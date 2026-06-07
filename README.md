@@ -1,6 +1,8 @@
 <p align="center">
-  <img src="assets/readme-header.svg" alt="XHAUS" width="720" />
+  <img src="assets/xhaus-logo.png" alt="XHAUS" width="180" />
 </p>
+
+<h1 align="center">XHAUS</h1>
 
 <p align="center">
   培养一个<strong>全天候私人管家</strong>——不只是会聊天的 AI，而是有性格、有技能、能感知世界、能跨端陪伴的贴身助手。
