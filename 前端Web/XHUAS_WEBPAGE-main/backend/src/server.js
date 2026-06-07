@@ -1,4 +1,5 @@
 const express = require("express");
+const fs = require("fs");
 const path = require("path");
 const { PORT } = require("./config/env");
 const loginRoutes = require("./routes/login");
@@ -9,13 +10,17 @@ const xhausRoutes = require("./routes/xhaus");
 const satelliteService = require("./services/satelliteService");
 
 const app = express();
+const publicDir = path.join(__dirname, "..", "public");
+const miniAssetsDir = path.join(__dirname, "..", "..", "miniprogram", "images");
 
 app.use(express.json({ limit: "2mb" }));
-app.use(express.static(path.join(__dirname, "..", "public")));
-app.use(
-  "/assets",
-  express.static(path.join(__dirname, "..", "..", "miniprogram", "images"))
-);
+app.use(express.static(publicDir));
+if (fs.existsSync(miniAssetsDir)) {
+  app.use("/assets", express.static(miniAssetsDir));
+}
+app.get("/", (req, res) => {
+  res.sendFile(path.join(publicDir, "index.html"));
+});
 app.use((req, res, next) => {
   console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
   next();

@@ -128,16 +128,20 @@ Skills 是管家的「手脚」。本仓库包含两类核心能力：
 ## 仓库结构
 
 ```text
-XHAUS/
-├── 预设性格/          # Franziska、Emma、Sebas、Toru 等人格档案
+XHAUS-Project/
+├── scripts/               # 一键安装脚本（macOS / Windows）
+├── RUNXHAUS/              # 运行目录（脚本自动创建，已 gitignore）
+│   ├── XHUAS_WEBPAGE/     # 从 GitHub 克隆的 Web 前端
+│   └── .run/              # 进程日志与 PID
+├── 预设性格/              # Franziska、Emma、Sebas、Toru 等人格档案
 ├── Skills/
-│   ├── Satellite/           # 元技能：自我进化
-│   ├── 本地生活skills/      # 餐饮、天气、出行、娱乐、心跳
-│   ├── schedule_reminder/   # 日程提醒
-│   └── phone_call/          # 电话呼叫
-├── 前端Web/           # 网页端（XHUAS_WEBPAGE）
-├── 前端小程序/        # 微信小程序端（XHUAS_MINIPROGRAM）
-└── 后端沙盒/          # dynamic-sandbox 世界引擎 + 一键启动脚本
+│   ├── Satellite/         # 元技能：自我进化
+│   ├── 本地生活skills/    # 餐饮、天气、出行、娱乐、心跳
+│   ├── schedule_reminder/ # 日程提醒
+│   └── phone_call/        # 电话呼叫
+├── 前端Web/               # Web 端参考副本（安装脚本会克隆最新版到 RUNXHAUS/）
+├── 前端小程序/            # 微信小程序端（XHUAS_MINIPROGRAM）
+└── 后端沙盒/              # dynamic-sandbox 世界引擎 + 一键启动脚本
 ```
 
 ---
@@ -163,14 +167,266 @@ XHAUS/
 
 ## 快速开始
 
-沙盒与 Skills 的一键启动说明见 `后端沙盒/Sand_box/README.md`；网页端与小程式的安装配置分别见其各自目录下的 README。
+> [!IMPORTANT]
+> ### 🌐 Web 端快速开始
+>
+> **适用范围：** 本节仅介绍 **Web 网页端** 的安装与启动（浏览器访问 `http://127.0.0.1:3000`）。
+>
+> **不包含：** 微信小程序、本地生活沙盒、Skills 全量部署——这些见下文 [完整环境搭建（沙盒 + Skills + 多端）](#完整环境搭建沙盒--skills--多端)。
+>
+> **推荐路径：** 克隆本仓库 → 运行一键脚本 → 在浏览器完成初始化。脚本会在 `RUNXHAUS/` 下自动拉取 Web 前端并启动服务。
+
+### 环境要求
+
+| 依赖 | 版本 | 用途 |
+|------|------|------|
+| Git | — | 克隆仓库 |
+| [OpenClaw](https://github.com/openclaw/openclaw) CLI | 最新 | Agent 运行时与 Gateway |
+| Python | 3.10+ | XHAUS 主程序、Satellite |
+| Node.js | 18+ | Web 后端 |
+| 模型 API Key | — | 首次 OpenClaw 引导时填写（DeepSeek / OpenAI 等） |
+
+默认端口：**OpenClaw Gateway 18789** · **Web 后端 3000**
+
+---
+
+### 第一步：克隆仓库
 
 ```bash
-# 沙盒 + Skills 一键启动（macOS / Linux）
-cd 后端沙盒/Sand_box
-chmod +x 一键启动.sh scripts/*.sh
-./一键启动.sh
+git clone https://github.com/Sorcerer-Zhao/XHAUS-Project.git
+cd XHAUS-Project
 ```
+
+---
+
+### 第二步：运行一键安装脚本
+
+脚本会在 **`<仓库根>/RUNXHAUS/`** 下创建运行环境（不污染用户主目录）：
+
+```text
+XHAUS-Project/
+└── RUNXHAUS/
+    ├── XHUAS_WEBPAGE/    ← 从 GitHub 克隆
+    └── .run/             ← 日志与进程 PID
+```
+
+**macOS**
+
+```bash
+chmod +x scripts/setup-xhaus-mac.sh
+./scripts/setup-xhaus-mac.sh
+```
+
+若 OpenClaw 已配置过，可跳过引导：
+
+```bash
+SKIP_OPENCLAW_ONBOARD=1 ./scripts/setup-xhaus-mac.sh
+```
+
+**Windows（PowerShell）**
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\scripts\setup-xhaus-windows.ps1
+```
+
+已配置 OpenClaw 时：
+
+```powershell
+$env:SKIP_OPENCLAW_ONBOARD = "1"
+.\scripts\setup-xhaus-windows.ps1
+```
+
+脚本自动完成：
+
+1. 检查 Git / Node / Python
+2. 克隆 [XHUAS_WEBPAGE](https://github.com/hareonna-hina/XHUAS_WEBPAGE) 到 `RUNXHAUS/XHUAS_WEBPAGE`
+3. `npm install` + Python 依赖 + 生成 `backend/.env`
+4. 安装并启动 OpenClaw Gateway（`18789`）
+5. 清理 3000 端口旧进程，启动 Web 后端并打开浏览器
+
+---
+
+### 第三步：在网页中完成初始化
+
+浏览器访问 **http://127.0.0.1:3000**（脚本会自动打开）：
+
+1. 点击 **「开始使用」**
+2. WebSocket 地址填入：`ws://127.0.0.1:18789`
+3. 选择人格预设（Franziska、Emma 等）
+4. 顶部显示 OpenClaw 在线后即可对话
+
+---
+
+### 停止与重启
+
+```bash
+# 停止 Web 后端
+kill $(cat RUNXHAUS/.run/web-backend.pid) 2>/dev/null
+
+# 停止 OpenClaw（若由脚本后台启动）
+kill $(cat RUNXHAUS/.run/openclaw-gateway.pid) 2>/dev/null
+openclaw gateway stop 2>/dev/null
+
+# 重新安装 / 启动
+./scripts/setup-xhaus-mac.sh
+```
+
+日志位置：`RUNXHAUS/.run/web-backend.log`、`RUNXHAUS/.run/openclaw-gateway.log`
+
+---
+
+### 常见问题（Web 端）
+
+| 现象 | 处理 |
+|------|------|
+| `EADDRINUSE :3000` | 端口被旧进程占用；重新运行脚本会自动清理，或手动 `lsof -tiTCP:3000 \| xargs kill` |
+| `Cannot GET /` | 多为旧后端实例；结束 3000 端口进程后重新运行脚本 |
+| 对话无响应 / 401 | 运行 `openclaw onboard` 配置模型 API Key |
+| OpenClaw 引导已做过 | 使用 `SKIP_OPENCLAW_ONBOARD=1` 跳过 |
+
+> [!NOTE]
+> 以上为 **Web 端** 快速开始全流程。继续向下阅读可搭建沙盒、Skills 与小程序等完整能力。
+
+---
+
+## 完整环境搭建（沙盒 + Skills + 多端）
+
+若需本地生活沙盒、全部 Skills 或微信小程序，在 Web 端跑通后按以下步骤扩展。
+
+### 启动沙盒与世界引擎
+
+沙盒为本地生活 Skills 提供可查询的仿真世界（时间、天气、排队、商户事件等）。
+
+```bash
+# 本仓库路径
+cd 后端沙盒/Sand_box
+
+chmod +x 一键启动.sh scripts/*.sh skills/install.sh
+./scripts/start-all.sh --all
+```
+
+`--all` 将依次完成：启动沙盒 → 健康检查 → 挂载本地生活 Skills → 启动 Gateway → 注册管家心跳 Cron。
+
+验证沙盒是否正常：
+
+```bash
+curl http://127.0.0.1:8787/health
+node scripts/health-check.js --skills
+```
+
+> 详细说明见 `后端沙盒/Sand_box/GETTING_STARTED.md`
+
+---
+
+### 安装扩展 Skills（可选）
+
+本仓库 `Skills/` 已包含 Satellite、schedule_reminder、phone_call 与本地生活 Skills。若使用独立仓库克隆，可通过以下方式安装：
+
+**命令行挂载（本地生活 Skills）**
+
+```bash
+cd 后端沙盒/Sand_box/skills && ./install.sh
+```
+
+**Web 端图形界面安装（Satellite 等）**
+
+启动 Web 后端后，在网页「能力装载」面板勾选 Skill 目录并安装。Satellite 需额外配置 LLM Key（DeepSeek / OpenAI / OpenClaw 兼容接口）。
+
+| Skill | 仓库 | 说明 |
+|-------|------|------|
+| Satellite | [Satellite](https://github.com/Sorcerer-Zhao/Satellite) | 元技能，自动沉淀经验 |
+| schedule_reminder | [schedule_reminder](https://github.com/Sorcerer-Zhao/schedule_reminder) | 日程提醒 |
+| phone_call | [phone_call](https://github.com/Sorcerer-Zhao/phone_call) | 电话预约与呼叫 |
+
+---
+
+### 启动微信小程序（可选）
+
+```bash
+cd 前端小程序/XHUAS_MINIPROGRAM-main/backend   # 独立克隆则用 XHUAS_MINIPROGRAM/backend
+
+npm install
+cp .env.example .env
+```
+
+生成并填入 `JWT_SECRET`，确认 Gateway 地址：
+
+```env
+JWT_SECRET=<随机字符串>
+XHAUS_DEFAULT_WEBSOCKET=ws://127.0.0.1:18789
+```
+
+若 XHAUS 不在默认相对路径，补充 `XHAUS_ROOT` 与 `SATELLITE_ROOT`。启动后端：
+
+```bash
+npm start
+```
+
+用**微信开发者工具**打开 `miniprogram/` 目录，将请求域名指向本机后端（开发阶段可勾选「不校验合法域名」）。
+
+> 完整配置见 [XHUAS_MINIPROGRAM README](https://github.com/hareonna-hina/XHUAS_MINIPROGRAM)
+
+---
+
+### 挂载人格预设
+
+从 `预设性格/` 选择管家原型，将对应目录下的四份文档同步到 OpenClaw Agent 工作区：
+
+```text
+预设性格/Franziska/   →  IDENTITY.md · SOUL.md · AGENTS.md · USER.md
+预设性格/Emma/
+预设性格/Sebas/
+预设性格/Toru/
+```
+
+Web 端选择预设时会自动同步；手动部署时，将上述文件复制到 `~/.openclaw/workspace/skills/` 对应 Agent 的根目录即可。
+
+---
+
+### 启动顺序一览
+
+```text
+① OpenClaw Gateway (:18789)
+        ↓
+② 动态沙盒 (:8787) + 本地生活 Skills
+        ↓
+③ Web / 小程序后端 (:3000)
+        ↓
+④ 选择人格 → 开始对话
+```
+
+**一键验收（沙盒 + Skills）**
+
+```bash
+cd 后端沙盒/Sand_box
+node scripts/acceptance-check.js --boot
+```
+
+**停止服务**
+
+```bash
+cd 后端沙盒/Sand_box
+./scripts/stop-all.sh --gateway --cron
+```
+
+---
+
+### 常见问题
+
+| 现象 | 处理 |
+|------|------|
+| Skill 返回空数据 | 确认沙盒已启动：`curl http://127.0.0.1:8787/health` |
+| Web 端无法连接 Agent | 确认 Gateway 在 `18789` 端口运行，WebSocket 地址为 `ws://127.0.0.1:18789` |
+| Satellite 未自动运行 | 需配置 LLM Key，且近 14 天对话样本达到阈值 |
+| Redis 连接失败提示 | 可忽略，后端会自动降级为内存会话 |
+
+各模块详细文档：
+
+- 沙盒：`后端沙盒/Sand_box/README.md`
+- Web 端：[hareonna-hina/XHUAS_WEBPAGE](https://github.com/hareonna-hina/XHUAS_WEBPAGE)
+- 小程序：[hareonna-hina/XHUAS_MINIPROGRAM](https://github.com/hareonna-hina/XHUAS_MINIPROGRAM)
+- Satellite：[Sorcerer-Zhao/Satellite](https://github.com/Sorcerer-Zhao/Satellite)
 
 ---
 
