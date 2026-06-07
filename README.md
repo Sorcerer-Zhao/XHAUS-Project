@@ -54,14 +54,13 @@ XHAUS 正是为此而设计。
 
 ## 2. 强大的 Skills 体系
 
-Skills 是管家的「手脚」。本仓库的 Skills 体系由 **四个部分** 组成：元技能自我进化、本地生活链路、日程提醒、电话订位——分别覆盖「成长、查询、规划、执行」四类生活能力。
+Skills 是管家的「手脚」。本仓库的 Skills 体系由 **四个部分** 组成：元技能自我进化、本地生活链路、日程提醒、电话订位——覆盖「成长、查询、规划、执行」四类生活能力。
 
 ---
 
 ### 一、Satellite · 元技能（自我进化）
 
-> [!IMPORTANT]
-> **定位：** 让管家从重复对话中**自动学习**，生成新 Skill 或更新人格偏好。  
+> **定位：** 让管家从重复对话中**自动学习**，生成新 Skill 或更新人格偏好、构建用户画像  
 > **仓库：** [Sorcerer-Zhao/Satellite](https://github.com/Sorcerer-Zhao/Satellite) · 路径：`Skills/Satellite/`
 
 [Satellite](https://github.com/Sorcerer-Zhao/Satellite) 是一个 **MetaSkill（生成 Skill 的 Skill）**：
@@ -76,17 +75,18 @@ Skills 是管家的「手脚」。本仓库的 Skills 体系由 **四个部分**
 
 ### 二、本地生活 Skills · 连接模拟世界
 
-> [!TIP]
 > **定位：** 贯通「搜索—推荐—排队—导航—出行—到店」本地生活链路，数据一律来自动态沙盒 API，**禁止凭空编造**。  
 > **路径：** `Skills/本地生活skills/`
 
-| 能力 | Skill | 说明 |
-|------|-------|------|
-| 搜餐厅 / 排队取号 | `food-guide` | 搜索餐厅、取号、盯号提醒 |
-| 天气查询 | `weather` | 读取沙盒世界当前天气 |
-| 出行规划 | `mobility-planner` | 路线与出行方案 |
-| 娱乐活动 | `entertainment-scout` | 发现周边娱乐选项 |
-| 管家心跳 | `sandbox-heartbeat` | 轮询世界事件，主动提醒排队/天气/出行等 |
+
+| 能力         | Skill                 | 说明                   |
+| ---------- | --------------------- | -------------------- |
+| 搜餐厅 / 排队取号 | `food-guide`          | 搜索餐厅、取号、盯号提醒         |
+| 天气查询       | `weather`             | 读取沙盒世界当前天气           |
+| 出行规划       | `mobility-planner`    | 路线与出行方案              |
+| 娱乐活动       | `entertainment-scout` | 发现周边娱乐选项             |
+| 管家心跳       | `sandbox-heartbeat`   | 轮询世界事件，主动提醒排队/天气/出行等 |
+
 
 五个 Skill 协同工作：`food-guide` 取号后由 `sandbox-heartbeat` 盯号叫号；`weather` 与 `mobility-planner` 根据天气联动出行 ETA；`entertainment-scout` 承接餐后娱乐推荐。需先启动 [动态沙盒](#完整环境搭建沙盒--skills--多端)（端口 `8787`）。
 
@@ -94,7 +94,6 @@ Skills 是管家的「手脚」。本仓库的 Skills 体系由 **四个部分**
 
 ### 三、schedule_reminder · 日程识别与主动提醒
 
-> [!NOTE]
 > **定位：** 从自然语言中**听懂日程**，写入结构化日程表，并按时间节点**主动推送**提醒。  
 > **仓库：** [Sorcerer-Zhao/schedule_reminder](https://github.com/Sorcerer-Zhao/schedule_reminder) · 路径：`Skills/schedule_reminder/`
 
@@ -111,7 +110,6 @@ Skills 是管家的「手脚」。本仓库的 Skills 体系由 **四个部分**
 
 ### 四、phone_call · 本机电话订位
 
-> [!WARNING]
 > **定位：** 协助用户完成**餐厅订位等电话预约**，走 Mac + iPhone 本机链路，不依赖云外呼。  
 > **仓库：** [Sorcerer-Zhao/phone_call](https://github.com/Sorcerer-Zhao/phone_call) · 路径：`Skills/phone_call/`
 
@@ -153,11 +151,13 @@ Skills 是管家的「手脚」。本仓库的 Skills 体系由 **四个部分**
 
 ### 控场能力 — 为演示与测试而生
 
-| 接口 | 能力 |
-|------|------|
-| `POST /admin/clock` | 调整世界倍速（如 30x：10 分钟演化在数十秒内看完）、**暂停世界时间** |
-| `POST /admin/reset` | 重置世界，可选 `seed` 复现同一随机世界 |
-| `POST /admin/inject` | 注入剧情（餐厅立刻满座、立刻下雨等） |
+
+| 接口                   | 能力                                      |
+| -------------------- | --------------------------------------- |
+| `POST /admin/clock`  | 调整世界倍速（如 30x：10 分钟演化在数十秒内看完）、**暂停世界时间** |
+| `POST /admin/reset`  | 重置世界，可选 `seed` 复现同一随机世界                 |
+| `POST /admin/inject` | 注入剧情（餐厅立刻满座、立刻下雨等）                      |
+
 
 一键启动脚本默认以 **seed=42、30 倍速** 复位世界，方便快速演示端到端流程。需要细粒度观察时，可随时暂停时钟或降速。
 
@@ -194,24 +194,29 @@ XHAUS-Project/
 
 ### Skills
 
-| 项目 | 链接 |
-|------|------|
-| Satellite | https://github.com/Sorcerer-Zhao/Satellite |
-| schedule_reminder | https://github.com/Sorcerer-Zhao/schedule_reminder |
-| phone_call | https://github.com/Sorcerer-Zhao/phone_call |
+
+| 项目                | 链接                                                                                                       |
+| ----------------- | -------------------------------------------------------------------------------------------------------- |
+| Satellite         | [https://github.com/Sorcerer-Zhao/Satellite](https://github.com/Sorcerer-Zhao/Satellite)                 |
+| schedule_reminder | [https://github.com/Sorcerer-Zhao/schedule_reminder](https://github.com/Sorcerer-Zhao/schedule_reminder) |
+| phone_call        | [https://github.com/Sorcerer-Zhao/phone_call](https://github.com/Sorcerer-Zhao/phone_call)               |
+
 
 ### 前端
 
-| 项目 | 链接 |
-|------|------|
-| Web 网页端 | https://github.com/hareonna-hina/XHUAS_WEBPAGE |
-| 微信小程序 | https://github.com/hareonna-hina/XHUAS_MINIPROGRAM |
+
+| 项目      | 链接                                                                                                       |
+| ------- | -------------------------------------------------------------------------------------------------------- |
+| Web 网页端 | [https://github.com/hareonna-hina/XHUAS_WEBPAGE](https://github.com/hareonna-hina/XHUAS_WEBPAGE)         |
+| 微信小程序   | [https://github.com/hareonna-hina/XHUAS_MINIPROGRAM](https://github.com/hareonna-hina/XHUAS_MINIPROGRAM) |
+
 
 ---
 
 ## 快速开始
 
 > [!IMPORTANT]
+>
 > ### 🌐 Web 端快速开始
 >
 > **适用范围：** 本节仅介绍 **Web 网页端** 的安装与启动（浏览器访问 `http://127.0.0.1:3000`）。
@@ -222,13 +227,15 @@ XHAUS-Project/
 
 ### 环境要求
 
-| 依赖 | 版本 | 用途 |
-|------|------|------|
-| Git | — | 克隆仓库 |
-| [OpenClaw](https://github.com/openclaw/openclaw) CLI | 最新 | Agent 运行时与 Gateway |
-| Python | 3.10+ | XHAUS 主程序、Satellite |
-| Node.js | 18+ | Web 后端 |
-| 模型 API Key | — | 首次 OpenClaw 引导时填写（DeepSeek / OpenAI 等） |
+
+| 依赖                                                   | 版本    | 用途                                     |
+| ---------------------------------------------------- | ----- | -------------------------------------- |
+| Git                                                  | —     | 克隆仓库                                   |
+| [OpenClaw](https://github.com/openclaw/openclaw) CLI | 最新    | Agent 运行时与 Gateway                     |
+| Python                                               | 3.10+ | XHAUS 主程序、Satellite                    |
+| Node.js                                              | 18+   | Web 后端                                 |
+| 模型 API Key                                           | —     | 首次 OpenClaw 引导时填写（DeepSeek / OpenAI 等） |
+
 
 默认端口：**OpenClaw Gateway 18789** · **Web 后端 3000**
 
@@ -293,7 +300,7 @@ $env:SKIP_OPENCLAW_ONBOARD = "1"
 
 ### 第三步：在网页中完成初始化
 
-浏览器访问 **http://127.0.0.1:3000**（脚本会自动打开）：
+浏览器访问 **[http://127.0.0.1:3000](http://127.0.0.1:3000)**（脚本会自动打开）：
 
 1. 点击 **「开始使用」**
 2. WebSocket 地址填入：`ws://127.0.0.1:18789`
@@ -322,12 +329,14 @@ openclaw gateway stop 2>/dev/null
 
 ### 常见问题（Web 端）
 
-| 现象 | 处理 |
-|------|------|
+
+| 现象                 | 处理                                                       |
+| ------------------ | -------------------------------------------------------- |
 | `EADDRINUSE :3000` | 端口被旧进程占用；重新运行脚本会自动清理，或手动 `lsof -tiTCP:3000 \| xargs kill` |
-| `Cannot GET /` | 多为旧后端实例；结束 3000 端口进程后重新运行脚本 |
-| 对话无响应 / 401 | 运行 `openclaw onboard` 配置模型 API Key |
-| OpenClaw 引导已做过 | 使用 `SKIP_OPENCLAW_ONBOARD=1` 跳过 |
+| `Cannot GET /`     | 多为旧后端实例；结束 3000 端口进程后重新运行脚本                              |
+| 对话无响应 / 401        | 运行 `openclaw onboard` 配置模型 API Key                       |
+| OpenClaw 引导已做过     | 使用 `SKIP_OPENCLAW_ONBOARD=1` 跳过                          |
+
 
 > [!NOTE]
 > 以上为 **Web 端** 快速开始全流程。继续向下阅读可搭建沙盒、Skills 与小程序等完整能力。
@@ -339,6 +348,7 @@ openclaw gateway stop 2>/dev/null
 若需本地生活沙盒、全部 Skills 或微信小程序，在 Web 端跑通后按以下步骤扩展。
 
 > [!TIP]
+>
 > ### 🏙️ 沙盒快速启动
 >
 > **适用范围：** 启动 **dynamic-sandbox** 世界引擎（端口 `8787`），并挂载本地生活 Skills、OpenClaw Gateway 与管家心跳。
@@ -373,7 +383,7 @@ curl http://127.0.0.1:8787/health
 node 后端沙盒/Sand_box/scripts/health-check.js --skills
 ```
 
-沙盒 API 文档：**http://127.0.0.1:8787/docs**
+沙盒 API 文档：**[http://127.0.0.1:8787/docs](http://127.0.0.1:8787/docs)**
 
 > 详细说明见 `后端沙盒/Sand_box/GETTING_STARTED.md`
 
@@ -393,11 +403,13 @@ cd 后端沙盒/Sand_box/skills && ./install.sh
 
 启动 Web 后端后，在网页「能力装载」面板勾选 Skill 目录并安装。Satellite 需额外配置 LLM Key（DeepSeek / OpenAI / OpenClaw 兼容接口）。
 
-| Skill | 仓库 | 说明 |
-|-------|------|------|
-| Satellite | [Satellite](https://github.com/Sorcerer-Zhao/Satellite) | 元技能，自动沉淀经验 |
-| schedule_reminder | [schedule_reminder](https://github.com/Sorcerer-Zhao/schedule_reminder) | 日程提醒 |
-| phone_call | [phone_call](https://github.com/Sorcerer-Zhao/phone_call) | 电话预约与呼叫 |
+
+| Skill             | 仓库                                                                      | 说明         |
+| ----------------- | ----------------------------------------------------------------------- | ---------- |
+| Satellite         | [Satellite](https://github.com/Sorcerer-Zhao/Satellite)                 | 元技能，自动沉淀经验 |
+| schedule_reminder | [schedule_reminder](https://github.com/Sorcerer-Zhao/schedule_reminder) | 日程提醒       |
+| phone_call        | [phone_call](https://github.com/Sorcerer-Zhao/phone_call)               | 电话预约与呼叫    |
+
 
 ---
 
@@ -474,12 +486,14 @@ cd 后端沙盒/Sand_box
 
 ### 常见问题
 
-| 现象 | 处理 |
-|------|------|
-| Skill 返回空数据 | 确认沙盒已启动：`curl http://127.0.0.1:8787/health` |
+
+| 现象              | 处理                                                             |
+| --------------- | -------------------------------------------------------------- |
+| Skill 返回空数据     | 确认沙盒已启动：`curl http://127.0.0.1:8787/health`                    |
 | Web 端无法连接 Agent | 确认 Gateway 在 `18789` 端口运行，WebSocket 地址为 `ws://127.0.0.1:18789` |
-| Satellite 未自动运行 | 需配置 LLM Key，且近 14 天对话样本达到阈值 |
-| Redis 连接失败提示 | 可忽略，后端会自动降级为内存会话 |
+| Satellite 未自动运行 | 需配置 LLM Key，且近 14 天对话样本达到阈值                                    |
+| Redis 连接失败提示    | 可忽略，后端会自动降级为内存会话                                               |
+
 
 各模块详细文档：
 
