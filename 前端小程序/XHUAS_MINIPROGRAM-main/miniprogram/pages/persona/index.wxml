@@ -1,0 +1,30 @@
+<view class="page">
+  <view class="nav-space" style="height: {{safeTop}}px;"></view>
+  <view class="panel">
+    <view class="head">
+      <view>
+        <text class="eyebrow">BUTLER PROFILE</text>
+        <text class="title">选择管家</text>
+      </view>
+      <view class="pill" bindtap="createProfile">自定义</view>
+    </view>
+
+    <view wx:if="{{loading}}" class="list-item muted">正在读取管家列表...</view>
+    <view wx:elif="{{!choices.length}}" class="list-item muted">暂无可选管家。</view>
+    <view wx:else class="list">
+      <view wx:for="{{choices}}" wx:key="index" class="history-item persona-row">
+        <view class="history-main" data-index="{{item.index}}" bindtap="selectPersona">
+          <text class="item-title">{{item.label}}</text>
+          <text class="item-meta">{{item.kindLabel}}</text>
+        </view>
+        <view
+          wx:if="{{item.canDelete}}"
+          class="delete-btn"
+          data-id="{{item.profileId}}"
+          data-label="{{item.label}}"
+          catchtap="deletePersona"
+        >删除</view>
+      </view>
+    </view>
+  </view>
+</view>

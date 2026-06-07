@@ -1,0 +1,9 @@
+{
+  "entertainment": {
+    "lastCrawlTime": "2026-05-03T08:32:23.483Z",
+    "areas": "望京,三里屯,朝阳大悦城,国贸,中关村,五道口",
+    "type": "movie,bar,ktv,escape_room,board_game,park,fitness,spa,massage,billiards,shopping,board_game_cafe",
+    "count": 165,
+    "dataSource": "amap"
+  }
+}

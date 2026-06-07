@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 虚拟环境 (本项目不用 venv，仅防止误提交)
+.venv/
+venv/
+env/
+ENV/
+
+# 打包/分发
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# 测试 / 覆盖率
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 编辑器 / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# 运行期产物 (如启用 admin/snapshot 持久化)
+*.log
+snapshot*.json

@@ -1,0 +1,22 @@
+# Virtual environments
+.venv/
+venv/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Local sandbox staging area
+.staging_skills/
+
+# Local databases & logs
+*.db
+*.sqlite
+*.log
+
+# Secret-bearing config
+.env
+
+# IDE / OS junk
+.idea/
+.DS_Store

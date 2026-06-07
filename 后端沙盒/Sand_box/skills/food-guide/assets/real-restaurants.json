@@ -1,0 +1,1834 @@
+{
+  "restaurants": [
+    {
+      "id": "r001",
+      "name": "正院大宅門烤鸭(望京店)",
+      "cuisine": "北京菜",
+      "area": "望京",
+      "address": "北京城区望京南湖南路11号院1号楼京泰广场三层",
+      "rating": 4.6,
+      "pricePerPerson": 146,
+      "tags": [
+        "北京菜",
+        "石库门老酒烧肉",
+        "双人餐",
+        "红烧肉",
+        "烤鸭"
+      ],
+      "openHours": "11:00-14:00",
+      "phone": "010-64702081;010-64702082",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "石库门老酒烧肉",
+        "双人餐",
+        "红烧肉"
+      ]
+    },
+    {
+      "id": "r002",
+      "name": "丝路传奇·中国拉面航母店(望京总店)",
+      "cuisine": "面馆",
+      "area": "望京",
+      "address": "北京城区湖光中街9号(望京地铁站H西南口步行110米)",
+      "rating": 4.8,
+      "pricePerPerson": 58,
+      "tags": [
+        "面馆",
+        "五香牛腱子",
+        "胡麻油沙葱土鸡蛋",
+        "滩羊肉烤包子",
+        "核桃烤馕"
+      ],
+      "openHours": "24小时营业",
+      "phone": "18401138238",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "五香牛腱子",
+        "胡麻油沙葱土鸡蛋",
+        "滩羊肉烤包子"
+      ]
+    },
+    {
+      "id": "r003",
+      "name": "芈重山老火锅(望京店)",
+      "cuisine": "火锅",
+      "area": "望京",
+      "address": "望京东湖街道广顺南大街3号望京西园四区420号楼1层420-5-085",
+      "rating": 4.8,
+      "pricePerPerson": 129,
+      "tags": [
+        "火锅",
+        "双人餐",
+        "毛肚",
+        "老火锅",
+        "小酥肉"
+      ],
+      "openHours": "11:00-02:00",
+      "phone": "010-64781399",
+      "waitInfo": {
+        "currentWait": 2,
+        "avgWaitMinutes": 18
+      },
+      "highlights": [
+        "双人餐",
+        "毛肚",
+        "老火锅"
+      ]
+    },
+    {
+      "id": "r004",
+      "name": "饭阿姨(望京新城店)",
+      "cuisine": "韩国料理",
+      "area": "望京",
+      "address": "广顺北大街望京西园4区423号楼望京美食城2层",
+      "rating": 4.7,
+      "pricePerPerson": 54,
+      "tags": [
+        "韩国料理",
+        "饭阿姨",
+        "炸鸡",
+        "芝士",
+        "餐饮"
+      ],
+      "openHours": "10:00-21:30",
+      "phone": "010-84724790",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "饭阿姨",
+        "炸鸡",
+        "芝士"
+      ]
+    },
+    {
+      "id": "r005",
+      "name": "南京大牌档(望京凯德店)",
+      "cuisine": "江浙菜",
+      "area": "望京",
+      "address": "广顺北大街33号望京凯德Mall4楼",
+      "rating": 4.7,
+      "pricePerPerson": 66,
+      "tags": [
+        "江浙菜",
+        "煮鸭血粉丝煲",
+        "金牌煎饺",
+        "烤鸭天王包",
+        "美龄粥"
+      ],
+      "openHours": "10:00-21:30",
+      "phone": "010-64719777;17669318109",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "煮鸭血粉丝煲",
+        "金牌煎饺",
+        "烤鸭天王包"
+      ]
+    },
+    {
+      "id": "r006",
+      "name": "小吊梨汤·北京菜·烤鸭(凯德望京店)",
+      "cuisine": "北京菜",
+      "area": "望京",
+      "address": "北京城区广顺北大街33号院215号楼05层501内05-01号",
+      "rating": 4.6,
+      "pricePerPerson": 90,
+      "tags": [
+        "北京菜",
+        "小吊梨汤",
+        "素菜",
+        "双人餐",
+        "烤鸭"
+      ],
+      "openHours": "10:00-21:30",
+      "phone": "010-64728665;15810968284",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "小吊梨汤",
+        "素菜",
+        "双人餐"
+      ]
+    },
+    {
+      "id": "r007",
+      "name": "逐鹿·古风·湘菜馆(望京店)",
+      "cuisine": "湘菜",
+      "area": "望京",
+      "address": "北京城区广顺北大街33号福码大厦",
+      "rating": 4.7,
+      "pricePerPerson": 80,
+      "tags": [
+        "湘菜",
+        "自助餐",
+        "餐饮",
+        "中餐厅",
+        "茶艺"
+      ],
+      "openHours": "09:30-14:00",
+      "phone": "010-62277789",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "自助餐"
+      ]
+    },
+    {
+      "id": "r008",
+      "name": "香猪坊(望京二店)",
+      "cuisine": "韩式烤肉",
+      "area": "望京",
+      "address": "广顺北大街望京西园4区423号楼韩国城101A(近宏昌路)",
+      "rating": 4.7,
+      "pricePerPerson": 127,
+      "tags": [
+        "韩式烤肉",
+        "五花肉",
+        "烤肉",
+        "餐饮",
+        "外国餐厅"
+      ],
+      "openHours": "11:00-14:30",
+      "phone": "010-64747772",
+      "waitInfo": {
+        "currentWait": 1,
+        "avgWaitMinutes": 7
+      },
+      "highlights": [
+        "五花肉",
+        "烤肉"
+      ]
+    },
+    {
+      "id": "r009",
+      "name": "滨寿司(望京凯德MALL店)",
+      "cuisine": "日料",
+      "area": "望京",
+      "address": "广顺北大街33号凯德MALL望京店L4层",
+      "rating": 4.7,
+      "pricePerPerson": 106,
+      "tags": [
+        "日料",
+        "寿司",
+        "餐饮",
+        "餐饮相关场所",
+        "餐饮相关"
+      ],
+      "openHours": "10:00-21:30",
+      "phone": "13121703101",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "寿司"
+      ]
+    },
+    {
+      "id": "r010",
+      "name": "水木锦堂自助铁板烧(望京凯德MALL店)",
+      "cuisine": "日料",
+      "area": "望京",
+      "address": "望京街道广顺北大街33号凯德MALL 4层",
+      "rating": 4.6,
+      "pricePerPerson": 260,
+      "tags": [
+        "日料",
+        "铁板烧自助",
+        "皇家菲力牛排",
+        "烤三文鱼",
+        "铁板鳕鱼"
+      ],
+      "openHours": "10:30-22:00",
+      "phone": "010-64749986",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "皇家菲力牛排",
+        "烤三文鱼",
+        "铁板鳕鱼"
+      ]
+    },
+    {
+      "id": "r011",
+      "name": "争鲜回转寿司(望京凯德PLUS店)",
+      "cuisine": "日料",
+      "area": "望京",
+      "address": "北京城区广顺北大街33号院213号楼4层401内04-08号(凯德Mall)",
+      "rating": 4.4,
+      "pricePerPerson": 69,
+      "tags": [
+        "日料",
+        "日本料理",
+        "柚子醋冻安格斯牛",
+        "安格斯牛肉茶碗蒸",
+        "牛气关东煮"
+      ],
+      "openHours": "10:00-21:30",
+      "phone": "17600246682",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "柚子醋冻安格斯牛",
+        "安格斯牛肉茶碗蒸",
+        "牛气关东煮"
+      ]
+    },
+    {
+      "id": "r012",
+      "name": "回屋·深夜食堂",
+      "cuisine": "日料",
+      "area": "望京",
+      "address": "广顺北大街辅路望京西园四区420号楼熊家城2层(熊家烤肉对面)",
+      "rating": 4.5,
+      "pricePerPerson": 134,
+      "tags": [
+        "日料",
+        "夜宵",
+        "黄油",
+        "鸡翅",
+        "三文鱼"
+      ],
+      "openHours": "17:00-03:00",
+      "phone": "18511383531",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "黄油",
+        "鸡翅",
+        "三文鱼"
+      ]
+    },
+    {
+      "id": "r013",
+      "name": "庆春朴门(三里屯太古里店)",
+      "cuisine": "素菜馆",
+      "area": "三里屯",
+      "address": "三里屯太古里北区N2四楼(三里屯路与三里屯东三街交叉口对面)",
+      "rating": 4.8,
+      "pricePerPerson": 104,
+      "tags": [
+        "素菜馆",
+        "炒饭",
+        "双人餐",
+        "素食",
+        "蘑菇"
+      ],
+      "openHours": "11:00-21:30",
+      "phone": "010-87807099",
+      "waitInfo": {
+        "currentWait": 2,
+        "avgWaitMinutes": 16
+      },
+      "highlights": [
+        "炒饭",
+        "双人餐",
+        "素食"
+      ]
+    },
+    {
+      "id": "r014",
+      "name": "海底捞火锅(太古里3.3店)",
+      "cuisine": "火锅",
+      "area": "三里屯",
+      "address": "北京城区三里屯路33号太古里3.3大厦三层3006号商铺",
+      "rating": 4.7,
+      "pricePerPerson": 121,
+      "tags": [
+        "火锅",
+        "单人餐",
+        "双人餐",
+        "餐饮",
+        "中餐厅"
+      ],
+      "openHours": "10:00-07:00",
+      "phone": "010-67448596",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "单人餐",
+        "双人餐"
+      ]
+    },
+    {
+      "id": "r015",
+      "name": "酬板前寿司 OMAKASE(3·3大厦店)",
+      "cuisine": "日料",
+      "area": "三里屯",
+      "address": "北京城区三里屯路33号3·3大厦5层",
+      "rating": 4.7,
+      "pricePerPerson": 450,
+      "tags": [
+        "日料",
+        "日本料理",
+        "单人餐",
+        "料理",
+        "牛肉"
+      ],
+      "openHours": "11:00-22:00",
+      "phone": "13273610798",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "单人餐",
+        "料理",
+        "牛肉"
+      ]
+    },
+    {
+      "id": "r016",
+      "name": "阿公阿嬤酒菜处(三里屯太古里南区店)",
+      "cuisine": "台湾菜",
+      "area": "三里屯",
+      "address": "北京城区三里屯路19号院三里屯太古里南区L3层S2-31",
+      "rating": 4.6,
+      "pricePerPerson": 98,
+      "tags": [
+        "台湾菜",
+        "咸酥虾",
+        "菜脯蛋",
+        "大肠包小肠",
+        "花枝丸"
+      ],
+      "openHours": "",
+      "phone": "13146626219",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "咸酥虾",
+        "菜脯蛋",
+        "大肠包小肠"
+      ]
+    },
+    {
+      "id": "r017",
+      "name": "元古雲境",
+      "cuisine": "创意菜",
+      "area": "三里屯",
+      "address": "三里屯路11号太古里北区N4三层(Kenzo旁扶梯上)",
+      "rating": 4.7,
+      "pricePerPerson": 206,
+      "tags": [
+        "创意菜",
+        "下午茶",
+        "牛肉",
+        "双人餐",
+        "豆腐"
+      ],
+      "openHours": "",
+      "phone": "13693071462",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "下午茶",
+        "牛肉",
+        "双人餐"
+      ]
+    },
+    {
+      "id": "r018",
+      "name": "胖哥俩肉蟹煲(3·3大厦店)",
+      "cuisine": "江浙菜",
+      "area": "三里屯",
+      "address": "北京城区三里屯路33号3.3大厦五层胖哥俩肉蟹煲",
+      "rating": 4.7,
+      "pricePerPerson": 97,
+      "tags": [
+        "江浙菜",
+        "年糕",
+        "鸡爪",
+        "鸡翅",
+        "餐饮"
+      ],
+      "openHours": "",
+      "phone": "010-51365668",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "年糕",
+        "鸡爪",
+        "鸡翅"
+      ]
+    },
+    {
+      "id": "r019",
+      "name": "NEED创意韩国料理(三里屯太古里店)",
+      "cuisine": "韩国料理",
+      "area": "三里屯",
+      "address": "朝阳区三里屯路19号院6号楼3层S6-31b单元",
+      "rating": 4.7,
+      "pricePerPerson": 129,
+      "tags": [
+        "韩国料理",
+        "餐饮",
+        "外国餐厅"
+      ],
+      "openHours": "11:00-22:00",
+      "phone": "17663729560",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "韩国料理"
+      ]
+    },
+    {
+      "id": "r020",
+      "name": "潭月烧鹅(三里屯太古里北区店)",
+      "cuisine": "粤菜",
+      "area": "三里屯",
+      "address": "北京城区三里屯路19号三里屯太古里北区LG层NLG-09a",
+      "rating": 4.6,
+      "pricePerPerson": 203,
+      "tags": [
+        "粤菜",
+        "杨枝甘露",
+        "双人餐",
+        "鲍鱼",
+        "烧鹅"
+      ],
+      "openHours": "11:30-14:00",
+      "phone": "010-84059196;13260238153",
+      "waitInfo": {
+        "currentWait": 2,
+        "avgWaitMinutes": 14
+      },
+      "highlights": [
+        "杨枝甘露",
+        "双人餐",
+        "鲍鱼"
+      ]
+    },
+    {
+      "id": "r021",
+      "name": "鳥梵·YAKIYAKI&烧鸟·酒场",
+      "cuisine": "日料",
+      "area": "三里屯",
+      "address": "三里屯路33号3.3大厦东门下扶梯周转B1层1027号",
+      "rating": 4.6,
+      "pricePerPerson": 129,
+      "tags": [
+        "日料",
+        "日本料理",
+        "牛肉",
+        "鸡肉",
+        "餐饮"
+      ],
+      "openHours": "11:00-14:30",
+      "phone": "18511056552",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "牛肉",
+        "鸡肉"
+      ]
+    },
+    {
+      "id": "r022",
+      "name": "十十寿喜烧(3·3大厦店)",
+      "cuisine": "日料",
+      "area": "三里屯",
+      "address": "三里屯路33号3·3大厦5L层5020",
+      "rating": 4.6,
+      "pricePerPerson": 118,
+      "tags": [
+        "日料",
+        "日本料理",
+        "安格斯上脑",
+        "寿喜烧",
+        "生拌牛肉"
+      ],
+      "openHours": "11:30-23:30",
+      "phone": "17610859978",
+      "waitInfo": {
+        "currentWait": 2,
+        "avgWaitMinutes": 18
+      },
+      "highlights": [
+        "安格斯上脑",
+        "寿喜烧",
+        "生拌牛肉"
+      ]
+    },
+    {
+      "id": "r023",
+      "name": "观筵铁板烧(三里屯太古里店)",
+      "cuisine": "日料",
+      "area": "三里屯",
+      "address": "北京城区三里屯路太古里南区S6-32号3层",
+      "rating": 4.6,
+      "pricePerPerson": 298,
+      "tags": [
+        "日料",
+        "铁板烧自助",
+        "羊肚菌虾滑",
+        "和牛9+保利肩",
+        "隔膜串"
+      ],
+      "openHours": "11:30-22:00",
+      "phone": "17610828928",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "羊肚菌虾滑",
+        "和牛9+保利肩",
+        "隔膜串"
+      ]
+    },
+    {
+      "id": "r024",
+      "name": "长安记·大美陕菜(朝阳大悦城店)",
+      "cuisine": "西北菜",
+      "area": "朝阳大悦城",
+      "address": "北京城区朝阳北路101号楼朝阳大悦城6F-13B",
+      "rating": 4.5,
+      "pricePerPerson": 80,
+      "tags": [
+        "西北菜",
+        "鸡肉",
+        "双人餐",
+        "豆腐",
+        "餐饮"
+      ],
+      "openHours": "11:00-21:00",
+      "phone": "010-85577131",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "鸡肉",
+        "双人餐",
+        "豆腐"
+      ]
+    },
+    {
+      "id": "r025",
+      "name": "烤匠麻辣烤鱼(朝阳大悦城店)",
+      "cuisine": "川菜",
+      "area": "朝阳大悦城",
+      "address": "北京城区朝阳北路101号朝阳大悦城7F-03",
+      "rating": 4.6,
+      "pricePerPerson": 106,
+      "tags": [
+        "川菜",
+        "烤鱼",
+        "豆花",
+        "餐饮",
+        "中餐厅"
+      ],
+      "openHours": "11:00-05:00",
+      "phone": "13146625820",
+      "waitInfo": {
+        "currentWait": 1,
+        "avgWaitMinutes": 8
+      },
+      "highlights": [
+        "烤鱼",
+        "豆花"
+      ]
+    },
+    {
+      "id": "r026",
+      "name": "四世同堂·京菜·烤鸭(青年路店)",
+      "cuisine": "北京菜",
+      "area": "朝阳大悦城",
+      "address": "北京城区朝阳北路107号院58号楼2层203",
+      "rating": 4.6,
+      "pricePerPerson": 121,
+      "tags": [
+        "北京菜",
+        "艾窝窝",
+        "羊肉",
+        "烤鸭",
+        "餐饮"
+      ],
+      "openHours": "10:30-22:00",
+      "phone": "010-85825218;18514839636",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "艾窝窝",
+        "羊肉",
+        "烤鸭"
+      ]
+    },
+    {
+      "id": "r027",
+      "name": "初色海鲜自助(朝阳北路店)",
+      "cuisine": "自助餐",
+      "area": "朝阳大悦城",
+      "address": "平房镇朝阳北路雅成一里19号楼世丰国际大厦3层(南门)",
+      "rating": 4.7,
+      "pricePerPerson": 324,
+      "tags": [
+        "自助餐",
+        "刺身",
+        "北京烤鸭",
+        "烤肉",
+        "牛羊肉"
+      ],
+      "openHours": "",
+      "phone": "010-85513888",
+      "waitInfo": {
+        "currentWait": 2,
+        "avgWaitMinutes": 20
+      },
+      "highlights": [
+        "刺身",
+        "北京烤鸭",
+        "烤肉"
+      ]
+    },
+    {
+      "id": "r028",
+      "name": "昊来了寿司(青年路店)",
+      "cuisine": "日料",
+      "area": "朝阳大悦城",
+      "address": "青年路姚家园113号13号",
+      "rating": 4.7,
+      "pricePerPerson": 139,
+      "tags": [
+        "日料",
+        "寿司",
+        "牛肉",
+        "餐饮",
+        "餐饮相关场所"
+      ],
+      "openHours": "11:30-14:30",
+      "phone": "15810262474",
+      "waitInfo": {
+        "currentWait": 2,
+        "avgWaitMinutes": 16
+      },
+      "highlights": [
+        "寿司",
+        "牛肉"
+      ]
+    },
+    {
+      "id": "r029",
+      "name": "KAMOME海鸥洋食堂",
+      "cuisine": "西餐",
+      "area": "朝阳大悦城",
+      "address": "北京城区四季星河南街北院内1-1平房F5(门牌号)",
+      "rating": 4.5,
+      "pricePerPerson": 97,
+      "tags": [
+        "西餐",
+        "雪顶千层面",
+        "奶油蘑菇培根意面",
+        "黑松露菌菇披萨",
+        "澳洲谷饲眼肉牛排"
+      ],
+      "openHours": "11:00-22:00",
+      "phone": "18514292365",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "雪顶千层面",
+        "奶油蘑菇培根意面",
+        "黑松露菌菇披萨"
+      ]
+    },
+    {
+      "id": "r030",
+      "name": "寿司郎(朝阳大悦城店)",
+      "cuisine": "日料",
+      "area": "朝阳大悦城",
+      "address": "朝阳北路101号朝阳大悦城7F-14",
+      "rating": 4.7,
+      "pricePerPerson": 140,
+      "tags": [
+        "日料",
+        "寿司",
+        "餐饮",
+        "外国餐厅",
+        "日本料理"
+      ],
+      "openHours": "10:30-21:30",
+      "phone": "010-85958869",
+      "waitInfo": {
+        "currentWait": 2,
+        "avgWaitMinutes": 14
+      },
+      "highlights": [
+        "寿司"
+      ]
+    },
+    {
+      "id": "r031",
+      "name": "一楼一饭店(青年路店)",
+      "cuisine": "中餐",
+      "area": "朝阳大悦城",
+      "address": "青年路113号悦鑫园停车场内",
+      "rating": 4.7,
+      "pricePerPerson": 110,
+      "tags": [
+        "中餐",
+        "金银菜炖猪肺汤",
+        "西班牙黑金叉烧",
+        "芝士龙虾伊面",
+        "玫瑰豉油鸡"
+      ],
+      "openHours": "11:00-22:00",
+      "phone": "15624917758",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "金银菜炖猪肺汤",
+        "西班牙黑金叉烧",
+        "西洋菜陈肾炖瘦肉汤"
+      ]
+    },
+    {
+      "id": "r032",
+      "name": "味千拉面(朝北大悦城店)",
+      "cuisine": "日料",
+      "area": "朝阳大悦城",
+      "address": "朝阳大悦城6层",
+      "rating": 4.4,
+      "pricePerPerson": 60,
+      "tags": [
+        "日料",
+        "面馆",
+        "拉面",
+        "餐饮",
+        "外国餐厅"
+      ],
+      "openHours": "10:00-21:00",
+      "phone": "18930129602",
+      "waitInfo": {
+        "currentWait": 2,
+        "avgWaitMinutes": 14
+      },
+      "highlights": [
+        "拉面"
+      ]
+    },
+    {
+      "id": "r033",
+      "name": "温野菜涮涮锅(朝阳大悦城店)",
+      "cuisine": "日料",
+      "area": "朝阳大悦城",
+      "address": "北京城区朝阳北路101号朝阳大悦城6F-06",
+      "rating": 4.7,
+      "pricePerPerson": 192,
+      "tags": [
+        "日料",
+        "火锅",
+        "新棉花甜",
+        "虾滑/鸡滑/",
+        "饮料放题"
+      ],
+      "openHours": "11:00-21:00",
+      "phone": "010-85859788",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "新棉花甜",
+        "虾滑/鸡滑/",
+        "饮料放题"
+      ]
+    },
+    {
+      "id": "r034",
+      "name": "中国大饭店夏宫中餐厅",
+      "cuisine": "粤菜",
+      "area": "国贸",
+      "address": "建国门外大街1号中国大饭店大堂层",
+      "rating": 4.5,
+      "pricePerPerson": 329,
+      "tags": [
+        "粤菜",
+        "夏宫虾饺皇",
+        "牛肉",
+        "杨枝甘露",
+        "餐饮"
+      ],
+      "openHours": "11:30-14:30",
+      "phone": "010-65052266;010-65055838",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "夏宫虾饺皇",
+        "牛肉",
+        "杨枝甘露"
+      ]
+    },
+    {
+      "id": "r035",
+      "name": "南门涮肉(国贸商城店)",
+      "cuisine": "涮羊肉",
+      "area": "国贸",
+      "address": "建国门外大街1号院18号楼地上5层SL5009SL5010SL5011号",
+      "rating": 4.8,
+      "pricePerPerson": 125,
+      "tags": [
+        "涮羊肉",
+        "太阳肉",
+        "鲜切羊腱",
+        "羊腹肉",
+        "鲜羊肉"
+      ],
+      "openHours": "10:30-22:30",
+      "phone": "010-65057988",
+      "waitInfo": {
+        "currentWait": 2,
+        "avgWaitMinutes": 20
+      },
+      "highlights": [
+        "太阳肉",
+        "鲜切羊腱",
+        "羊腹肉"
+      ]
+    },
+    {
+      "id": "r036",
+      "name": "庭院江南菜·烤鸭·江浙菜(国贸CBD中央公园旗舰店)",
+      "cuisine": "淮扬菜",
+      "area": "国贸",
+      "address": "北京城区建国路99号楼4层99-17内401-409、419-424室",
+      "rating": 4.8,
+      "pricePerPerson": 103,
+      "tags": [
+        "淮扬菜",
+        "牛肉",
+        "红烧肉",
+        "鸡肉",
+        "下午茶"
+      ],
+      "openHours": "10:30-22:00",
+      "phone": "010-65839139;13693056014",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "牛肉",
+        "红烧肉",
+        "鸡肉"
+      ]
+    },
+    {
+      "id": "r037",
+      "name": "羲和雅苑烤鸭坊(国贸商城店)",
+      "cuisine": "北京菜",
+      "area": "国贸",
+      "address": "建国门外大街1号国贸商城南区B1层SB128",
+      "rating": 4.6,
+      "pricePerPerson": 145,
+      "tags": [
+        "北京菜",
+        "羲和烤鸭",
+        "张氏狮子头",
+        "宫保虾球",
+        "马蹄水"
+      ],
+      "openHours": "11:00-21:30",
+      "phone": "010-65056587;13141444164",
+      "waitInfo": {
+        "currentWait": 2,
+        "avgWaitMinutes": 14
+      },
+      "highlights": [
+        "羲和烤鸭",
+        "张氏狮子头",
+        "宫保虾球"
+      ]
+    },
+    {
+      "id": "r038",
+      "name": "1886汽车餐厅(国贸商城店)",
+      "cuisine": "西餐",
+      "area": "国贸",
+      "address": "建国门外大街1号国贸商城北区东段L6层NL6007",
+      "rating": 4.7,
+      "pricePerPerson": 156,
+      "tags": [
+        "西餐",
+        "经典德式香肠拼盘",
+        "Plu",
+        "水果风味火焰烤饼",
+        "烤肉"
+      ],
+      "openHours": "11:00-24:00",
+      "phone": "13121726030;13581626847",
+      "waitInfo": {
+        "currentWait": 1,
+        "avgWaitMinutes": 7
+      },
+      "highlights": [
+        "经典德式香肠拼盘",
+        "低温嫩煎牛排Tapas",
+        "Plu"
+      ]
+    },
+    {
+      "id": "r039",
+      "name": "CAPARESH開府莱舍(北京银泰中心店)",
+      "cuisine": "意大利菜",
+      "area": "国贸",
+      "address": "建国门外大街2号北京银泰中心in01B1层B45、B46",
+      "rating": 4.8,
+      "pricePerPerson": 167,
+      "tags": [
+        "意大利菜",
+        "意面",
+        "奶油",
+        "提拉米苏",
+        "柠檬"
+      ],
+      "openHours": "11:00-22:00",
+      "phone": "010-65281386",
+      "waitInfo": {
+        "currentWait": 2,
+        "avgWaitMinutes": 16
+      },
+      "highlights": [
+        "意面",
+        "奶油",
+        "提拉米苏"
+      ]
+    },
+    {
+      "id": "r040",
+      "name": "清水亭·湖北菜(国贸商城店)",
+      "cuisine": "湖北菜",
+      "area": "国贸",
+      "address": "建国门外大街1号国贸商城南区四层SL4011",
+      "rating": 4.6,
+      "pricePerPerson": 140,
+      "tags": [
+        "湖北菜",
+        "小龙虾",
+        "双人餐",
+        "餐饮",
+        "中餐厅"
+      ],
+      "openHours": "11:00-14:00",
+      "phone": "010-65056117",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "小龙虾",
+        "双人餐"
+      ]
+    },
+    {
+      "id": "r041",
+      "name": "新荣记(北京建国门外大街店)",
+      "cuisine": "浙菜",
+      "area": "国贸",
+      "address": "建国门外大街2号北京银泰中心A座5层(国贸地铁站出入口旁)",
+      "rating": 4.7,
+      "pricePerPerson": 651,
+      "tags": [
+        "浙菜",
+        "藏香猪鲍鱼红烧肉",
+        "鸡肉",
+        "豆腐",
+        "年糕"
+      ],
+      "openHours": "11:30-15:30",
+      "phone": "010-85171636;010-85171789",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "藏香猪鲍鱼红烧肉",
+        "鸡肉",
+        "豆腐"
+      ]
+    },
+    {
+      "id": "r042",
+      "name": "怡己·三ツ矢堂日式料理(国贸店)",
+      "cuisine": "日料",
+      "area": "国贸",
+      "address": "国贸公寓大堂出入口旁(国贸地铁站出入口步行380米)",
+      "rating": 4.6,
+      "pricePerPerson": 129,
+      "tags": [
+        "日料",
+        "日本料理",
+        "炸鸡",
+        "牛肉",
+        "芝士"
+      ],
+      "openHours": "11:00-22:30",
+      "phone": "010-85958500",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "炸鸡",
+        "牛肉",
+        "芝士"
+      ]
+    },
+    {
+      "id": "r043",
+      "name": "牛角烧肉专门店(国贸店)",
+      "cuisine": "日料",
+      "area": "国贸",
+      "address": "建国门外大街1号国贸商城北区6层NL6001",
+      "rating": 4.7,
+      "pricePerPerson": 165,
+      "tags": [
+        "日料",
+        "烤肉",
+        "猪颈肉",
+        "厚切牛舌",
+        "牛角冷面"
+      ],
+      "openHours": "11:00-21:00",
+      "phone": "010-85950993",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "猪颈肉",
+        "厚切牛舌",
+        "牛角冷面"
+      ]
+    },
+    {
+      "id": "r044",
+      "name": "羊屋小杉",
+      "cuisine": "日料",
+      "area": "国贸",
+      "address": "北京城区北京银泰中心in01三层305",
+      "rating": 4.6,
+      "pricePerPerson": 201,
+      "tags": [
+        "日料",
+        "日本料理",
+        "羊生蚝",
+        "成吉思汗烤肉",
+        "札幌汉堡"
+      ],
+      "openHours": "11:30-14:00",
+      "phone": "13693254096",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "羊生蚝",
+        "成吉思汗烤肉",
+        "札幌汉堡"
+      ]
+    },
+    {
+      "id": "r045",
+      "name": "胜博殿日式炸猪排(国贸商城店)",
+      "cuisine": "日料",
+      "area": "国贸",
+      "address": "建国门外大街1号国贸三期B座北区地下一层NB1025店铺",
+      "rating": 4.6,
+      "pricePerPerson": 115,
+      "tags": [
+        "日料",
+        "日本料理",
+        "炸猪排",
+        "牛肉",
+        "鸡肉"
+      ],
+      "openHours": "17:30-21:00",
+      "phone": "010-85351656",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "炸猪排",
+        "牛肉",
+        "鸡肉"
+      ]
+    },
+    {
+      "id": "r046",
+      "name": "京城小江南•北京菜•上海菜•白鱼(中关村)",
+      "cuisine": "江浙菜",
+      "area": "中关村",
+      "address": "北京城区科学院南路中关村新科祥园甲4号楼一层01号",
+      "rating": 4.6,
+      "pricePerPerson": 50,
+      "tags": [
+        "江浙菜",
+        "双人餐",
+        "鸡肉",
+        "特色菜",
+        "家常菜"
+      ],
+      "openHours": "11:00-21:30",
+      "phone": "13831241356;19561846919",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "双人餐",
+        "鸡肉",
+        "特色菜"
+      ]
+    },
+    {
+      "id": "r047",
+      "name": "护国寺小吃(中关村店)",
+      "cuisine": "小吃快餐",
+      "area": "中关村",
+      "address": "中关村南路甲2号一层3号",
+      "rating": 4.6,
+      "pricePerPerson": 34,
+      "tags": [
+        "小吃快餐",
+        "堂食",
+        "特色小吃",
+        "羊杂汤",
+        "羊肉"
+      ],
+      "openHours": "06:00-20:00",
+      "phone": "010-62631899",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "堂食",
+        "特色小吃",
+        "羊杂汤"
+      ]
+    },
+    {
+      "id": "r048",
+      "name": "南城香(中关村南路店)",
+      "cuisine": "小吃快餐",
+      "area": "中关村",
+      "address": "北京城区黄庄804楼东侧1层101号",
+      "rating": 4.5,
+      "pricePerPerson": 32,
+      "tags": [
+        "小吃快餐",
+        "羊肉",
+        "蘑菇",
+        "黄焖鸡米饭",
+        "奶皮子"
+      ],
+      "openHours": "06:00-21:30",
+      "phone": "010-82526049;15188776433",
+      "waitInfo": {
+        "currentWait": 1,
+        "avgWaitMinutes": 8
+      },
+      "highlights": [
+        "羊肉",
+        "蘑菇",
+        "黄焖鸡米饭"
+      ]
+    },
+    {
+      "id": "r049",
+      "name": "廣東阿源鱼捞斑鱼火锅·海鲜粥(中关村店)",
+      "cuisine": "鱼火锅",
+      "area": "中关村",
+      "address": "中关村南路与中关村二街交叉口东60米",
+      "rating": 4.7,
+      "pricePerPerson": 88,
+      "tags": [
+        "鱼火锅",
+        "阳光绣球菌",
+        "竹轮虾滑",
+        "匠之鱼皮",
+        "山间红泥冬笋"
+      ],
+      "openHours": "11:00-22:00",
+      "phone": "13261426299",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "阳光绣球菌",
+        "竹轮虾滑",
+        "匠之鱼皮"
+      ]
+    },
+    {
+      "id": "r050",
+      "name": "0776烤鸭(中关村店)",
+      "cuisine": "北京菜",
+      "area": "中关村",
+      "address": "北京城区中关村南路甲2号1幢2层202号",
+      "rating": 4.6,
+      "pricePerPerson": 102,
+      "tags": [
+        "北京菜",
+        "烤鸭",
+        "双人餐",
+        "餐饮",
+        "中餐厅"
+      ],
+      "openHours": "11:00-15:00",
+      "phone": "010-68860776;18611540776",
+      "waitInfo": {
+        "currentWait": 2,
+        "avgWaitMinutes": 18
+      },
+      "highlights": [
+        "烤鸭",
+        "双人餐"
+      ]
+    },
+    {
+      "id": "r051",
+      "name": "越恰越湘(中关村店)",
+      "cuisine": "湘菜",
+      "area": "中关村",
+      "address": "北京城区中关村南路82楼西平房4号楼2层",
+      "rating": 4.6,
+      "pricePerPerson": 68,
+      "tags": [
+        "湘菜",
+        "小炒黄牛肉",
+        "素菜",
+        "双人餐",
+        "肥肠"
+      ],
+      "openHours": "09:00-21:30",
+      "phone": "010-62577249;13521024783",
+      "waitInfo": {
+        "currentWait": 1,
+        "avgWaitMinutes": 8
+      },
+      "highlights": [
+        "小炒黄牛肉",
+        "素菜",
+        "双人餐"
+      ]
+    },
+    {
+      "id": "r052",
+      "name": "方中山胡辣汤(北京中关村店)",
+      "cuisine": "汤",
+      "area": "中关村",
+      "address": "北京城区中关村大街9号4幢1层104",
+      "rating": 4.6,
+      "pricePerPerson": 20,
+      "tags": [
+        "汤",
+        "胡辣汤",
+        "牛肉",
+        "餐饮",
+        "中餐厅"
+      ],
+      "openHours": "07:00-14:30",
+      "phone": "13311405986",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "胡辣汤",
+        "牛肉"
+      ]
+    },
+    {
+      "id": "r053",
+      "name": "大鸭梨烤鸭(中关村店)",
+      "cuisine": "北京菜",
+      "area": "中关村",
+      "address": "中关村大街11号e世界财富中心A座四通大厦西南F1层",
+      "rating": 4.6,
+      "pricePerPerson": 86,
+      "tags": [
+        "北京菜",
+        "餐饮",
+        "中餐厅"
+      ],
+      "openHours": "10:00-22:00",
+      "phone": "010-62903988;18001262279",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": []
+    },
+    {
+      "id": "r054",
+      "name": "LONG·滝波烧肉(中关村店)",
+      "cuisine": "烤肉",
+      "area": "中关村",
+      "address": "北京城区科学院南路与中关村南路甲2号(海中市场一层)",
+      "rating": 4.6,
+      "pricePerPerson": 88,
+      "tags": [
+        "烤肉",
+        "烤猪肉香肠",
+        "辣牛肉豆腐汤",
+        "黑椒猪五花",
+        "m9眼肉"
+      ],
+      "openHours": "10:00-21:30",
+      "phone": "010-62576768;17610913836",
+      "waitInfo": {
+        "currentWait": 2,
+        "avgWaitMinutes": 20
+      },
+      "highlights": [
+        "烤猪肉香肠",
+        "辣牛肉豆腐汤",
+        "黑椒猪五花"
+      ]
+    },
+    {
+      "id": "r055",
+      "name": "滨寿司(中关村领展广场店)",
+      "cuisine": "日料",
+      "area": "中关村",
+      "address": "丹棱街甲1号北京中关村领展广场五层501-03",
+      "rating": 4.7,
+      "pricePerPerson": 119,
+      "tags": [
+        "日料",
+        "寿司",
+        "餐饮",
+        "外国餐厅",
+        "日本料理"
+      ],
+      "openHours": "10:00-21:30",
+      "phone": "13051595119;18618117119",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "寿司"
+      ]
+    },
+    {
+      "id": "r056",
+      "name": "原心食堂·酒屋(e世界财富中心店)",
+      "cuisine": "日料",
+      "area": "中关村",
+      "address": "中关村海淀大街e世界c座(四通大厦往西对面10米停车场)",
+      "rating": 4.6,
+      "pricePerPerson": 88,
+      "tags": [
+        "日料",
+        "居酒屋",
+        "堂食",
+        "炸鸡",
+        "牛肉"
+      ],
+      "openHours": "11:00-22:00",
+      "phone": "010-82626266",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "堂食",
+        "炸鸡",
+        "牛肉"
+      ]
+    },
+    {
+      "id": "r057",
+      "name": "寿司郎(西区中关村大融城店)",
+      "cuisine": "日料",
+      "area": "中关村",
+      "address": "中关村大街15号中关村ARTPARK大融城西区A地块地下1层",
+      "rating": 4.7,
+      "pricePerPerson": 145,
+      "tags": [
+        "日料",
+        "寿司",
+        "餐饮",
+        "外国餐厅",
+        "日本料理"
+      ],
+      "openHours": "11:00-21:30",
+      "phone": "010-68539708",
+      "waitInfo": {
+        "currentWait": 1,
+        "avgWaitMinutes": 8
+      },
+      "highlights": [
+        "寿司"
+      ]
+    },
+    {
+      "id": "r058",
+      "name": "前门李记老北京铜锅涮肉(五道口店)",
+      "cuisine": "涮羊肉",
+      "area": "五道口",
+      "address": "北京城区成府路27号五道口国际食尚苑3F卖安踏服装旁边A口进",
+      "rating": 4.6,
+      "pricePerPerson": 89,
+      "tags": [
+        "涮羊肉",
+        "手切鲜羊肉",
+        "聚四宝",
+        "一品烧饼",
+        "精品芝麻酱"
+      ],
+      "openHours": "11:00-22:30",
+      "phone": "13601071058;18514735898",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "手切鲜羊肉",
+        "老北京铜锅涮肉鸳鸯锅",
+        "聚四宝"
+      ]
+    },
+    {
+      "id": "r059",
+      "name": "安妮意大利餐厅(五道口东源大厦店)",
+      "cuisine": "西餐",
+      "area": "五道口",
+      "address": "北京城区成府路35号东源大厦3层301室(紧邻五道口地铁站)",
+      "rating": 4.7,
+      "pricePerPerson": 123,
+      "tags": [
+        "西餐",
+        "下午茶",
+        "蘑菇",
+        "奶油",
+        "披萨"
+      ],
+      "openHours": "10:30-22:30",
+      "phone": "010-62572098",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "下午茶",
+        "蘑菇",
+        "奶油"
+      ]
+    },
+    {
+      "id": "r060",
+      "name": "龙人居·水煮鱼(五道口店)",
+      "cuisine": "川菜",
+      "area": "五道口",
+      "address": "北京城区成府路28号五道口购物中心B座6楼",
+      "rating": 4.7,
+      "pricePerPerson": 124,
+      "tags": [
+        "川菜",
+        "白灼丝瓜尖",
+        "辣子鸡",
+        "猪蹄",
+        "水煮鱼"
+      ],
+      "openHours": "11:00-21:30",
+      "phone": "010-87538661",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "白灼丝瓜尖",
+        "辣子鸡",
+        "猪蹄"
+      ]
+    },
+    {
+      "id": "r061",
+      "name": "么哈MOJAR(北京五道口店)",
+      "cuisine": "西餐",
+      "area": "五道口",
+      "address": "华清嘉园12-5号(五道口地铁站B南口步行200米)",
+      "rating": 4.7,
+      "pricePerPerson": 79,
+      "tags": [
+        "西餐",
+        "披萨",
+        "汉堡",
+        "芝士",
+        "沙拉"
+      ],
+      "openHours": "17:00-04:00",
+      "phone": "13096000725",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "披萨",
+        "汉堡",
+        "芝士"
+      ]
+    },
+    {
+      "id": "r062",
+      "name": "芈重山老火锅(北京五道口店)",
+      "cuisine": "火锅",
+      "area": "五道口",
+      "address": "成府路35号东源大厦F2层(五道口地铁站A北口步行130米)",
+      "rating": 4.8,
+      "pricePerPerson": 113,
+      "tags": [
+        "火锅",
+        "牛肉",
+        "老火锅",
+        "蛋炒饭",
+        "小酥肉"
+      ],
+      "openHours": "11:00-02:00",
+      "phone": "010-69943719",
+      "waitInfo": {
+        "currentWait": 1,
+        "avgWaitMinutes": 7
+      },
+      "highlights": [
+        "牛肉",
+        "老火锅",
+        "蛋炒饭"
+      ]
+    },
+    {
+      "id": "r063",
+      "name": "郑阿公顺德鸡煲饭双皮奶(五道口店)",
+      "cuisine": "小吃快餐",
+      "area": "五道口",
+      "address": "北京城区成府路29号国际食尚苑1期1层1-1-1",
+      "rating": 4.6,
+      "pricePerPerson": 59,
+      "tags": [
+        "小吃快餐",
+        "双皮奶",
+        "餐饮",
+        "快餐厅"
+      ],
+      "openHours": "11:00-22:00",
+      "phone": "13001259913",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "双皮奶"
+      ]
+    },
+    {
+      "id": "r064",
+      "name": "金谷园饺子馆(五道口店)",
+      "cuisine": "饺子",
+      "area": "五道口",
+      "address": "东源大厦4层(五道口地铁站A北口步行120米)",
+      "rating": 4.7,
+      "pricePerPerson": 55,
+      "tags": [
+        "饺子",
+        "口水鸡",
+        "虾饺",
+        "鲜虾黄瓜饺",
+        "餐饮"
+      ],
+      "openHours": "10:00-22:00",
+      "phone": "",
+      "waitInfo": {
+        "currentWait": 2,
+        "avgWaitMinutes": 20
+      },
+      "highlights": [
+        "口水鸡",
+        "虾饺",
+        "鲜虾黄瓜饺"
+      ]
+    },
+    {
+      "id": "r065",
+      "name": "乐园夜市场(五道口店)",
+      "cuisine": "韩国料理",
+      "area": "五道口",
+      "address": "华清嘉园12号楼酒吧街底商3层火鬼上三楼",
+      "rating": 4.7,
+      "pricePerPerson": 82,
+      "tags": [
+        "韩国料理",
+        "部队火锅套餐",
+        "春川奶酪炒鸡排",
+        "韩式牛肉饭",
+        "部队火锅"
+      ],
+      "openHours": "11:00-02:00",
+      "phone": "010-62345600;18601234917",
+      "waitInfo": {
+        "currentWait": 1,
+        "avgWaitMinutes": 10
+      },
+      "highlights": [
+        "部队火锅套餐",
+        "春川奶酪炒鸡排",
+        "韩式牛肉饭"
+      ]
+    },
+    {
+      "id": "r066",
+      "name": "烧鸟职人·居酒屋(五道口店)",
+      "cuisine": "日料",
+      "area": "五道口",
+      "address": "北京城区荷清路华清嘉园12号楼3层商业2号(便利蜂旁边三楼)",
+      "rating": 4.7,
+      "pricePerPerson": 147,
+      "tags": [
+        "日料",
+        "日本料理",
+        "烧鸟",
+        "牛肉",
+        "双人餐"
+      ],
+      "openHours": "17:30-02:30",
+      "phone": "13161349017;17533316819;17810688212",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "烧鸟",
+        "牛肉",
+        "双人餐"
+      ]
+    },
+    {
+      "id": "r067",
+      "name": "争鲜回转寿司(海淀五道口PLUS店)",
+      "cuisine": "日料",
+      "area": "五道口",
+      "address": "北京城区成府路28号五道口购物中心5层",
+      "rating": 4.3,
+      "pricePerPerson": 68,
+      "tags": [
+        "日料",
+        "日本料理",
+        "安格斯牛肉寿喜锅",
+        "安格斯牛三味",
+        "焦糖鹅肝"
+      ],
+      "openHours": "11:00-21:30",
+      "phone": "13683211925",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "安格斯牛肉寿喜锅",
+        "安格斯牛三味",
+        "焦糖鹅肝"
+      ]
+    },
+    {
+      "id": "r068",
+      "name": "旬野菜日式和牛寿喜烧专门店(五道口购物中心店)",
+      "cuisine": "日料",
+      "area": "五道口",
+      "address": "成府路28号五道口购物中心5层17号",
+      "rating": 4.6,
+      "pricePerPerson": 168,
+      "tags": [
+        "日料",
+        "日式火锅",
+        "寿喜锅",
+        "和牛",
+        "福袋"
+      ],
+      "openHours": "11:00-22:00",
+      "phone": "010-87096217;17600838785",
+      "waitInfo": {
+        "currentWait": 1,
+        "avgWaitMinutes": 8
+      },
+      "highlights": [
+        "寿喜锅",
+        "和牛",
+        "福袋"
+      ]
+    },
+    {
+      "id": "r069",
+      "name": "悠炙和牛自助烤肉(五道口购物中心店)",
+      "cuisine": "日料",
+      "area": "五道口",
+      "address": "成府路28号五道口购物中心5F层",
+      "rating": 4.4,
+      "pricePerPerson": 190,
+      "tags": [
+        "日料",
+        "自助餐",
+        "双人餐",
+        "餐饮",
+        "外国餐厅"
+      ],
+      "openHours": "11:00-22:00",
+      "phone": "19231281905",
+      "waitInfo": {
+        "currentWait": 0,
+        "avgWaitMinutes": 0
+      },
+      "highlights": [
+        "双人餐"
+      ]
+    }
+  ],
+  "dataSource": "amap",
+  "crawledAt": "2026-05-03T08:31:49.524Z"
+}

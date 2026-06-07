@@ -1,0 +1,92 @@
+{
+  "queues": {
+    "r001": [
+      {
+        "queueCode": "正01",
+        "restaurantId": "r001",
+        "restaurantName": "正院大宅門烤鸭(望京店)",
+        "address": "北京城区望京南湖南路11号院1号楼京泰广场三层",
+        "tableTypeKey": "small",
+        "tableTypeLabel": "小桌（1-2人）",
+        "people": 2,
+        "customerName": "test-user",
+        "status": "waiting",
+        "takenAt": "2026-05-02T08:32:45.778Z",
+        "initialAhead": 0,
+        "initialEstimate": 5,
+        "dataSource": "mock",
+        "crawledAt": null
+      },
+      {
+        "queueCode": "正02",
+        "restaurantId": "r001",
+        "restaurantName": "正院大宅門烤鸭(望京店)",
+        "address": "北京城区望京南湖南路11号院1号楼京泰广场三层",
+        "tableTypeKey": "small",
+        "tableTypeLabel": "小桌（1-2人）",
+        "people": 2,
+        "customerName": "e2e-test",
+        "status": "waiting",
+        "takenAt": "2026-05-02T08:35:43.169Z",
+        "initialAhead": 1,
+        "initialEstimate": 8,
+        "dataSource": "mock",
+        "crawledAt": null
+      },
+      {
+        "queueCode": "正03",
+        "restaurantId": "r001",
+        "restaurantName": "正院大宅門烤鸭(望京店)",
+        "address": "北京城区望京南湖南路11号院1号楼京泰广场三层",
+        "tableTypeKey": "small",
+        "tableTypeLabel": "小桌（1-2人）",
+        "people": 2,
+        "customerName": "e2e-test",
+        "status": "waiting",
+        "takenAt": "2026-05-03T08:30:50.475Z",
+        "initialAhead": 2,
+        "initialEstimate": 16,
+        "dataSource": "mock",
+        "crawledAt": null
+      },
+      {
+        "queueCode": "正04",
+        "restaurantId": "r001",
+        "restaurantName": "正院大宅門烤鸭(望京店)",
+        "address": "北京城区望京南湖南路11号院1号楼京泰广场三层",
+        "tableTypeKey": "small",
+        "tableTypeLabel": "小桌（1-2人）",
+        "people": 2,
+        "customerName": "e2e-test",
+        "status": "waiting",
+        "takenAt": "2026-05-03T08:31:41.449Z",
+        "initialAhead": 3,
+        "initialEstimate": 24,
+        "dataSource": "mock",
+        "crawledAt": null
+      }
+    ],
+    "r070": [
+      {
+        "queueCode": "金01",
+        "restaurantId": "r070",
+        "restaurantName": "金谷园饺子馆(北邮总店)",
+        "address": "杏坛路与师大北路交叉口北120米",
+        "tableTypeKey": "small",
+        "tableTypeLabel": "小桌（1-2人）",
+        "people": 1,
+        "customerName": "Sxingxing",
+        "status": "waiting",
+        "takenAt": "2026-05-02T09:03:34.455Z",
+        "initialAhead": 4,
+        "initialEstimate": 13,
+        "dataSource": "mock",
+        "crawledAt": null
+      }
+    ]
+  },
+  "nextSeq": {
+    "r001": 5,
+    "r070": 2
+  }
+}

@@ -1,0 +1,10 @@
+# 动态模拟沙盒后端 · 依赖清单
+# 环境已全局安装这些包 (Python 3.13.5 anaconda)，此文件仅留痕 + 便于他人复现。
+# 安装: python3 -m pip install -r requirements.txt
+#
+# 已核实的实际版本: fastapi==0.115.9, uvicorn==0.34.2, pydantic==2.10.3
+# 这里写"版本下限" (>=)，保证拿到带 lifespan / pydantic v2 语法的版本即可。
+
+fastapi>=0.115.9
+uvicorn[standard]>=0.34.2
+pydantic>=2.10.3

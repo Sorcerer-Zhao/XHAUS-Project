@@ -1,0 +1,238 @@
+{
+  "venues": [
+    {
+      "id": "e001",
+      "name": "万达影城(三里屯店)",
+      "type": "movie",
+      "typeLabel": "🎬 电影",
+      "area": "三里屯",
+      "address": "三里屯路19号太古里北区N4-B1",
+      "rating": 4.5,
+      "priceRange": "55-128",
+      "openHours": "09:00-次日01:00",
+      "tags": ["IMAX", "杜比全景声", "夜场"],
+      "shows": [
+        { "movie": "星际迷航：新纪元", "time": "19:20", "endTime": "21:30", "price": 68, "hall": "IMAX厅", "rating": 8.7 },
+        { "movie": "疯狂动物城2", "time": "19:45", "endTime": "21:35", "price": 55, "hall": "3号厅", "rating": 8.2 },
+        { "movie": "流浪地球3", "time": "20:10", "endTime": "22:40", "price": 78, "hall": "杜比厅", "rating": 9.1 },
+        { "movie": "星际迷航：新纪元", "time": "21:50", "endTime": "00:00", "price": 58, "hall": "5号厅", "rating": 8.7 },
+        { "movie": "默杀2", "time": "22:00", "endTime": "23:50", "price": 48, "hall": "7号厅", "rating": 7.5 }
+      ]
+    },
+    {
+      "id": "e002",
+      "name": "Blue Note Beijing",
+      "type": "bar",
+      "typeLabel": "🎵 爵士酒吧",
+      "area": "三里屯",
+      "address": "三里屯南路27号",
+      "rating": 4.7,
+      "priceRange": "150-300",
+      "openHours": "19:00-次日02:00",
+      "tags": ["爵士", "现场演出", "鸡尾酒", "约会"],
+      "highlights": ["每晚现场爵士乐演出", "招牌Old Fashioned", "氛围感拉满"],
+      "tonightEvent": { "name": "Jazz Night — Trio Session", "time": "20:30", "coverCharge": 100 }
+    },
+    {
+      "id": "e003",
+      "name": "唱吧麦颂(三里屯店)",
+      "type": "ktv",
+      "typeLabel": "🎤 KTV",
+      "area": "三里屯",
+      "address": "工体北路8号三里屯SOHO B1",
+      "rating": 4.3,
+      "priceRange": "80-200/人",
+      "openHours": "12:00-次日06:00",
+      "tags": ["KTV", "欢唱", "团建", "夜场"],
+      "packages": [
+        { "name": "欢唱2小时（小包）", "capacity": "2-4人", "price": 168, "period": "18:00-23:00" },
+        { "name": "欢唱2小时（中包）", "capacity": "4-8人", "price": 268, "period": "18:00-23:00" },
+        { "name": "夜场通宵（小包）", "capacity": "2-4人", "price": 298, "period": "23:00-06:00" }
+      ]
+    },
+    {
+      "id": "e004",
+      "name": "CGV影城(望京店)",
+      "type": "movie",
+      "typeLabel": "🎬 电影",
+      "area": "望京",
+      "address": "望京阜通东大街6号方恒购物中心5F",
+      "rating": 4.6,
+      "priceRange": "50-120",
+      "openHours": "09:30-次日00:30",
+      "tags": ["4DX", "ScreenX", "杜比"],
+      "shows": [
+        { "movie": "流浪地球3", "time": "19:00", "endTime": "21:30", "price": 85, "hall": "4DX厅", "rating": 9.1 },
+        { "movie": "疯狂动物城2", "time": "19:30", "endTime": "21:20", "price": 50, "hall": "2号厅", "rating": 8.2 },
+        { "movie": "星际迷航：新纪元", "time": "20:00", "endTime": "22:10", "price": 60, "hall": "ScreenX厅", "rating": 8.7 },
+        { "movie": "默杀2", "time": "21:00", "endTime": "22:50", "price": 45, "hall": "4号厅", "rating": 7.5 }
+      ]
+    },
+    {
+      "id": "e005",
+      "name": "星聚会KTV(望京店)",
+      "type": "ktv",
+      "typeLabel": "🎤 KTV",
+      "area": "望京",
+      "address": "望京街9号望京国际商业中心3F",
+      "rating": 4.4,
+      "priceRange": "70-180/人",
+      "openHours": "11:00-次日06:00",
+      "tags": ["KTV", "网红", "高品质音响"],
+      "packages": [
+        { "name": "欢唱3小时（小包）", "capacity": "2-4人", "price": 198, "period": "18:00-23:00" },
+        { "name": "欢唱3小时（中包）", "capacity": "4-8人", "price": 328, "period": "18:00-23:00" },
+        { "name": "通宵畅唱（小包）", "capacity": "2-4人", "price": 258, "period": "23:00-06:00" }
+      ]
+    },
+    {
+      "id": "e006",
+      "name": "X密室逃脱(三里屯旗舰店)",
+      "type": "escape_room",
+      "typeLabel": "🔐 密室逃脱",
+      "area": "三里屯",
+      "address": "工体北路甲2号盈科中心B1",
+      "rating": 4.8,
+      "priceRange": "128-198/人",
+      "openHours": "10:00-23:00",
+      "tags": ["密室", "沉浸式", "恐怖", "推理"],
+      "themes": [
+        { "name": "末日危途", "difficulty": "⭐⭐⭐⭐", "duration": "70分钟", "players": "4-6人", "price": 168, "genre": "科幻冒险", "availableSlots": ["19:00", "20:30"] },
+        { "name": "午夜博物馆", "difficulty": "⭐⭐⭐", "duration": "60分钟", "players": "2-4人", "price": 138, "genre": "悬疑推理", "availableSlots": ["19:30", "21:00"] },
+        { "name": "盗墓笔记·云顶天宫", "difficulty": "⭐⭐⭐⭐⭐", "duration": "90分钟", "players": "4-8人", "price": 198, "genre": "探险恐怖", "availableSlots": ["20:00"] }
+      ]
+    },
+    {
+      "id": "e007",
+      "name": "望京公园",
+      "type": "park",
+      "typeLabel": "🌿 公园",
+      "area": "望京",
+      "address": "望京阜安西路",
+      "rating": 4.2,
+      "priceRange": "免费",
+      "openHours": "06:00-22:00",
+      "tags": ["散步", "免费", "夜景", "遛弯"],
+      "highlights": ["湖边步道适合饭后散步", "夜间有灯光", "安静舒适"]
+    },
+    {
+      "id": "e008",
+      "name": "百丽宫影城(国贸店)",
+      "type": "movie",
+      "typeLabel": "🎬 电影",
+      "area": "国贸",
+      "address": "建国门外大街1号国贸商城B1",
+      "rating": 4.7,
+      "priceRange": "80-168",
+      "openHours": "09:00-次日01:00",
+      "tags": ["奢华", "真皮座椅", "VIP厅"],
+      "shows": [
+        { "movie": "流浪地球3", "time": "19:15", "endTime": "21:45", "price": 128, "hall": "VIP厅", "rating": 9.1 },
+        { "movie": "星际迷航：新纪元", "time": "20:30", "endTime": "22:40", "price": 98, "hall": "1号厅", "rating": 8.7 },
+        { "movie": "疯狂动物城2", "time": "21:00", "endTime": "22:50", "price": 80, "hall": "3号厅", "rating": 8.2 }
+      ]
+    },
+    {
+      "id": "e009",
+      "name": "猫眼剧本杀(望京店)",
+      "type": "board_game",
+      "typeLabel": "🎲 剧本杀",
+      "area": "望京",
+      "address": "望京西园三区310号底商",
+      "rating": 4.5,
+      "priceRange": "88-158/人",
+      "openHours": "13:00-次日01:00",
+      "tags": ["剧本杀", "推理", "社交", "沉浸式"],
+      "themes": [
+        { "name": "年轮", "difficulty": "⭐⭐⭐", "duration": "4小时", "players": "5-6人", "price": 128, "genre": "情感本" },
+        { "name": "古木吟", "difficulty": "⭐⭐⭐⭐", "duration": "5小时", "players": "6-7人", "price": 158, "genre": "恐怖本" },
+        { "name": "入梦", "difficulty": "⭐⭐", "duration": "3小时", "players": "4-5人", "price": 88, "genre": "欢乐本" }
+      ]
+    },
+    {
+      "id": "e010",
+      "name": "SPARK PLUS酒吧",
+      "type": "bar",
+      "typeLabel": "🍸 酒吧",
+      "area": "国贸",
+      "address": "建外SOHO东区B座底商",
+      "rating": 4.4,
+      "priceRange": "100-250",
+      "openHours": "18:00-次日02:00",
+      "tags": ["鸡尾酒", "精酿", "氛围", "小酌"],
+      "highlights": ["手工鸡尾酒", "露台位夜景很好", "适合小聚"]
+    },
+    {
+      "id": "e011",
+      "name": "金逸影城(朝阳大悦城店)",
+      "type": "movie",
+      "typeLabel": "🎬 电影",
+      "area": "朝阳大悦城",
+      "address": "朝阳北路101号朝阳大悦城9F",
+      "rating": 4.3,
+      "priceRange": "45-98",
+      "openHours": "09:00-次日00:00",
+      "tags": ["性价比", "悦城会员折扣"],
+      "shows": [
+        { "movie": "流浪地球3", "time": "19:30", "endTime": "22:00", "price": 65, "hall": "巨幕厅", "rating": 9.1 },
+        { "movie": "疯狂动物城2", "time": "20:00", "endTime": "21:50", "price": 45, "hall": "1号厅", "rating": 8.2 },
+        { "movie": "默杀2", "time": "21:30", "endTime": "23:20", "price": 42, "hall": "5号厅", "rating": 7.5 }
+      ]
+    },
+    {
+      "id": "e012",
+      "name": "超级猩猩(朝阳大悦城店)",
+      "type": "fitness",
+      "typeLabel": "💪 健身",
+      "area": "朝阳大悦城",
+      "address": "朝阳北路101号朝阳大悦城4F",
+      "rating": 4.6,
+      "priceRange": "69-109/次",
+      "openHours": "07:00-22:00",
+      "tags": ["团课", "搏击", "瑜伽", "单次付费"],
+      "classes": [
+        { "name": "搏击操", "time": "19:30", "duration": "50分钟", "price": 89, "spotsLeft": 5 },
+        { "name": "瑜伽流", "time": "20:30", "duration": "60分钟", "price": 69, "spotsLeft": 8 }
+      ]
+    },
+    {
+      "id": "e013",
+      "name": "三里屯太古里",
+      "type": "shopping",
+      "typeLabel": "🛍️ 逛街",
+      "area": "三里屯",
+      "address": "三里屯路19号",
+      "rating": 4.5,
+      "priceRange": "免费（逛街）",
+      "openHours": "10:00-22:00",
+      "tags": ["购物", "网红", "拍照", "免费逛"],
+      "highlights": ["潮牌聚集地", "网红打卡点多", "夜景氛围好"]
+    },
+    {
+      "id": "e014",
+      "name": "奇遇台球(望京店)",
+      "type": "billiards",
+      "typeLabel": "🎱 台球",
+      "area": "望京",
+      "address": "望京SOHO T1-B1-1108",
+      "rating": 4.3,
+      "priceRange": "50-80/小时",
+      "openHours": "12:00-次日02:00",
+      "tags": ["台球", "休闲", "小聚"],
+      "highlights": ["环境好", "桌台新", "适合朋友小聚"]
+    },
+    {
+      "id": "e015",
+      "name": "朝阳公园",
+      "type": "park",
+      "typeLabel": "🌿 公园",
+      "area": "朝阳公园",
+      "address": "朝阳公园南路1号",
+      "rating": 4.4,
+      "priceRange": "¥5（门票）",
+      "openHours": "06:00-21:00",
+      "tags": ["户外", "湖景", "散步", "适合傍晚"],
+      "highlights": ["湖边漫步", "夕阳很美", "大草坪可以坐坐"]
+    }
+  ]
+}

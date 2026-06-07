@@ -1,0 +1,16 @@
+@import "../shared.wxss";
+
+.section-title {
+  margin: 18rpx 0 14rpx;
+  color: #70431e;
+  font-size: 26rpx;
+  font-weight: 900;
+}
+
+.profile-file {
+  padding-right: 88rpx;
+}
+
+.item-preview {
+  padding-right: 18rpx;
+}

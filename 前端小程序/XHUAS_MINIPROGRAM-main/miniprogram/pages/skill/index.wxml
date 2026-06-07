@@ -1,0 +1,46 @@
+<view class="page">
+  <view class="nav-space" style="height: {{safeTop}}px;"></view>
+  <view class="panel">
+    <view class="head">
+      <view>
+        <text class="eyebrow">SKILLS</text>
+        <text class="title">能力装载</text>
+      </view>
+      <view class="pill" bindtap="useExampleSkill">示例</view>
+    </view>
+
+    <input
+      class="field"
+      value="{{skillPath}}"
+      placeholder="后端本地 Skill 目录"
+      placeholder-class="placeholder"
+      bindinput="onSkillPathInput"
+    />
+
+    <view class="switch-row">
+      <text>覆盖同名 Skill</text>
+      <switch checked="{{forceSkill}}" bindchange="onForceSkillChange" color="#d67a2a" />
+    </view>
+
+    <view class="primary {{installing ? 'disabled' : ''}}" bindtap="installSkill">
+      {{installing ? '装载中' : '添加 Skill'}}
+    </view>
+
+    <scroll-view class="result" scroll-y="true">
+      <text>{{result}}</text>
+    </scroll-view>
+
+    <view class="section-title">已安装 Skill</view>
+    <view wx:if="{{loadingSkills}}" class="list-item muted">正在读取 Skill...</view>
+    <view wx:elif="{{!skills.length}}" class="list-item muted">暂无已安装 Skill。</view>
+    <view wx:else class="list">
+      <view wx:for="{{skills}}" wx:key="name" class="history-item">
+        <view class="history-main" data-name="{{item.name}}" bindtap="openSkill">
+          <text class="item-title">{{item.name}}</text>
+          <text class="item-meta">{{item.updated_at}}</text>
+        </view>
+        <view class="delete-btn" data-name="{{item.name}}" catchtap="deleteSkill">删除</view>
+      </view>
+    </view>
+  </view>
+</view>

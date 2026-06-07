@@ -1,0 +1,5 @@
+@import "../shared.wxss";
+
+.persona-row .history-main {
+  min-height: 78rpx;
+}

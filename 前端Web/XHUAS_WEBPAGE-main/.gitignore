@@ -1,0 +1,13 @@
+backend/node_modules/
+backend/.env
+backend/server.log
+XHAUS/runtime/
+XHAUS/__pycache__/
+XHAUS/**/__pycache__/
+XHAUS/**/*.pyc
+Satellite/**/__pycache__/
+Satellite/**/*.pyc
+Satellite/meta_skill/.venv/
+Satellite/meta_skill/.staging_skills/
+.DS_Store
+Thumbs.db

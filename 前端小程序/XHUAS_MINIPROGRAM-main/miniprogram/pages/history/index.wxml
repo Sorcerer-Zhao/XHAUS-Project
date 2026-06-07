@@ -1,0 +1,24 @@
+<view class="page">
+  <view class="nav-space" style="height: {{safeTop}}px;"></view>
+  <view class="panel">
+    <view class="head">
+      <view>
+        <text class="eyebrow">HISTORY</text>
+        <text class="title">历史对话</text>
+      </view>
+      <view class="pill" bindtap="newConversation">新对话</view>
+    </view>
+
+    <view class="list">
+      <view wx:for="{{conversations}}" wx:key="id" class="history-item">
+        <view class="history-main" data-id="{{item.id}}" bindtap="openConversation">
+          <text class="item-title">{{item.title}}</text>
+          <text class="item-meta">{{item.agentLabel}} · {{item.messageCount}} 条 · {{item.updatedAt}}</text>
+          <text class="item-preview">{{item.preview}}</text>
+        </view>
+        <view class="delete-btn" data-id="{{item.id}}" bindtap="deleteConversation">删除</view>
+      </view>
+      <view wx:if="{{conversations.length === 0}}" class="list-item muted">暂无历史对话</view>
+    </view>
+  </view>
+</view>

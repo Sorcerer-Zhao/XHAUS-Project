@@ -1,0 +1,190 @@
+<view class="page">
+  <view class="nav-space" style="height: {{safeTop}}px;"></view>
+
+  <block wx:if="{{!hasStarted}}">
+    <view class="landing">
+      <view class="brand">
+        <image class="avatar" src="../../images/avatar.png" mode="aspectFill"></image>
+        <view>
+          <text class="eyebrow">OPENCLAW LOCAL BUTLER</text>
+          <text class="brand-title">OpenClaw XHAUS</text>
+        </view>
+      </view>
+
+      <text class="landing-title">你的全天候私人管家</text>
+      <text class="landing-text">
+        它从不休息，记得你的偏好，读得懂你的节奏；它不只是回答问题，而是真正替你打理生活。
+      </text>
+
+      <view class="story-list">
+        <view class="story-item">
+          <text class="story-title">无处不在</text>
+          <text class="story-text">微信、小程序、网页和本地终端接入同一个管家。</text>
+        </view>
+        <view class="story-item">
+          <text class="story-title">团队协作</text>
+          <text class="story-text">大管家统筹意图，领域小管家处理餐饮、出行、娱乐与日程。</text>
+        </view>
+        <view class="story-item">
+          <text class="story-title">越来越懂你</text>
+          <text class="story-text">长期记忆会沉淀偏好、情绪和生活习惯。</text>
+        </view>
+      </view>
+
+      <view class="primary-action" bindtap="startExperience">开始使用</view>
+    </view>
+  </block>
+
+  <block wx:else>
+    <view class="topbar">
+      <view class="brand compact">
+        <image class="avatar small" src="../../images/avatar.png" mode="aspectFill"></image>
+        <view>
+          <text class="eyebrow">XHAUS</text>
+          <text class="brand-title small-title">{{activeAgentLabel}}</text>
+        </view>
+      </view>
+      <view class="status-pill {{openclawStatus === '在线' ? 'ok' : ''}}">
+        <view class="signal"></view>
+        <text>{{openclawStatus}}</text>
+      </view>
+    </view>
+
+    <view class="toolbar">
+      <view class="tool-btn" bindtap="newConversation">新对话</view>
+      <view class="tool-btn" bindtap="openHistoryPage">历史</view>
+      <view class="tool-btn" bindtap="openSkillPage">Skill</view>
+      <view class="tool-btn" bindtap="openMemoryPage">记忆</view>
+      <view class="tool-btn" bindtap="changeWebSocketUrl">WS</view>
+      <view class="tool-btn accent {{isSwitchingPersona ? 'disabled' : ''}}" bindtap="randomPersona">
+        {{isSwitchingPersona ? '切换中' : '换管家'}}
+      </view>
+    </view>
+
+    <view class="chat-card">
+      <view class="chat-head">
+        <view>
+          <text class="eyebrow warm">LIVE COMMAND</text>
+          <view class="chat-title-row" bindtap="editConversationTitle">
+            <text class="chat-title">{{conversationTitle}}</text>
+            <text class="title-edit">编辑</text>
+          </view>
+        </view>
+        <text class="agent-note">{{xhausStatus}}</text>
+      </view>
+
+      <scroll-view class="messages" scroll-y="true" scroll-into-view="{{scrollTarget}}">
+        <view wx:if="{{messages.length === 0}}" class="empty-chat">
+          <text class="empty-title">今天想交给管家什么？</text>
+          <text class="empty-text">可以从餐饮、娱乐、出行或日程开始，也可以直接讲你的目标。</text>
+        </view>
+
+        <view
+          wx:for="{{messages}}"
+          wx:key="id"
+          id="msg-{{item.id}}"
+          class="message {{item.role === 'user' ? 'user' : 'assistant'}}"
+        >
+          <view class="bubble {{item.role === 'assistant' ? 'markdown' : ''}}">
+            <block wx:if="{{item.role === 'assistant'}}">
+              <block wx:for="{{item.blocks}}" wx:for-item="block" wx:for-index="blockIndex" wx:key="blockIndex">
+                <view wx:if="{{block.type === 'paragraph'}}" class="md-p">
+                  <text
+                    wx:for="{{block.spans}}"
+                    wx:for-item="span"
+                    wx:for-index="spanIndex"
+                    wx:key="spanIndex"
+                    class="md-span {{span.style}}"
+                  >{{span.text}}</text>
+                </view>
+                <view wx:elif="{{block.type === 'heading'}}" class="md-heading h{{block.level}}">
+                  <text
+                    wx:for="{{block.spans}}"
+                    wx:for-item="span"
+                    wx:for-index="spanIndex"
+                    wx:key="spanIndex"
+                    class="md-span {{span.style}}"
+                  >{{span.text}}</text>
+                </view>
+                <view wx:elif="{{block.type === 'list'}}" class="md-list">
+                  <view wx:for="{{block.items}}" wx:for-item="listItem" wx:for-index="listIndex" wx:key="listIndex" class="md-li">
+                    <text class="bullet">•</text>
+                    <view class="li-content">
+                      <text
+                        wx:for="{{listItem}}"
+                        wx:for-item="span"
+                        wx:for-index="spanIndex"
+                        wx:key="spanIndex"
+                        class="md-span {{span.style}}"
+                      >{{span.text}}</text>
+                    </view>
+                  </view>
+                </view>
+                <scroll-view wx:elif="{{block.type === 'table'}}" scroll-x="true" class="md-table-scroll">
+                  <view class="md-table">
+                    <view class="md-tr md-th-row">
+                      <view wx:for="{{block.headers}}" wx:for-item="cell" wx:for-index="cellIndex" wx:key="cellIndex" class="md-td md-th">
+                        <text
+                          wx:for="{{cell}}"
+                          wx:for-item="span"
+                          wx:for-index="spanIndex"
+                          wx:key="spanIndex"
+                          class="md-span {{span.style}}"
+                        >{{span.text}}</text>
+                      </view>
+                    </view>
+                    <view wx:for="{{block.rows}}" wx:for-item="row" wx:for-index="rowIndex" wx:key="rowIndex" class="md-tr">
+                      <view wx:for="{{row}}" wx:for-item="cell" wx:for-index="cellIndex" wx:key="cellIndex" class="md-td">
+                        <text
+                          wx:for="{{cell}}"
+                          wx:for-item="span"
+                          wx:for-index="spanIndex"
+                          wx:key="spanIndex"
+                          class="md-span {{span.style}}"
+                        >{{span.text}}</text>
+                      </view>
+                    </view>
+                  </view>
+                </scroll-view>
+                <scroll-view wx:elif="{{block.type === 'code'}}" scroll-x="true" class="md-code-scroll">
+                  <view class="md-code-block">
+                    <text wx:if="{{block.language}}" class="md-code-lang">{{block.language}}</text>
+                    <text class="md-code-text">{{block.text}}</text>
+                  </view>
+                </scroll-view>
+                <view wx:elif="{{block.type === 'hr'}}" class="md-hr"></view>
+                <view wx:elif="{{block.type === 'space'}}" class="md-space"></view>
+              </block>
+            </block>
+            <block wx:else>{{item.text}}</block>
+          </view>
+        </view>
+      </scroll-view>
+
+      <view class="quick-row">
+        <view
+          wx:for="{{quickPrompts}}"
+          wx:key="label"
+          class="quick-chip"
+          data-prompt="{{item.prompt}}"
+          bindtap="fillPrompt"
+        >{{item.label}}</view>
+      </view>
+
+      <view class="composer">
+        <input
+          class="chat-input"
+          value="{{inputValue}}"
+          placeholder="把今天要处理的事交给 OpenClaw"
+          placeholder-class="placeholder"
+          bindinput="onInputChange"
+          confirm-type="send"
+          bindconfirm="sendMessage"
+        />
+        <view class="send-btn {{isSending ? 'disabled' : ''}}" bindtap="sendMessage">
+          <view class="send-icon"></view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

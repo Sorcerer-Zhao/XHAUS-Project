@@ -1,0 +1,4259 @@
+{
+  "venues": [
+    {
+      "id": "e001",
+      "name": "中影中数天悦影城(合生麒麟新天地店)",
+      "type": "movie",
+      "typeLabel": "🎬 电影",
+      "area": "望京",
+      "address": "阜通西大街11号合生·麒麟新天地2F层",
+      "rating": 4.5,
+      "priceRange": "31-77",
+      "openHours": "09:00-02:00",
+      "tags": [
+        "电影院"
+      ],
+      "highlights": [
+        "近期热映",
+        "适合饭后",
+        "可选晚场"
+      ]
+    },
+    {
+      "id": "e002",
+      "name": "中影星光影城(全VIP沙发望京悠乐汇店)",
+      "type": "movie",
+      "typeLabel": "🎬 电影",
+      "area": "望京",
+      "address": "望京园605号楼2层209室",
+      "rating": 4.6,
+      "priceRange": "56-141",
+      "openHours": "09:00-04:00",
+      "tags": [
+        "电影院"
+      ],
+      "highlights": [
+        "近期热映",
+        "适合饭后",
+        "可选晚场"
+      ]
+    },
+    {
+      "id": "e003",
+      "name": "中影CFR国际影城",
+      "type": "movie",
+      "typeLabel": "🎬 电影",
+      "area": "望京",
+      "address": "望京街9号万科时代中心F座B1层",
+      "rating": 4.6,
+      "priceRange": "26-66",
+      "openHours": "09:00-22:30",
+      "tags": [
+        "电影院"
+      ],
+      "highlights": [
+        "近期热映",
+        "适合饭后",
+        "可选晚场"
+      ]
+    },
+    {
+      "id": "e004",
+      "name": "白桦林酒吧(港旅大厦店)",
+      "type": "bar",
+      "typeLabel": "🍸 酒吧",
+      "area": "望京",
+      "address": "湖光中街甲6号港旅大厦4层(望京地铁站H西南口步行360米)",
+      "rating": 4.2,
+      "priceRange": "40-101",
+      "openHours": "17:00-01:00",
+      "tags": [
+        "酒吧"
+      ],
+      "highlights": [
+        "酒吧"
+      ]
+    },
+    {
+      "id": "e005",
+      "name": "Joytime轰趴俱乐部.精酿啤酒吧(望京旗舰店)",
+      "type": "bar",
+      "typeLabel": "🍸 酒吧",
+      "area": "望京",
+      "address": "望京湖光中街8号西段一层底商",
+      "rating": 4.6,
+      "priceRange": "46-116",
+      "openHours": "24小时营业",
+      "tags": [
+        "轰趴馆",
+        "娱乐场所"
+      ],
+      "highlights": [
+        "轰趴馆",
+        "娱乐场所"
+      ]
+    },
+    {
+      "id": "e006",
+      "name": "京A Taproom•精酿餐吧(望京店)",
+      "type": "bar",
+      "typeLabel": "🍸 酒吧",
+      "area": "望京",
+      "address": "阜安西路11号合生麒麟新天地F1",
+      "rating": 4.6,
+      "priceRange": "86-216",
+      "openHours": "11:00-02:00",
+      "tags": [
+        "西餐",
+        "酒吧|餐饮服务"
+      ],
+      "highlights": [
+        "西餐",
+        "酒吧|餐饮服务"
+      ]
+    },
+    {
+      "id": "e007",
+      "name": "魅KTV(望京凯德MALL店)",
+      "type": "ktv",
+      "typeLabel": "🎤 KTV",
+      "area": "望京",
+      "address": "广顺北大街33号院215号楼06层601内06-01号",
+      "rating": 4.5,
+      "priceRange": "40-99/人",
+      "openHours": "10:00-02:00",
+      "tags": [
+        "量贩式KTV",
+        "KTV"
+      ],
+      "packages": [
+        {
+          "name": "欢唱2小时（小包）",
+          "capacity": "2-4人",
+          "price": 145,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "欢唱2小时（中包）",
+          "capacity": "4-8人",
+          "price": 231,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "夜场通宵（小包）",
+          "capacity": "2-4人",
+          "price": 251,
+          "period": "23:00-06:00"
+        }
+      ],
+      "highlights": [
+        "适合聚会",
+        "可订包间",
+        "晚间可玩"
+      ]
+    },
+    {
+      "id": "e008",
+      "name": "唱吧麦颂KTV(望京北店)",
+      "type": "ktv",
+      "typeLabel": "🎤 KTV",
+      "area": "望京",
+      "address": "南湖东园122号楼地下一层",
+      "rating": 4.6,
+      "priceRange": "34-84/人",
+      "openHours": "12:00-14:00",
+      "tags": [
+        "量贩式KTV",
+        "KTV"
+      ],
+      "packages": [
+        {
+          "name": "欢唱2小时（小包）",
+          "capacity": "2-4人",
+          "price": 123,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "欢唱2小时（中包）",
+          "capacity": "4-8人",
+          "price": 196,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "夜场通宵（小包）",
+          "capacity": "2-4人",
+          "price": 213,
+          "period": "23:00-06:00"
+        }
+      ],
+      "highlights": [
+        "适合聚会",
+        "可订包间",
+        "晚间可玩"
+      ]
+    },
+    {
+      "id": "e009",
+      "name": "同乐迪KTV(望京信万广场店)",
+      "type": "ktv",
+      "typeLabel": "🎤 KTV",
+      "area": "望京",
+      "address": "望京西路41号望京信万广场6层",
+      "rating": 4.6,
+      "priceRange": "34-86/人",
+      "openHours": "11:00-02:00",
+      "tags": [
+        "量贩式KTV",
+        "KTV"
+      ],
+      "packages": [
+        {
+          "name": "欢唱2小时（小包）",
+          "capacity": "2-4人",
+          "price": 125,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "欢唱2小时（中包）",
+          "capacity": "4-8人",
+          "price": 200,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "夜场通宵（小包）",
+          "capacity": "2-4人",
+          "price": 217,
+          "period": "23:00-06:00"
+        }
+      ],
+      "highlights": [
+        "适合聚会",
+        "可订包间",
+        "晚间可玩"
+      ]
+    },
+    {
+      "id": "e010",
+      "name": "斯坦熊亲子密室(望京凯德MALL店)",
+      "type": "escape_room",
+      "typeLabel": "🔐 密室逃脱",
+      "area": "望京",
+      "address": "广顺北大街33号凯德MALL望京店L3层",
+      "rating": 3.7,
+      "priceRange": "74-186/人",
+      "openHours": "10:00-22:00",
+      "tags": [
+        "密室逃脱"
+      ],
+      "highlights": [
+        "沉浸体验",
+        "适合多人",
+        "需要预约"
+      ]
+    },
+    {
+      "id": "e011",
+      "name": "玄念剧情密室(博泰国际商业广场B座店)",
+      "type": "escape_room",
+      "typeLabel": "🔐 密室逃脱",
+      "area": "望京",
+      "address": "博泰国际商业广场B座715",
+      "rating": 4.5,
+      "priceRange": "106-264/人",
+      "openHours": "09:30-24:00",
+      "tags": [
+        "密室逃脱",
+        "娱乐场所"
+      ],
+      "highlights": [
+        "沉浸体验",
+        "适合多人",
+        "需要预约"
+      ]
+    },
+    {
+      "id": "e012",
+      "name": "猫着剧本杀(东亚·望京中心A座店)",
+      "type": "board_game",
+      "typeLabel": "🎲 剧本杀",
+      "area": "望京",
+      "address": "东亚望京中心a座0315室(阜通地铁站C东南口步行140米)",
+      "rating": 3.1,
+      "priceRange": "74-185/人",
+      "openHours": "24小时营业",
+      "tags": [
+        "桌游",
+        "娱乐场所"
+      ],
+      "highlights": [
+        "剧情互动",
+        "适合聚会",
+        "多人参与"
+      ]
+    },
+    {
+      "id": "e013",
+      "name": "鹿屿·剧本杀",
+      "type": "board_game",
+      "typeLabel": "🎲 剧本杀",
+      "area": "望京",
+      "address": "阜通西大街10号9层908",
+      "rating": 4.5,
+      "priceRange": "82-204/人",
+      "openHours": "24小时营业",
+      "tags": [
+        "剧本杀",
+        "娱乐场所"
+      ],
+      "highlights": [
+        "剧情互动",
+        "适合聚会",
+        "多人参与"
+      ]
+    },
+    {
+      "id": "e014",
+      "name": "北小河公园",
+      "type": "park",
+      "typeLabel": "🌿 公园",
+      "area": "望京",
+      "address": "师家坟村156号",
+      "rating": 4.7,
+      "priceRange": "免费",
+      "openHours": "06:00-21:00",
+      "tags": [
+        "公园"
+      ],
+      "highlights": [
+        "散步休闲",
+        "免费开放",
+        "适合饭后"
+      ]
+    },
+    {
+      "id": "e015",
+      "name": "大望京公园",
+      "type": "park",
+      "typeLabel": "🌿 公园",
+      "area": "望京",
+      "address": "东湖街道望京东路甲6号",
+      "rating": 4.6,
+      "priceRange": "免费",
+      "openHours": "24小时营业",
+      "tags": [
+        "公园"
+      ],
+      "highlights": [
+        "散步休闲",
+        "免费开放",
+        "适合饭后"
+      ]
+    },
+    {
+      "id": "e016",
+      "name": "乐刻健身(望京梦秀广场店)",
+      "type": "fitness",
+      "typeLabel": "💪 健身",
+      "area": "望京",
+      "address": "北京城区望京西路41号梦秀广场5层",
+      "rating": 4.5,
+      "priceRange": "568-1421/人",
+      "openHours": "24小时营业",
+      "tags": [
+        "健身中心",
+        "健身"
+      ],
+      "classes": [
+        {
+          "name": "搏击操",
+          "time": "19:30",
+          "duration": "50分钟",
+          "price": 947,
+          "spotsLeft": 5
+        },
+        {
+          "name": "瑜伽",
+          "time": "20:30",
+          "duration": "60分钟",
+          "price": 758,
+          "spotsLeft": 8
+        }
+      ],
+      "highlights": [
+        "运动放松",
+        "课程可选",
+        "适合轻社交"
+      ]
+    },
+    {
+      "id": "e017",
+      "name": "乐刻健身(望京街辅路店)",
+      "type": "fitness",
+      "typeLabel": "💪 健身",
+      "area": "望京",
+      "address": "望京麒麟新天地B1层",
+      "rating": 4.5,
+      "priceRange": "1843-4608/人",
+      "openHours": "24小时营业",
+      "tags": [
+        "健身中心",
+        "健身"
+      ],
+      "classes": [
+        {
+          "name": "搏击操",
+          "time": "19:30",
+          "duration": "50分钟",
+          "price": 3072,
+          "spotsLeft": 5
+        },
+        {
+          "name": "瑜伽",
+          "time": "20:30",
+          "duration": "60分钟",
+          "price": 2458,
+          "spotsLeft": 8
+        }
+      ],
+      "highlights": [
+        "运动放松",
+        "课程可选",
+        "适合轻社交"
+      ]
+    },
+    {
+      "id": "e018",
+      "name": "海德汤泉生活",
+      "type": "spa",
+      "typeLabel": "♨️ 汤泉",
+      "area": "望京",
+      "address": "望京西路40号-3至6层101号1层、2层、3层、4层",
+      "rating": 4.9,
+      "priceRange": "224-561/人",
+      "openHours": "24小时营业",
+      "tags": [
+        "洗浴",
+        "洗浴推拿场所"
+      ],
+      "packages": [
+        {
+          "name": "单人泡汤",
+          "price": 299,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸",
+          "price": 374,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸+自助",
+          "price": 561,
+          "duration": "不限时"
+        }
+      ],
+      "highlights": [
+        "多种温泉/汗蒸",
+        "休息区舒适",
+        "适合放松"
+      ]
+    },
+    {
+      "id": "e019",
+      "name": "一品汤泉",
+      "type": "spa",
+      "typeLabel": "♨️ 汤泉",
+      "area": "望京",
+      "address": "南湖东园122号楼-01层B1-01",
+      "rating": 4.6,
+      "priceRange": "83-207/人",
+      "openHours": "09:00-02:00",
+      "tags": [
+        "洗浴",
+        "烟酒专卖"
+      ],
+      "packages": [
+        {
+          "name": "单人泡汤",
+          "price": 110,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸",
+          "price": 138,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸+自助",
+          "price": 207,
+          "duration": "不限时"
+        }
+      ],
+      "highlights": [
+        "多种温泉/汗蒸",
+        "休息区舒适",
+        "适合放松"
+      ]
+    },
+    {
+      "id": "e020",
+      "name": "董小薰•熏蒸馆(望京总店)",
+      "type": "spa",
+      "typeLabel": "♨️ 汤泉",
+      "area": "望京",
+      "address": "阜通西大街18号院2号楼1层101(董小熏熏蒸馆望京总店)",
+      "rating": 4.3,
+      "priceRange": "66-165/人",
+      "openHours": "09:30-21:30",
+      "tags": [
+        "桑拿汗蒸",
+        "洗浴推拿场所"
+      ],
+      "packages": [
+        {
+          "name": "单人泡汤",
+          "price": 88,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸",
+          "price": 110,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸+自助",
+          "price": 165,
+          "duration": "不限时"
+        }
+      ],
+      "highlights": [
+        "多种温泉/汗蒸",
+        "休息区舒适",
+        "适合放松"
+      ]
+    },
+    {
+      "id": "e021",
+      "name": "鸥迪足道(望京店)",
+      "type": "massage",
+      "typeLabel": "💆 足疗",
+      "area": "望京",
+      "address": "望京湖光中街夏都家园北门(1号楼a单元)",
+      "rating": 4.7,
+      "priceRange": "115-288/人",
+      "openHours": "11:00-23:00",
+      "tags": [
+        "足疗",
+        "洗浴推拿场所"
+      ],
+      "packages": [
+        {
+          "name": "足底按摩 60min",
+          "price": 134
+        },
+        {
+          "name": "全身推拿 90min",
+          "price": 192
+        },
+        {
+          "name": "精油SPA 120min",
+          "price": 288
+        }
+      ],
+      "highlights": [
+        "专业技师",
+        "环境舒适",
+        "可加钟"
+      ]
+    },
+    {
+      "id": "e022",
+      "name": "颐和足道(夏都家园店)",
+      "type": "massage",
+      "typeLabel": "💆 足疗",
+      "area": "望京",
+      "address": "广顺北大街31号院1号楼底商",
+      "rating": 4.3,
+      "priceRange": "117-293/人",
+      "openHours": "11:00-01:00",
+      "tags": [
+        "足疗",
+        "生活服务场所"
+      ],
+      "packages": [
+        {
+          "name": "足底按摩 60min",
+          "price": 137
+        },
+        {
+          "name": "全身推拿 90min",
+          "price": 195
+        },
+        {
+          "name": "精油SPA 120min",
+          "price": 293
+        }
+      ],
+      "highlights": [
+        "专业技师",
+        "环境舒适",
+        "可加钟"
+      ]
+    },
+    {
+      "id": "e023",
+      "name": "颐润堂专业足疗保健按摩(阜通西大街)",
+      "type": "massage",
+      "typeLabel": "💆 足疗",
+      "area": "望京",
+      "address": "广顺北大街33号院大西洋新城B区206号楼1层",
+      "rating": 4.4,
+      "priceRange": "100-251/人",
+      "openHours": "10:00-24:00",
+      "tags": [
+        "足疗",
+        "洗浴推拿场所"
+      ],
+      "packages": [
+        {
+          "name": "足底按摩 60min",
+          "price": 117
+        },
+        {
+          "name": "全身推拿 90min",
+          "price": 167
+        },
+        {
+          "name": "精油SPA 120min",
+          "price": 251
+        }
+      ],
+      "highlights": [
+        "专业技师",
+        "环境舒适",
+        "可加钟"
+      ]
+    },
+    {
+      "id": "e024",
+      "name": "云玖台球俱乐部(望京信万广场店)",
+      "type": "billiards",
+      "typeLabel": "🎱 台球",
+      "area": "望京",
+      "address": "望京西路49号楼B1层",
+      "rating": 4.6,
+      "priceRange": "40-80/小时",
+      "openHours": "08:00-03:00",
+      "tags": [
+        "台球厅",
+        "台球"
+      ],
+      "highlights": [
+        "桌台新",
+        "环境好",
+        "适合朋友"
+      ]
+    },
+    {
+      "id": "e025",
+      "name": "银球时刻台球(望京店)",
+      "type": "billiards",
+      "typeLabel": "🎱 台球",
+      "area": "望京",
+      "address": "南湖西园120号楼地下1层",
+      "rating": 4.5,
+      "priceRange": "35-87",
+      "openHours": "09:00-02:00",
+      "tags": [
+        "台球厅",
+        "台球"
+      ],
+      "highlights": [
+        "桌台新",
+        "环境好",
+        "适合朋友"
+      ]
+    },
+    {
+      "id": "e026",
+      "name": "凯德MALL(望京店)",
+      "type": "shopping",
+      "typeLabel": "🛍️ 逛街",
+      "area": "望京",
+      "address": "广顺北大街33号",
+      "rating": 4.7,
+      "priceRange": "免费（逛街）",
+      "openHours": "10:00-22:00",
+      "tags": [
+        "商场",
+        "购物"
+      ],
+      "highlights": [
+        "逛街购物",
+        "网红打卡",
+        "夜景好"
+      ]
+    },
+    {
+      "id": "e027",
+      "name": "合生·麒麟新天地",
+      "type": "shopping",
+      "typeLabel": "🛍️ 逛街",
+      "area": "望京",
+      "address": "望京街2号楼-阜安西路11号",
+      "rating": 4.6,
+      "priceRange": "免费（逛街）",
+      "openHours": "10:00-22:00",
+      "tags": [
+        "商场",
+        "购物"
+      ],
+      "highlights": [
+        "逛街购物",
+        "网红打卡",
+        "夜景好"
+      ]
+    },
+    {
+      "id": "e028",
+      "name": "猎人桌游(望京SOHOT1商场店)",
+      "type": "board_game_cafe",
+      "typeLabel": "🎲 桌游吧",
+      "area": "望京",
+      "address": "望京街10号望京SOHO塔1C座1501",
+      "rating": 4.6,
+      "priceRange": "40-99/人",
+      "openHours": "12:00-24:00",
+      "tags": [
+        "桌游",
+        "体育休闲服务场所"
+      ],
+      "highlights": [
+        "桌游丰富",
+        "适合聚会"
+      ]
+    },
+    {
+      "id": "e029",
+      "name": "乐一卡社",
+      "type": "board_game_cafe",
+      "typeLabel": "🎲 桌游吧",
+      "area": "望京",
+      "address": "东亚望京中心B座二楼B207(阜通地铁站出入口步行200米)",
+      "rating": 4.4,
+      "priceRange": "55-137/人",
+      "openHours": "12:00-22:00",
+      "tags": [
+        "桌游",
+        "娱乐场所"
+      ],
+      "highlights": [
+        "桌游丰富",
+        "适合聚会"
+      ]
+    },
+    {
+      "id": "e030",
+      "name": "英皇电影城(北京三里屯太古里店)",
+      "type": "movie",
+      "typeLabel": "🎬 电影",
+      "area": "三里屯",
+      "address": "三里屯路19号院三里屯太古里南区LG层",
+      "rating": 4.8,
+      "priceRange": "52-129",
+      "openHours": "09:00-23:00",
+      "tags": [
+        "电影院"
+      ],
+      "highlights": [
+        "近期热映",
+        "适合饭后",
+        "可选晚场"
+      ]
+    },
+    {
+      "id": "e031",
+      "name": "美都M影城(爱奇艺青春中心店)",
+      "type": "movie",
+      "typeLabel": "🎬 电影",
+      "area": "三里屯",
+      "address": "工人体育场北路21号屯三里永利国际购物中心B1层b1_01-03",
+      "rating": 4.6,
+      "priceRange": "27-68",
+      "openHours": "",
+      "tags": [
+        "电影院"
+      ],
+      "highlights": [
+        "近期热映",
+        "适合饭后",
+        "可选晚场"
+      ]
+    },
+    {
+      "id": "e032",
+      "name": "朝阳区三里屯街道温馨家园无障碍电影观影点",
+      "type": "movie",
+      "typeLabel": "🎬 电影",
+      "area": "三里屯",
+      "address": "北三里屯26-27号楼院内平房温馨家园",
+      "rating": 3.3,
+      "priceRange": "45-120",
+      "openHours": "09:00-11:00",
+      "tags": [
+        "电影院"
+      ],
+      "highlights": [
+        "近期热映",
+        "适合饭后",
+        "可选晚场"
+      ]
+    },
+    {
+      "id": "e033",
+      "name": "月色酒吧(三里屯店)",
+      "type": "bar",
+      "typeLabel": "🍸 酒吧",
+      "area": "三里屯",
+      "address": "三里屯北街8-10号",
+      "rating": 4.5,
+      "priceRange": "75-188",
+      "openHours": "18:00-03:00",
+      "tags": [
+        "酒吧"
+      ],
+      "highlights": [
+        "酒吧"
+      ]
+    },
+    {
+      "id": "e034",
+      "name": "OASIS酒吧(三里屯铂郡店)",
+      "type": "bar",
+      "typeLabel": "🍸 酒吧",
+      "area": "三里屯",
+      "address": "首开铂郡北区一层临新东路",
+      "rating": 4.5,
+      "priceRange": "86-215",
+      "openHours": "17:00-02:30",
+      "tags": [
+        "酒吧"
+      ],
+      "highlights": [
+        "酒吧"
+      ]
+    },
+    {
+      "id": "e035",
+      "name": "COMMUNE·X(太古里店)",
+      "type": "bar",
+      "typeLabel": "🍸 酒吧",
+      "area": "三里屯",
+      "address": "北京城区三里屯太古里南区8号楼3层S8-31",
+      "rating": 4.8,
+      "priceRange": "102-255",
+      "openHours": "",
+      "tags": [
+        "西餐",
+        "酒吧|餐饮服务"
+      ],
+      "highlights": [
+        "西餐",
+        "酒吧|餐饮服务"
+      ]
+    },
+    {
+      "id": "e036",
+      "name": "M-ONE PARTY KTV(三里屯太古里店)",
+      "type": "ktv",
+      "typeLabel": "🎤 KTV",
+      "area": "三里屯",
+      "address": "工体北路58号楼6层W6-1(太古里西区优衣库楼上)",
+      "rating": 4.6,
+      "priceRange": "46-116/人",
+      "openHours": "13:00-02:00",
+      "tags": [
+        "量贩式KTV",
+        "KTV"
+      ],
+      "packages": [
+        {
+          "name": "欢唱2小时（小包）",
+          "capacity": "2-4人",
+          "price": 169,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "欢唱2小时（中包）",
+          "capacity": "4-8人",
+          "price": 270,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "夜场通宵（小包）",
+          "capacity": "2-4人",
+          "price": 293,
+          "period": "23:00-06:00"
+        }
+      ],
+      "highlights": [
+        "适合聚会",
+        "可订包间",
+        "晚间可玩"
+      ]
+    },
+    {
+      "id": "e037",
+      "name": "唱吧麦颂KTV(三里屯店)",
+      "type": "ktv",
+      "typeLabel": "🎤 KTV",
+      "area": "三里屯",
+      "address": "北京城区工人体育场北路甲6号楼3层301等",
+      "rating": 4.6,
+      "priceRange": "45-113/人",
+      "openHours": "12:00-02:00",
+      "tags": [
+        "量贩式KTV",
+        "KTV"
+      ],
+      "packages": [
+        {
+          "name": "欢唱2小时（小包）",
+          "capacity": "2-4人",
+          "price": 165,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "欢唱2小时（中包）",
+          "capacity": "4-8人",
+          "price": 263,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "夜场通宵（小包）",
+          "capacity": "2-4人",
+          "price": 285,
+          "period": "23:00-06:00"
+        }
+      ],
+      "highlights": [
+        "适合聚会",
+        "可订包间",
+        "晚间可玩"
+      ]
+    },
+    {
+      "id": "e038",
+      "name": "METAK·元宇宙KTV",
+      "type": "ktv",
+      "typeLabel": "🎤 KTV",
+      "area": "三里屯",
+      "address": "北京城区工人体育场北路8号院1号楼3层",
+      "rating": 4.7,
+      "priceRange": "53-132/人",
+      "openHours": "12:00-02:00",
+      "tags": [
+        "量贩式KTV",
+        "KTV"
+      ],
+      "packages": [
+        {
+          "name": "欢唱2小时（小包）",
+          "capacity": "2-4人",
+          "price": 194,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "欢唱2小时（中包）",
+          "capacity": "4-8人",
+          "price": 308,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "夜场通宵（小包）",
+          "capacity": "2-4人",
+          "price": 334,
+          "period": "23:00-06:00"
+        }
+      ],
+      "highlights": [
+        "适合聚会",
+        "可订包间",
+        "晚间可玩"
+      ]
+    },
+    {
+      "id": "e039",
+      "name": "柯洛克机械式沉浸密室(三里屯店)",
+      "type": "escape_room",
+      "typeLabel": "🔐 密室逃脱",
+      "area": "三里屯",
+      "address": "工体北路海隆石油大厦3层301-302室",
+      "rating": 4.6,
+      "priceRange": "85-213/人",
+      "openHours": "10:00-02:00",
+      "tags": [
+        "密室逃脱",
+        "体育休闲服务场所"
+      ],
+      "highlights": [
+        "沉浸体验",
+        "适合多人",
+        "需要预约"
+      ]
+    },
+    {
+      "id": "e040",
+      "name": "X先生密室(三里屯店)",
+      "type": "escape_room",
+      "typeLabel": "🔐 密室逃脱",
+      "area": "三里屯",
+      "address": "工体北路13号世茂工三商场2层西南角(三里屯工体北门斜对面)",
+      "rating": 4.7,
+      "priceRange": "154-384/人",
+      "openHours": "10:00-02:00",
+      "tags": [
+        "密室逃脱",
+        "娱乐场所"
+      ],
+      "highlights": [
+        "沉浸体验",
+        "适合多人",
+        "需要预约"
+      ]
+    },
+    {
+      "id": "e041",
+      "name": "大可乐剧本杀(三里屯店)",
+      "type": "board_game",
+      "typeLabel": "🎲 剧本杀",
+      "area": "三里屯",
+      "address": "三里屯sohoD座2203",
+      "rating": 4.2,
+      "priceRange": "116-291/人",
+      "openHours": "",
+      "tags": [
+        "剧本杀",
+        "购物相关场所"
+      ],
+      "highlights": [
+        "剧情互动",
+        "适合聚会",
+        "多人参与"
+      ]
+    },
+    {
+      "id": "e042",
+      "name": "EMO剧本杀桌游(三里屯SOHO商场1号楼店)",
+      "type": "board_game",
+      "typeLabel": "🎲 剧本杀",
+      "area": "三里屯",
+      "address": "工人体育场北路8号三里屯SOHO商场1号楼F1层",
+      "rating": 2.2,
+      "priceRange": "111-278/人",
+      "openHours": "13:00-24:00",
+      "tags": [
+        "桌游",
+        "娱乐场所"
+      ],
+      "highlights": [
+        "剧情互动",
+        "适合聚会",
+        "多人参与"
+      ]
+    },
+    {
+      "id": "e043",
+      "name": "朝阳公园",
+      "type": "park",
+      "typeLabel": "🌿 公园",
+      "area": "三里屯",
+      "address": "朝阳公园南路1号",
+      "rating": 4.8,
+      "priceRange": "免费",
+      "openHours": "00:00-24:00",
+      "tags": [
+        "4A景区",
+        "公园"
+      ],
+      "highlights": [
+        "散步休闲",
+        "免费开放",
+        "适合饭后"
+      ]
+    },
+    {
+      "id": "e044",
+      "name": "朝阳公园-郡王府步行街公园",
+      "type": "park",
+      "typeLabel": "🌿 公园",
+      "area": "三里屯",
+      "address": "朝阳公园南路1号朝阳公园(东南角)",
+      "rating": 3.5,
+      "priceRange": "免费",
+      "openHours": "24小时营业",
+      "tags": [
+        "城市公园",
+        "公园"
+      ],
+      "highlights": [
+        "散步休闲",
+        "免费开放",
+        "适合饭后"
+      ]
+    },
+    {
+      "id": "e045",
+      "name": "赢瀚健身(三里屯店)",
+      "type": "fitness",
+      "typeLabel": "💪 健身",
+      "area": "三里屯",
+      "address": "三里屯南路16号楼商业2楼202",
+      "rating": 4.2,
+      "priceRange": "1450-3626/人",
+      "openHours": "10:00-22:00",
+      "tags": [
+        "健身中心",
+        "健身"
+      ],
+      "classes": [
+        {
+          "name": "搏击操",
+          "time": "19:30",
+          "duration": "50分钟",
+          "price": 2417,
+          "spotsLeft": 5
+        },
+        {
+          "name": "瑜伽",
+          "time": "20:30",
+          "duration": "60分钟",
+          "price": 1934,
+          "spotsLeft": 8
+        }
+      ],
+      "highlights": [
+        "运动放松",
+        "课程可选",
+        "适合轻社交"
+      ]
+    },
+    {
+      "id": "e046",
+      "name": "子人健身馆(三里屯旗舰店)",
+      "type": "fitness",
+      "typeLabel": "💪 健身",
+      "area": "三里屯",
+      "address": "三里屯首开铂郡北区1-029子人健身",
+      "rating": 4.5,
+      "priceRange": "226-564/人",
+      "openHours": "24小时营业",
+      "tags": [
+        "健身中心",
+        "健身"
+      ],
+      "classes": [
+        {
+          "name": "搏击操",
+          "time": "19:30",
+          "duration": "50分钟",
+          "price": 376,
+          "spotsLeft": 5
+        },
+        {
+          "name": "瑜伽",
+          "time": "20:30",
+          "duration": "60分钟",
+          "price": 301,
+          "spotsLeft": 8
+        }
+      ],
+      "highlights": [
+        "运动放松",
+        "课程可选",
+        "适合轻社交"
+      ]
+    },
+    {
+      "id": "e047",
+      "name": "凯富温泉俱乐部(凯富大厦店)",
+      "type": "spa",
+      "typeLabel": "♨️ 汤泉",
+      "area": "三里屯",
+      "address": "工体北路6号凯富大厦12-14层(近南三里屯路)",
+      "rating": 4.6,
+      "priceRange": "782-1956/人",
+      "openHours": "12:00-24:00",
+      "tags": [
+        "按摩"
+      ],
+      "packages": [
+        {
+          "name": "单人泡汤",
+          "price": 1043,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸",
+          "price": 1304,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸+自助",
+          "price": 1956,
+          "duration": "不限时"
+        }
+      ],
+      "highlights": [
+        "多种温泉/汗蒸",
+        "休息区舒适",
+        "适合放松"
+      ]
+    },
+    {
+      "id": "e048",
+      "name": "君雅温泉会馆",
+      "type": "spa",
+      "typeLabel": "♨️ 汤泉",
+      "area": "三里屯",
+      "address": "百富怡大酒店东门旁",
+      "rating": 4.4,
+      "priceRange": "171-428/人",
+      "openHours": "24小时营业",
+      "tags": [
+        "温泉洗浴",
+        "洗浴推拿场所"
+      ],
+      "packages": [
+        {
+          "name": "单人泡汤",
+          "price": 228,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸",
+          "price": 285,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸+自助",
+          "price": 428,
+          "duration": "不限时"
+        }
+      ],
+      "highlights": [
+        "多种温泉/汗蒸",
+        "休息区舒适",
+        "适合放松"
+      ]
+    },
+    {
+      "id": "e049",
+      "name": "花小妞女子洗浴汗蒸馆",
+      "type": "spa",
+      "typeLabel": "♨️ 汤泉",
+      "area": "三里屯",
+      "address": "呼家楼街道朝阳北路圣世一品小区爱尚健身内",
+      "rating": 4.7,
+      "priceRange": "100-251/人",
+      "openHours": "11:00-24:00",
+      "tags": [
+        "洗浴",
+        "生活服务场所"
+      ],
+      "packages": [
+        {
+          "name": "单人泡汤",
+          "price": 134,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸",
+          "price": 167,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸+自助",
+          "price": 251,
+          "duration": "不限时"
+        }
+      ],
+      "highlights": [
+        "多种温泉/汗蒸",
+        "休息区舒适",
+        "适合放松"
+      ]
+    },
+    {
+      "id": "e050",
+      "name": "良子足道(耀莱广场店)",
+      "type": "massage",
+      "typeLabel": "💆 足疗",
+      "area": "三里屯",
+      "address": "首开幸福广场C座东北门旁(工人体育场地铁站C口步行460米)",
+      "rating": 4.5,
+      "priceRange": "85-213/人",
+      "openHours": "11:00-02:00",
+      "tags": [
+        "足疗",
+        "健身|生活服务"
+      ],
+      "packages": [
+        {
+          "name": "足底按摩 60min",
+          "price": 99
+        },
+        {
+          "name": "全身推拿 90min",
+          "price": 142
+        },
+        {
+          "name": "精油SPA 120min",
+          "price": 213
+        }
+      ],
+      "highlights": [
+        "专业技师",
+        "环境舒适",
+        "可加钟"
+      ]
+    },
+    {
+      "id": "e051",
+      "name": "愈舍YUSPA(三里屯店)",
+      "type": "massage",
+      "typeLabel": "💆 足疗",
+      "area": "三里屯",
+      "address": "南三里屯路1号洲际酒店5层",
+      "rating": 4.7,
+      "priceRange": "253-632/人",
+      "openHours": "12:00-23:00",
+      "tags": [
+        "SPA",
+        "餐饮相关"
+      ],
+      "packages": [
+        {
+          "name": "足底按摩 60min",
+          "price": 295
+        },
+        {
+          "name": "全身推拿 90min",
+          "price": 421
+        },
+        {
+          "name": "精油SPA 120min",
+          "price": 632
+        }
+      ],
+      "highlights": [
+        "专业技师",
+        "环境舒适",
+        "可加钟"
+      ]
+    },
+    {
+      "id": "e052",
+      "name": "云川台球(三里屯店)",
+      "type": "billiards",
+      "typeLabel": "🎱 台球",
+      "area": "三里屯",
+      "address": "北京城区三里屯南路16号泰悦豪庭地下1层",
+      "rating": 4.7,
+      "priceRange": "35-89",
+      "openHours": "10:00-04:00",
+      "tags": [
+        "台球厅",
+        "台球"
+      ],
+      "highlights": [
+        "桌台新",
+        "环境好",
+        "适合朋友"
+      ]
+    },
+    {
+      "id": "e053",
+      "name": "谈小娱24h自助台球(三里屯SOHO商场1号楼店)",
+      "type": "billiards",
+      "typeLabel": "🎱 台球",
+      "area": "三里屯",
+      "address": "三里屯SOHO办公A座603室",
+      "rating": 4.4,
+      "priceRange": "40-80/小时",
+      "openHours": "24小时营业",
+      "tags": [
+        "台球厅",
+        "台球"
+      ],
+      "highlights": [
+        "桌台新",
+        "环境好",
+        "适合朋友"
+      ]
+    },
+    {
+      "id": "e054",
+      "name": "3·3大厦",
+      "type": "shopping",
+      "typeLabel": "🛍️ 逛街",
+      "area": "三里屯",
+      "address": "三里屯路33号",
+      "rating": 4.7,
+      "priceRange": "免费（逛街）",
+      "openHours": "10:00-22:00",
+      "tags": [
+        "商场"
+      ],
+      "highlights": [
+        "逛街购物",
+        "网红打卡",
+        "夜景好"
+      ]
+    },
+    {
+      "id": "e055",
+      "name": "三里屯太古里",
+      "type": "shopping",
+      "typeLabel": "🛍️ 逛街",
+      "area": "三里屯",
+      "address": "三里屯路11、19号院(工人体育场地铁站D口步行240米)",
+      "rating": 4.9,
+      "priceRange": "免费（逛街）",
+      "openHours": "10:00-22:00",
+      "tags": [
+        "商场",
+        "普通商场"
+      ],
+      "highlights": [
+        "逛街购物",
+        "网红打卡",
+        "夜景好"
+      ]
+    },
+    {
+      "id": "e056",
+      "name": "猎人桌游(三里屯SOHO商场1号楼店)",
+      "type": "board_game_cafe",
+      "typeLabel": "🎲 桌游吧",
+      "area": "三里屯",
+      "address": "三里屯SOHOA座608(工人体育场地铁站D口步行220米)",
+      "rating": 4.6,
+      "priceRange": "47-117/人",
+      "openHours": "12:00-24:00",
+      "tags": [
+        "桌游",
+        "体育休闲服务场所"
+      ],
+      "highlights": [
+        "桌游丰富",
+        "适合聚会"
+      ]
+    },
+    {
+      "id": "e057",
+      "name": "Hiπ·嗨派桌游(三里屯店)",
+      "type": "board_game_cafe",
+      "typeLabel": "🎲 桌游吧",
+      "area": "三里屯",
+      "address": "工人体育场北路8号院三里屯soho写字楼D座2703",
+      "rating": 4.3,
+      "priceRange": "51-128/人",
+      "openHours": "12:00-23:00",
+      "tags": [
+        "桌游",
+        "娱乐场所"
+      ],
+      "highlights": [
+        "桌游丰富",
+        "适合聚会"
+      ]
+    },
+    {
+      "id": "e058",
+      "name": "金逸国际影城(朝阳大悦城)",
+      "type": "movie",
+      "typeLabel": "🎬 电影",
+      "area": "朝阳大悦城",
+      "address": "朝阳北路101号朝阳大悦城8F层8F-Z02",
+      "rating": 4.6,
+      "priceRange": "41-102",
+      "openHours": "10:30-22:30",
+      "tags": [
+        "电影院"
+      ],
+      "highlights": [
+        "近期热映",
+        "适合饭后",
+        "可选晚场"
+      ]
+    },
+    {
+      "id": "e059",
+      "name": "观华国际影城(新城市广场店)",
+      "type": "movie",
+      "typeLabel": "🎬 电影",
+      "area": "朝阳大悦城",
+      "address": "十里堡新城市广场B1层",
+      "rating": 4.6,
+      "priceRange": "22-56",
+      "openHours": "08:00-23:30",
+      "tags": [
+        "电影院"
+      ],
+      "highlights": [
+        "近期热映",
+        "适合饭后",
+        "可选晚场"
+      ]
+    },
+    {
+      "id": "e060",
+      "name": "魔影国际影城(达美店)",
+      "type": "movie",
+      "typeLabel": "🎬 电影",
+      "area": "朝阳大悦城",
+      "address": "青年路1号院达美中心东门B1层",
+      "rating": 4.5,
+      "priceRange": "21-53",
+      "openHours": "10:00-23:00",
+      "tags": [
+        "电影院"
+      ],
+      "highlights": [
+        "近期热映",
+        "适合饭后",
+        "可选晚场"
+      ]
+    },
+    {
+      "id": "e061",
+      "name": "扶谣民谣酒馆(青年路店)",
+      "type": "bar",
+      "typeLabel": "🍸 酒吧",
+      "area": "朝阳大悦城",
+      "address": "悦鑫园内15号",
+      "rating": 4.5,
+      "priceRange": "65-164",
+      "openHours": "17:00-03:00",
+      "tags": [
+        "酒吧",
+        "餐饮相关"
+      ],
+      "highlights": [
+        "酒吧",
+        "餐饮相关"
+      ]
+    },
+    {
+      "id": "e062",
+      "name": "So Long Bar",
+      "type": "bar",
+      "typeLabel": "🍸 酒吧",
+      "area": "朝阳大悦城",
+      "address": "青年汇104号楼108号底商",
+      "rating": 4.6,
+      "priceRange": "64-159",
+      "openHours": "18:00-03:00",
+      "tags": [
+        "酒吧"
+      ],
+      "highlights": [
+        "酒吧"
+      ]
+    },
+    {
+      "id": "e063",
+      "name": "Carpe diem Bar 及时行乐(朝阳大悦城店)",
+      "type": "bar",
+      "typeLabel": "🍸 酒吧",
+      "area": "朝阳大悦城",
+      "address": "北京城区朝阳北路102楼1113室(青年路地铁站D西南口步行170米)",
+      "rating": 4.4,
+      "priceRange": "68-171",
+      "openHours": "19:00-06:00",
+      "tags": [
+        "清吧",
+        "酒吧"
+      ],
+      "highlights": [
+        "清吧",
+        "酒吧"
+      ]
+    },
+    {
+      "id": "e064",
+      "name": "魅KTV(朝阳大悦城)",
+      "type": "ktv",
+      "typeLabel": "🎤 KTV",
+      "area": "朝阳大悦城",
+      "address": "朝阳北路101号朝阳大悦城9F层",
+      "rating": 4.5,
+      "priceRange": "51-128/人",
+      "openHours": "13:00-02:00",
+      "tags": [
+        "KTV"
+      ],
+      "packages": [
+        {
+          "name": "欢唱2小时（小包）",
+          "capacity": "2-4人",
+          "price": 187,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "欢唱2小时（中包）",
+          "capacity": "4-8人",
+          "price": 298,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "夜场通宵（小包）",
+          "capacity": "2-4人",
+          "price": 323,
+          "period": "23:00-06:00"
+        }
+      ],
+      "highlights": [
+        "适合聚会",
+        "可订包间",
+        "晚间可玩"
+      ]
+    },
+    {
+      "id": "e065",
+      "name": "唱吧麦颂KTV(北京大悦城店)",
+      "type": "ktv",
+      "typeLabel": "🎤 KTV",
+      "area": "朝阳大悦城",
+      "address": "北京城区雅成一里19号楼-1层-101南侧",
+      "rating": 4.6,
+      "priceRange": "46-114/人",
+      "openHours": "12:00-02:00",
+      "tags": [
+        "量贩式KTV",
+        "KTV"
+      ],
+      "packages": [
+        {
+          "name": "欢唱2小时（小包）",
+          "capacity": "2-4人",
+          "price": 167,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "欢唱2小时（中包）",
+          "capacity": "4-8人",
+          "price": 266,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "夜场通宵（小包）",
+          "capacity": "2-4人",
+          "price": 289,
+          "period": "23:00-06:00"
+        }
+      ],
+      "highlights": [
+        "适合聚会",
+        "可订包间",
+        "晚间可玩"
+      ]
+    },
+    {
+      "id": "e066",
+      "name": "星聚会KTV(北京姚家园万象汇店)",
+      "type": "ktv",
+      "typeLabel": "🎤 KTV",
+      "area": "朝阳大悦城",
+      "address": "北京城区青年北路35号院1号楼2层L203、L204、L205",
+      "rating": 4.5,
+      "priceRange": "43-107/人",
+      "openHours": "12:00-02:00",
+      "tags": [
+        "量贩式KTV",
+        "KTV"
+      ],
+      "packages": [
+        {
+          "name": "欢唱2小时（小包）",
+          "capacity": "2-4人",
+          "price": 156,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "欢唱2小时（中包）",
+          "capacity": "4-8人",
+          "price": 249,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "夜场通宵（小包）",
+          "capacity": "2-4人",
+          "price": 270,
+          "period": "23:00-06:00"
+        }
+      ],
+      "highlights": [
+        "适合聚会",
+        "可订包间",
+        "晚间可玩"
+      ]
+    },
+    {
+      "id": "e067",
+      "name": "长藤密室(朝阳大悦城)",
+      "type": "escape_room",
+      "typeLabel": "🔐 密室逃脱",
+      "area": "朝阳大悦城",
+      "address": "青年路131号朝阳大悦城11楼长藤密室",
+      "rating": 4.5,
+      "priceRange": "119-297/人",
+      "openHours": "10:00-23:00",
+      "tags": [
+        "密室逃脱",
+        "娱乐场所"
+      ],
+      "highlights": [
+        "沉浸体验",
+        "适合多人",
+        "需要预约"
+      ]
+    },
+    {
+      "id": "e068",
+      "name": "长藤鬼校(朝阳大悦城店)",
+      "type": "escape_room",
+      "typeLabel": "🔐 密室逃脱",
+      "area": "朝阳大悦城",
+      "address": "朝阳北路101号大悦城11F长藤鬼校(青年路地铁站出入口旁)",
+      "rating": 4.4,
+      "priceRange": "75-188/人",
+      "openHours": "09:00-23:00",
+      "tags": [
+        "密室逃脱",
+        "娱乐场所"
+      ],
+      "highlights": [
+        "沉浸体验",
+        "适合多人",
+        "需要预约"
+      ]
+    },
+    {
+      "id": "e069",
+      "name": "来财club·剧本杀·桌游·聚会",
+      "type": "board_game",
+      "typeLabel": "🎲 剧本杀",
+      "area": "朝阳大悦城",
+      "address": "八里庄街道珠江罗马家园东区54号楼底商B1来财club",
+      "rating": 4.1,
+      "priceRange": "68-170/人",
+      "openHours": "24小时营业",
+      "tags": [
+        "剧本杀",
+        "体育休闲服务场所"
+      ],
+      "highlights": [
+        "剧情互动",
+        "适合聚会",
+        "多人参与"
+      ]
+    },
+    {
+      "id": "e070",
+      "name": "大理寺·沉浸式剧本杀桌游推理馆",
+      "type": "board_game",
+      "typeLabel": "🎲 剧本杀",
+      "area": "朝阳大悦城",
+      "address": "青年公社102号楼516室",
+      "rating": 4.2,
+      "priceRange": "83-209/人",
+      "openHours": "07:00-19:00",
+      "tags": [
+        "桌游",
+        "娱乐场所"
+      ],
+      "highlights": [
+        "剧情互动",
+        "适合聚会",
+        "多人参与"
+      ]
+    },
+    {
+      "id": "e071",
+      "name": "莱运动游泳健身",
+      "type": "fitness",
+      "typeLabel": "💪 健身",
+      "area": "朝阳大悦城",
+      "address": "青年路西里5号院16号楼地下-1层-101",
+      "rating": 4.4,
+      "priceRange": "1630-4074/人",
+      "openHours": "09:00-22:00",
+      "tags": [
+        "健身房",
+        "健身"
+      ],
+      "classes": [
+        {
+          "name": "搏击操",
+          "time": "19:30",
+          "duration": "50分钟",
+          "price": 2716,
+          "spotsLeft": 5
+        },
+        {
+          "name": "瑜伽",
+          "time": "20:30",
+          "duration": "60分钟",
+          "price": 2173,
+          "spotsLeft": 8
+        }
+      ],
+      "highlights": [
+        "运动放松",
+        "课程可选",
+        "适合轻社交"
+      ]
+    },
+    {
+      "id": "e072",
+      "name": "虾健健24H共享自助健身(北京青年汇佳园店)",
+      "type": "fitness",
+      "typeLabel": "💪 健身",
+      "area": "朝阳大悦城",
+      "address": "朝阳区青年汇佳园一号地112号楼B1层",
+      "rating": 4.5,
+      "priceRange": "54-135/人",
+      "openHours": "24小时营业",
+      "tags": [
+        "健身中心",
+        "健身"
+      ],
+      "classes": [
+        {
+          "name": "搏击操",
+          "time": "19:30",
+          "duration": "50分钟",
+          "price": 90,
+          "spotsLeft": 5
+        },
+        {
+          "name": "瑜伽",
+          "time": "20:30",
+          "duration": "60分钟",
+          "price": 72,
+          "spotsLeft": 8
+        }
+      ],
+      "highlights": [
+        "运动放松",
+        "课程可选",
+        "适合轻社交"
+      ]
+    },
+    {
+      "id": "e073",
+      "name": "汤悦温泉汗蒸生活馆天鹅湾店",
+      "type": "spa",
+      "typeLabel": "♨️ 汤泉",
+      "area": "朝阳大悦城",
+      "address": "北京城区雅成二里20号楼1层122",
+      "rating": 4.8,
+      "priceRange": "126-315/人",
+      "openHours": "24小时营业",
+      "tags": [
+        "洗浴",
+        "洗浴推拿场所"
+      ],
+      "packages": [
+        {
+          "name": "单人泡汤",
+          "price": 168,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸",
+          "price": 210,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸+自助",
+          "price": 315,
+          "duration": "不限时"
+        }
+      ],
+      "highlights": [
+        "多种温泉/汗蒸",
+        "休息区舒适",
+        "适合放松"
+      ]
+    },
+    {
+      "id": "e074",
+      "name": "泡泡搓·搓背馆",
+      "type": "spa",
+      "typeLabel": "♨️ 汤泉",
+      "area": "朝阳大悦城",
+      "address": "北京城区雅成二里3号楼1层商业8",
+      "rating": 4.6,
+      "priceRange": "172-429/人",
+      "openHours": "11:00-24:00",
+      "tags": [
+        "洗浴中心",
+        "美容美发"
+      ],
+      "packages": [
+        {
+          "name": "单人泡汤",
+          "price": 229,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸",
+          "price": 286,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸+自助",
+          "price": 429,
+          "duration": "不限时"
+        }
+      ],
+      "highlights": [
+        "多种温泉/汗蒸",
+        "休息区舒适",
+        "适合放松"
+      ]
+    },
+    {
+      "id": "e075",
+      "name": "沐沐洗浴(青年路店)",
+      "type": "spa",
+      "typeLabel": "♨️ 汤泉",
+      "area": "朝阳大悦城",
+      "address": "青年西路2号院",
+      "rating": 4.1,
+      "priceRange": "73-183/人",
+      "openHours": "09:00-01:00",
+      "tags": [
+        "洗浴",
+        "洗浴推拿场所"
+      ],
+      "packages": [
+        {
+          "name": "单人泡汤",
+          "price": 98,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸",
+          "price": 122,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸+自助",
+          "price": 183,
+          "duration": "不限时"
+        }
+      ],
+      "highlights": [
+        "多种温泉/汗蒸",
+        "休息区舒适",
+        "适合放松"
+      ]
+    },
+    {
+      "id": "e076",
+      "name": "华夏良子(北京朝阳大悦城店)",
+      "type": "massage",
+      "typeLabel": "💆 足疗",
+      "area": "朝阳大悦城",
+      "address": "朝阳北路世丰国际大厦二层(朝阳大悦城东)",
+      "rating": 4.7,
+      "priceRange": "137-342/人",
+      "openHours": "10:30-24:00",
+      "tags": [
+        "足疗",
+        "洗浴推拿场所"
+      ],
+      "packages": [
+        {
+          "name": "足底按摩 60min",
+          "price": 160
+        },
+        {
+          "name": "全身推拿 90min",
+          "price": 228
+        },
+        {
+          "name": "精油SPA 120min",
+          "price": 342
+        }
+      ],
+      "highlights": [
+        "专业技师",
+        "环境舒适",
+        "可加钟"
+      ]
+    },
+    {
+      "id": "e077",
+      "name": "千子莲足道养生(大悦城店)",
+      "type": "massage",
+      "typeLabel": "💆 足疗",
+      "area": "朝阳大悦城",
+      "address": "雅成一里19世丰国际大厦1层",
+      "rating": 4.5,
+      "priceRange": "134-335/人",
+      "openHours": "24小时营业",
+      "tags": [
+        "足疗",
+        "洗浴推拿场所"
+      ],
+      "packages": [
+        {
+          "name": "足底按摩 60min",
+          "price": 156
+        },
+        {
+          "name": "全身推拿 90min",
+          "price": 223
+        },
+        {
+          "name": "精油SPA 120min",
+          "price": 335
+        }
+      ],
+      "highlights": [
+        "专业技师",
+        "环境舒适",
+        "可加钟"
+      ]
+    },
+    {
+      "id": "e078",
+      "name": "小铁24h无人自助台球(北京朝阳大悦城店)",
+      "type": "billiards",
+      "typeLabel": "🎱 台球",
+      "area": "朝阳大悦城",
+      "address": "青年路世丰国际大厦5层510号",
+      "rating": 4.3,
+      "priceRange": "40-80/小时",
+      "openHours": "24小时营业",
+      "tags": [
+        "台球厅",
+        "台球"
+      ],
+      "highlights": [
+        "桌台新",
+        "环境好",
+        "适合朋友"
+      ]
+    },
+    {
+      "id": "e079",
+      "name": "谈小娱24h自助台球棋牌(天鹅湾店)",
+      "type": "billiards",
+      "typeLabel": "🎱 台球",
+      "area": "朝阳大悦城",
+      "address": "雅成二里20-101号",
+      "rating": 4.4,
+      "priceRange": "40-80/小时",
+      "openHours": "24小时营业",
+      "tags": [
+        "台球厅",
+        "台球"
+      ],
+      "highlights": [
+        "桌台新",
+        "环境好",
+        "适合朋友"
+      ]
+    },
+    {
+      "id": "e080",
+      "name": "华硕智汇家(朝阳大悦城店)",
+      "type": "shopping",
+      "typeLabel": "🛍️ 逛街",
+      "area": "朝阳大悦城",
+      "address": "朝阳北路101号朝阳大悦城5F层",
+      "rating": 4.3,
+      "priceRange": "免费（逛街）",
+      "openHours": "10:00-22:00",
+      "tags": [
+        "电脑销售",
+        "数码电子"
+      ],
+      "highlights": [
+        "逛街购物",
+        "网红打卡",
+        "夜景好"
+      ]
+    },
+    {
+      "id": "e081",
+      "name": "朝阳大悦城",
+      "type": "shopping",
+      "typeLabel": "🛍️ 逛街",
+      "area": "朝阳大悦城",
+      "address": "朝阳北路101号",
+      "rating": 4.9,
+      "priceRange": "免费（逛街）",
+      "openHours": "10:00-22:00",
+      "tags": [
+        "商场",
+        "购物"
+      ],
+      "highlights": [
+        "逛街购物",
+        "网红打卡",
+        "夜景好"
+      ]
+    },
+    {
+      "id": "e082",
+      "name": "猎人桌游吧(朝阳大悦城店)",
+      "type": "board_game_cafe",
+      "typeLabel": "🎲 桌游吧",
+      "area": "朝阳大悦城",
+      "address": "世丰国际大厦903(青年路地铁站B东北口步行260米)",
+      "rating": 4.5,
+      "priceRange": "45-113/人",
+      "openHours": "12:00-24:00",
+      "tags": [
+        "桌游",
+        "娱乐场所"
+      ],
+      "highlights": [
+        "桌游丰富",
+        "适合聚会"
+      ]
+    },
+    {
+      "id": "e083",
+      "name": "嘻哈电玩(朝阳大悦城店)",
+      "type": "board_game_cafe",
+      "typeLabel": "🎲 桌游吧",
+      "area": "朝阳大悦城",
+      "address": "北京城区朝阳北路辅路与四季星河西路交叉口东北80米",
+      "rating": 4.3,
+      "priceRange": "41-104/人",
+      "openHours": "11:00-24:00",
+      "tags": [
+        "桌游",
+        "游戏"
+      ],
+      "highlights": [
+        "桌游丰富",
+        "适合聚会"
+      ]
+    },
+    {
+      "id": "e084",
+      "name": "百丽宫影城(国贸店)",
+      "type": "movie",
+      "typeLabel": "🎬 电影",
+      "area": "国贸",
+      "address": "建国门外大街1号国贸大厦3座B1层",
+      "rating": 4.6,
+      "priceRange": "81-203",
+      "openHours": "10:00-22:00",
+      "tags": [
+        "电影院"
+      ],
+      "highlights": [
+        "近期热映",
+        "适合饭后",
+        "可选晚场"
+      ]
+    },
+    {
+      "id": "e085",
+      "name": "华夏国际影城(建外贵友大厦店)",
+      "type": "movie",
+      "typeLabel": "🎬 电影",
+      "area": "国贸",
+      "address": "贵友大厦(永安里地铁站B东北口旁)",
+      "rating": 4.4,
+      "priceRange": "35-87",
+      "openHours": "10:00-23:30",
+      "tags": [
+        "电影院"
+      ],
+      "highlights": [
+        "近期热映",
+        "适合饭后",
+        "可选晚场"
+      ]
+    },
+    {
+      "id": "e086",
+      "name": "万达影城(CBD万达广场店)",
+      "type": "movie",
+      "typeLabel": "🎬 电影",
+      "area": "国贸",
+      "address": "建国路93号院万达广场B座3层",
+      "rating": 4.8,
+      "priceRange": "37-92",
+      "openHours": "10:00-23:00",
+      "tags": [
+        "电影院"
+      ],
+      "highlights": [
+        "近期热映",
+        "适合饭后",
+        "可选晚场"
+      ]
+    },
+    {
+      "id": "e087",
+      "name": "中国大饭店大堂酒廊(国贸商城店)",
+      "type": "bar",
+      "typeLabel": "🍸 酒吧",
+      "area": "国贸",
+      "address": "建外街道建国门外大街1号中国大饭店1楼",
+      "rating": 4.2,
+      "priceRange": "95-237",
+      "openHours": "14:00-18:00",
+      "tags": [
+        "酒吧"
+      ],
+      "highlights": [
+        "酒吧"
+      ]
+    },
+    {
+      "id": "e088",
+      "name": "北京亮酒吧",
+      "type": "bar",
+      "typeLabel": "🍸 酒吧",
+      "area": "国贸",
+      "address": "建国门外大街2号北京银泰中心65层北京柏悦酒店",
+      "rating": 4.7,
+      "priceRange": "94-234",
+      "openHours": "18:00-01:00",
+      "tags": [
+        "清吧",
+        "酒吧"
+      ],
+      "highlights": [
+        "清吧",
+        "酒吧"
+      ]
+    },
+    {
+      "id": "e089",
+      "name": "bluefrog蓝蛙(国贸商城店)",
+      "type": "bar",
+      "typeLabel": "🍸 酒吧",
+      "area": "国贸",
+      "address": "北京城区国贸三期B座六楼(国贸地铁站E2西北口步行280米)",
+      "rating": 4.7,
+      "priceRange": "79-198",
+      "openHours": "10:30-22:30",
+      "tags": [
+        "西餐",
+        "西餐(综合风味)"
+      ],
+      "highlights": [
+        "西餐",
+        "西餐(综合风味)"
+      ]
+    },
+    {
+      "id": "e090",
+      "name": "纯K(国贸店)",
+      "type": "ktv",
+      "typeLabel": "🎤 KTV",
+      "area": "国贸",
+      "address": "建国门外大街1号国贸商城3期北区裙楼四层",
+      "rating": 4.8,
+      "priceRange": "98-246/人",
+      "openHours": "11:00-06:00",
+      "tags": [
+        "量贩式KTV",
+        "KTV"
+      ],
+      "packages": [
+        {
+          "name": "欢唱2小时（小包）",
+          "capacity": "2-4人",
+          "price": 361,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "欢唱2小时（中包）",
+          "capacity": "4-8人",
+          "price": 574,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "夜场通宵（小包）",
+          "capacity": "2-4人",
+          "price": 623,
+          "period": "23:00-06:00"
+        }
+      ],
+      "highlights": [
+        "适合聚会",
+        "可订包间",
+        "晚间可玩"
+      ]
+    },
+    {
+      "id": "e091",
+      "name": "温莎KTV(北京国贸店)",
+      "type": "ktv",
+      "typeLabel": "🎤 KTV",
+      "area": "国贸",
+      "address": "建国门外大街甲6号华熙国际中心C座B1层",
+      "rating": 4.8,
+      "priceRange": "63-158/人",
+      "openHours": "10:00-02:00",
+      "tags": [
+        "量贩式KTV",
+        "KTV"
+      ],
+      "packages": [
+        {
+          "name": "欢唱2小时（小包）",
+          "capacity": "2-4人",
+          "price": 231,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "欢唱2小时（中包）",
+          "capacity": "4-8人",
+          "price": 368,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "夜场通宵（小包）",
+          "capacity": "2-4人",
+          "price": 399,
+          "period": "23:00-06:00"
+        }
+      ],
+      "highlights": [
+        "适合聚会",
+        "可订包间",
+        "晚间可玩"
+      ]
+    },
+    {
+      "id": "e092",
+      "name": "唱吧麦颂KTV(世纪财富中心店)",
+      "type": "ktv",
+      "typeLabel": "🎤 KTV",
+      "area": "国贸",
+      "address": "北京城区光华路5号院世纪财富中心B1",
+      "rating": 4.6,
+      "priceRange": "41-104/人",
+      "openHours": "11:00-05:00",
+      "tags": [
+        "量贩式KTV",
+        "KTV"
+      ],
+      "packages": [
+        {
+          "name": "欢唱2小时（小包）",
+          "capacity": "2-4人",
+          "price": 152,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "欢唱2小时（中包）",
+          "capacity": "4-8人",
+          "price": 242,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "夜场通宵（小包）",
+          "capacity": "2-4人",
+          "price": 262,
+          "period": "23:00-06:00"
+        }
+      ],
+      "highlights": [
+        "适合聚会",
+        "可订包间",
+        "晚间可玩"
+      ]
+    },
+    {
+      "id": "e093",
+      "name": "火火爵·MAX伯爵真人实景密室(工体店)",
+      "type": "escape_room",
+      "typeLabel": "🔐 密室逃脱",
+      "area": "国贸",
+      "address": "朝外市场街日坛国际中心B座4层4B68号",
+      "rating": 4.7,
+      "priceRange": "137-344/人",
+      "openHours": "10:30-02:30",
+      "tags": [
+        "密室逃脱",
+        "娱乐场所"
+      ],
+      "highlights": [
+        "沉浸体验",
+        "适合多人",
+        "需要预约"
+      ]
+    },
+    {
+      "id": "e094",
+      "name": "明日世界密室-轰趴-桌游(国贸店)",
+      "type": "escape_room",
+      "typeLabel": "🔐 密室逃脱",
+      "area": "国贸",
+      "address": "黄木厂路1号院1号楼底商B1层",
+      "rating": 4.6,
+      "priceRange": "133-332/人",
+      "openHours": "09:00-04:00",
+      "tags": [
+        "密室逃脱",
+        "娱乐场所"
+      ],
+      "highlights": [
+        "沉浸体验",
+        "适合多人",
+        "需要预约"
+      ]
+    },
+    {
+      "id": "e095",
+      "name": "精圈儿沉浸推理剧场",
+      "type": "board_game",
+      "typeLabel": "🎲 剧本杀",
+      "area": "国贸",
+      "address": "景恒街建外soho西区16号楼503",
+      "rating": 4.5,
+      "priceRange": "111-278/人",
+      "openHours": "",
+      "tags": [
+        "剧本杀",
+        "体育休闲服务场所"
+      ],
+      "highlights": [
+        "剧情互动",
+        "适合聚会",
+        "多人参与"
+      ]
+    },
+    {
+      "id": "e096",
+      "name": "别见外沉浸式剧本杀",
+      "type": "board_game",
+      "typeLabel": "🎲 剧本杀",
+      "area": "国贸",
+      "address": "建外SOHO西区18号楼1905号",
+      "rating": 1.4,
+      "priceRange": "36-90/人",
+      "openHours": "",
+      "tags": [
+        "剧本杀",
+        "体育休闲服务场所"
+      ],
+      "highlights": [
+        "剧情互动",
+        "适合聚会",
+        "多人参与"
+      ]
+    },
+    {
+      "id": "e097",
+      "name": "庆丰公园",
+      "type": "park",
+      "typeLabel": "🌿 公园",
+      "area": "国贸",
+      "address": "东三环中路39号",
+      "rating": 4.6,
+      "priceRange": "免费",
+      "openHours": "24小时营业",
+      "tags": [
+        "3A景区",
+        "公园"
+      ],
+      "highlights": [
+        "散步休闲",
+        "免费开放",
+        "适合饭后"
+      ]
+    },
+    {
+      "id": "e098",
+      "name": "CBD中央公园",
+      "type": "park",
+      "typeLabel": "🌿 公园",
+      "area": "国贸",
+      "address": "景辉街与金和东路交叉口西南120米",
+      "rating": 4.3,
+      "priceRange": "免费",
+      "openHours": "24小时营业",
+      "tags": [
+        "社区公园",
+        "公园"
+      ],
+      "highlights": [
+        "散步休闲",
+        "免费开放",
+        "适合饭后"
+      ]
+    },
+    {
+      "id": "e099",
+      "name": "国贸大酒店健身中心",
+      "type": "fitness",
+      "typeLabel": "💪 健身",
+      "area": "国贸",
+      "address": "建国门外大街1号国贸大厦三期78层",
+      "rating": 4.3,
+      "priceRange": "50-100/次",
+      "openHours": "06:00-23:00",
+      "tags": [
+        "健身中心",
+        "健身"
+      ],
+      "classes": [
+        {
+          "name": "搏击操",
+          "time": "19:30",
+          "duration": "50分钟",
+          "price": 80,
+          "spotsLeft": 5
+        },
+        {
+          "name": "瑜伽",
+          "time": "20:30",
+          "duration": "60分钟",
+          "price": 64,
+          "spotsLeft": 8
+        }
+      ],
+      "highlights": [
+        "运动放松",
+        "课程可选",
+        "适合轻社交"
+      ]
+    },
+    {
+      "id": "e100",
+      "name": "北京西国贸水会-健身",
+      "type": "fitness",
+      "typeLabel": "💪 健身",
+      "area": "国贸",
+      "address": "丰管路16号院8号楼北京西国贸水会1层",
+      "rating": 4.3,
+      "priceRange": "1217-3044/人",
+      "openHours": "09:00-22:00",
+      "tags": [
+        "健身房",
+        "健身"
+      ],
+      "classes": [
+        {
+          "name": "搏击操",
+          "time": "19:30",
+          "duration": "50分钟",
+          "price": 2029,
+          "spotsLeft": 5
+        },
+        {
+          "name": "瑜伽",
+          "time": "20:30",
+          "duration": "60分钟",
+          "price": 1623,
+          "spotsLeft": 8
+        }
+      ],
+      "highlights": [
+        "运动放松",
+        "课程可选",
+        "适合轻社交"
+      ]
+    },
+    {
+      "id": "e101",
+      "name": "汤泉良子(国贸店)",
+      "type": "spa",
+      "typeLabel": "♨️ 汤泉",
+      "area": "国贸",
+      "address": "京伦饭店东2门西60米(永安里地铁站B2南口步行330米)",
+      "rating": 4.6,
+      "priceRange": "115-287/人",
+      "openHours": "10:30-01:00",
+      "tags": [
+        "SPA",
+        "洗浴推拿场所"
+      ],
+      "packages": [
+        {
+          "name": "单人泡汤",
+          "price": 153,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸",
+          "price": 191,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸+自助",
+          "price": 287,
+          "duration": "不限时"
+        }
+      ],
+      "highlights": [
+        "多种温泉/汗蒸",
+        "休息区舒适",
+        "适合放松"
+      ]
+    },
+    {
+      "id": "e102",
+      "name": "清华池(国贸店)",
+      "type": "spa",
+      "typeLabel": "♨️ 汤泉",
+      "area": "国贸",
+      "address": "建国路99号中服大厦4层(国贸地铁站F东北口步行130米)",
+      "rating": 4.6,
+      "priceRange": "137-342/人",
+      "openHours": "10:00-23:00",
+      "tags": [
+        "SPA",
+        "洗浴推拿场所"
+      ],
+      "packages": [
+        {
+          "name": "单人泡汤",
+          "price": 182,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸",
+          "price": 228,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸+自助",
+          "price": 342,
+          "duration": "不限时"
+        }
+      ],
+      "highlights": [
+        "多种温泉/汗蒸",
+        "休息区舒适",
+        "适合放松"
+      ]
+    },
+    {
+      "id": "e103",
+      "name": "后来生活AFTER汤泉",
+      "type": "spa",
+      "typeLabel": "♨️ 汤泉",
+      "area": "国贸",
+      "address": "金汇路8号中骏世界城D座B1层",
+      "rating": 4.7,
+      "priceRange": "178-444/人",
+      "openHours": "24小时营业",
+      "tags": [
+        "洗浴",
+        "洗浴推拿场所"
+      ],
+      "packages": [
+        {
+          "name": "单人泡汤",
+          "price": 237,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸",
+          "price": 296,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸+自助",
+          "price": 444,
+          "duration": "不限时"
+        }
+      ],
+      "highlights": [
+        "多种温泉/汗蒸",
+        "休息区舒适",
+        "适合放松"
+      ]
+    },
+    {
+      "id": "e104",
+      "name": "华夏良子(北京国贸店)",
+      "type": "massage",
+      "typeLabel": "💆 足疗",
+      "area": "国贸",
+      "address": "建国路99号楼2层99-12内西侧大厅",
+      "rating": 4.7,
+      "priceRange": "141-353/人",
+      "openHours": "11:00-24:00",
+      "tags": [
+        "足疗",
+        "洗浴推拿场所"
+      ],
+      "packages": [
+        {
+          "name": "足底按摩 60min",
+          "price": 165
+        },
+        {
+          "name": "全身推拿 90min",
+          "price": 235
+        },
+        {
+          "name": "精油SPA 120min",
+          "price": 353
+        }
+      ],
+      "highlights": [
+        "专业技师",
+        "环境舒适",
+        "可加钟"
+      ]
+    },
+    {
+      "id": "e105",
+      "name": "云川台球(建国门贵友店)",
+      "type": "billiards",
+      "typeLabel": "🎱 台球",
+      "area": "国贸",
+      "address": "北京城区建国门外大街甲5号贵友大厦5层",
+      "rating": 4.5,
+      "priceRange": "40-80/小时",
+      "openHours": "10:00-05:00",
+      "tags": [
+        "台球厅",
+        "台球"
+      ],
+      "highlights": [
+        "桌台新",
+        "环境好",
+        "适合朋友"
+      ]
+    },
+    {
+      "id": "e106",
+      "name": "谈小娱24h自助台球(建外soho东区店)",
+      "type": "billiards",
+      "typeLabel": "🎱 台球",
+      "area": "国贸",
+      "address": "建外soho东区7号楼商铺二层0720室谈小娱自助台球",
+      "rating": 4.3,
+      "priceRange": "40-80/小时",
+      "openHours": "24小时营业",
+      "tags": [
+        "台球厅",
+        "台球"
+      ],
+      "highlights": [
+        "桌台新",
+        "环境好",
+        "适合朋友"
+      ]
+    },
+    {
+      "id": "e107",
+      "name": "国贸商城",
+      "type": "shopping",
+      "typeLabel": "🛍️ 逛街",
+      "area": "国贸",
+      "address": "建国门外大街1号(国贸地铁站出入口旁)",
+      "rating": 4.9,
+      "priceRange": "免费（逛街）",
+      "openHours": "10:00-21:30",
+      "tags": [
+        "商场",
+        "购物"
+      ],
+      "highlights": [
+        "逛街购物",
+        "网红打卡",
+        "夜景好"
+      ]
+    },
+    {
+      "id": "e108",
+      "name": "北京银泰中心in01",
+      "type": "shopping",
+      "typeLabel": "🛍️ 逛街",
+      "area": "国贸",
+      "address": "建国门外大街2号(近国贸地铁站C口)",
+      "rating": 4.7,
+      "priceRange": "免费（逛街）",
+      "openHours": "11:00-22:00",
+      "tags": [
+        "商场",
+        "购物"
+      ],
+      "highlights": [
+        "逛街购物",
+        "网红打卡",
+        "夜景好"
+      ]
+    },
+    {
+      "id": "e109",
+      "name": "芝麻桌游·Sesame Board Game(数码01大厦店)",
+      "type": "board_game_cafe",
+      "typeLabel": "🎲 桌游吧",
+      "area": "国贸",
+      "address": "光华路丙12号数码01大厦F10层",
+      "rating": 4.3,
+      "priceRange": "49-122/人",
+      "openHours": "13:00-24:00",
+      "tags": [
+        "桌游",
+        "体育休闲服务场所"
+      ],
+      "highlights": [
+        "桌游丰富",
+        "适合聚会"
+      ]
+    },
+    {
+      "id": "e110",
+      "name": "金逸国际影城(中关村店)",
+      "type": "movie",
+      "typeLabel": "🎬 电影",
+      "area": "中关村",
+      "address": "中关村大街19号新中关购物中心B1层B180",
+      "rating": 4.7,
+      "priceRange": "35-89",
+      "openHours": "10:00-22:00",
+      "tags": [
+        "电影院"
+      ],
+      "highlights": [
+        "近期热映",
+        "适合饭后",
+        "可选晚场"
+      ]
+    },
+    {
+      "id": "e111",
+      "name": "完美世界影城(中关村IMAX店)",
+      "type": "movie",
+      "typeLabel": "🎬 电影",
+      "area": "中关村",
+      "address": "双榆树科学院南路44号(双安商场对面)",
+      "rating": 4.7,
+      "priceRange": "53-134",
+      "openHours": "09:00-24:00",
+      "tags": [
+        "电影院"
+      ],
+      "highlights": [
+        "近期热映",
+        "适合饭后",
+        "可选晚场"
+      ]
+    },
+    {
+      "id": "e112",
+      "name": "中影华宇国际影城(华宇时尚购物中心店)",
+      "type": "movie",
+      "typeLabel": "🎬 电影",
+      "area": "中关村",
+      "address": "中关村街道华宇时尚购物中心B1层",
+      "rating": 4.6,
+      "priceRange": "18-45",
+      "openHours": "09:00-01:00",
+      "tags": [
+        "电影院"
+      ],
+      "highlights": [
+        "近期热映",
+        "适合饭后",
+        "可选晚场"
+      ]
+    },
+    {
+      "id": "e113",
+      "name": "赋格(中关村店)",
+      "type": "bar",
+      "typeLabel": "🍸 酒吧",
+      "area": "中关村",
+      "address": "中关村大街9号2幢平房201",
+      "rating": 4.6,
+      "priceRange": "64-161",
+      "openHours": "18:30-01:30",
+      "tags": [
+        "清吧",
+        "美容美发"
+      ],
+      "highlights": [
+        "清吧",
+        "美容美发"
+      ]
+    },
+    {
+      "id": "e114",
+      "name": "液体研究院·精酿·鸡尾酒",
+      "type": "bar",
+      "typeLabel": "🍸 酒吧",
+      "area": "中关村",
+      "address": "海龙大厦1层(中关村地铁站D西南口旁)",
+      "rating": 4.5,
+      "priceRange": "65-162",
+      "openHours": "18:00-02:00",
+      "tags": [
+        "清吧",
+        "酒吧"
+      ],
+      "highlights": [
+        "清吧",
+        "酒吧"
+      ]
+    },
+    {
+      "id": "e115",
+      "name": "COMMUNE RESERVE幻师(中关村大融城店)",
+      "type": "bar",
+      "typeLabel": "🍸 酒吧",
+      "area": "中关村",
+      "address": "海淀街道海淀,中关村大街15-9号大融城1层101",
+      "rating": 4.6,
+      "priceRange": "111-278",
+      "openHours": "10:00-03:00",
+      "tags": [
+        "西餐",
+        "酒吧"
+      ],
+      "highlights": [
+        "西餐",
+        "酒吧"
+      ]
+    },
+    {
+      "id": "e116",
+      "name": "唱吧麦颂KTV(中关村店)",
+      "type": "ktv",
+      "typeLabel": "🎤 KTV",
+      "area": "中关村",
+      "address": "北京城区海淀大街3号B座地下一层14",
+      "rating": 4.6,
+      "priceRange": "18-45/人",
+      "openHours": "10:00-02:00",
+      "tags": [
+        "量贩式KTV",
+        "KTV"
+      ],
+      "packages": [
+        {
+          "name": "欢唱2小时（小包）",
+          "capacity": "2-4人",
+          "price": 66,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "欢唱2小时（中包）",
+          "capacity": "4-8人",
+          "price": 105,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "夜场通宵（小包）",
+          "capacity": "2-4人",
+          "price": 114,
+          "period": "23:00-06:00"
+        }
+      ],
+      "highlights": [
+        "适合聚会",
+        "可订包间",
+        "晚间可玩"
+      ]
+    },
+    {
+      "id": "e117",
+      "name": "酷秀KTV·派对(中关村店)",
+      "type": "ktv",
+      "typeLabel": "🎤 KTV",
+      "area": "中关村",
+      "address": "海淀大街中关村5号3层EF302",
+      "rating": 4.7,
+      "priceRange": "62-155/人",
+      "openHours": "12:00-02:00",
+      "tags": [
+        "量贩式KTV",
+        "KTV"
+      ],
+      "packages": [
+        {
+          "name": "欢唱2小时（小包）",
+          "capacity": "2-4人",
+          "price": 227,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "欢唱2小时（中包）",
+          "capacity": "4-8人",
+          "price": 361,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "夜场通宵（小包）",
+          "capacity": "2-4人",
+          "price": 391,
+          "period": "23:00-06:00"
+        }
+      ],
+      "highlights": [
+        "适合聚会",
+        "可订包间",
+        "晚间可玩"
+      ]
+    },
+    {
+      "id": "e118",
+      "name": "星聚会ktv(中关村领展店)",
+      "type": "ktv",
+      "typeLabel": "🎤 KTV",
+      "area": "中关村",
+      "address": "北京城区丹棱街甲1号6层601-03号",
+      "rating": 4.6,
+      "priceRange": "51-128/人",
+      "openHours": "10:00-05:00",
+      "tags": [
+        "量贩式KTV",
+        "KTV"
+      ],
+      "packages": [
+        {
+          "name": "欢唱2小时（小包）",
+          "capacity": "2-4人",
+          "price": 187,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "欢唱2小时（中包）",
+          "capacity": "4-8人",
+          "price": 298,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "夜场通宵（小包）",
+          "capacity": "2-4人",
+          "price": 323,
+          "period": "23:00-06:00"
+        }
+      ],
+      "highlights": [
+        "适合聚会",
+        "可订包间",
+        "晚间可玩"
+      ]
+    },
+    {
+      "id": "e119",
+      "name": "奥秘之家密室逃脱·聚会·团建(中关村旗舰店)",
+      "type": "escape_room",
+      "typeLabel": "🔐 密室逃脱",
+      "area": "中关村",
+      "address": "苏州街长远天地大厦b1座1806室",
+      "rating": 4.3,
+      "priceRange": "58-146/人",
+      "openHours": "10:00-24:00",
+      "tags": [
+        "密室逃脱",
+        "娱乐场所"
+      ],
+      "highlights": [
+        "沉浸体验",
+        "适合多人",
+        "需要预约"
+      ]
+    },
+    {
+      "id": "e120",
+      "name": "鸿蒙机械推理密室(天创店)",
+      "type": "escape_room",
+      "typeLabel": "🔐 密室逃脱",
+      "area": "中关村",
+      "address": "中关村彩和坊路8号天创科技大厦(西门3号梯)B1层",
+      "rating": 4.5,
+      "priceRange": "111-278/人",
+      "openHours": "10:00-00:30",
+      "tags": [
+        "密室逃脱",
+        "娱乐场所"
+      ],
+      "highlights": [
+        "沉浸体验",
+        "适合多人",
+        "需要预约"
+      ]
+    },
+    {
+      "id": "e121",
+      "name": "戏精管理局·剧本杀(理想大厦店)",
+      "type": "board_game",
+      "typeLabel": "🎲 剧本杀",
+      "area": "中关村",
+      "address": "知春路111号理想大厦1404室",
+      "rating": 4.4,
+      "priceRange": "92-231/人",
+      "openHours": "",
+      "tags": [
+        "剧本杀",
+        "体育休闲服务场所"
+      ],
+      "highlights": [
+        "剧情互动",
+        "适合聚会",
+        "多人参与"
+      ]
+    },
+    {
+      "id": "e122",
+      "name": "枝屋推理演绎剧场(中关村店)",
+      "type": "board_game",
+      "typeLabel": "🎲 剧本杀",
+      "area": "中关村",
+      "address": "豪景大厦C座5层503",
+      "rating": 4.5,
+      "priceRange": "79-198/人",
+      "openHours": "",
+      "tags": [
+        "剧本杀",
+        "娱乐场所"
+      ],
+      "highlights": [
+        "剧情互动",
+        "适合聚会",
+        "多人参与"
+      ]
+    },
+    {
+      "id": "e123",
+      "name": "中关村公园西区",
+      "type": "park",
+      "typeLabel": "🌿 公园",
+      "area": "中关村",
+      "address": "土井东路31号",
+      "rating": 4,
+      "priceRange": "免费",
+      "openHours": "24小时营业",
+      "tags": [
+        "公园"
+      ],
+      "highlights": [
+        "散步休闲",
+        "免费开放",
+        "适合饭后"
+      ]
+    },
+    {
+      "id": "e124",
+      "name": "雨水湿地",
+      "type": "park",
+      "typeLabel": "🌿 公园",
+      "area": "中关村",
+      "address": "唐家岭土井村路45号中关村公园内(北侧)",
+      "rating": 2.9,
+      "priceRange": "免费",
+      "openHours": "",
+      "tags": [
+        "湿地",
+        "公园"
+      ],
+      "highlights": [
+        "散步休闲",
+        "免费开放",
+        "适合饭后"
+      ]
+    },
+    {
+      "id": "e125",
+      "name": "青蛙健身(中关村壹号店)",
+      "type": "fitness",
+      "typeLabel": "💪 健身",
+      "area": "中关村",
+      "address": "北京城区北清路81号中关村壹号院3区2号楼202",
+      "rating": 4.5,
+      "priceRange": "293-734/人",
+      "openHours": "07:00-22:00",
+      "tags": [
+        "健身中心",
+        "健身"
+      ],
+      "classes": [
+        {
+          "name": "搏击操",
+          "time": "19:30",
+          "duration": "50分钟",
+          "price": 489,
+          "spotsLeft": 5
+        },
+        {
+          "name": "瑜伽",
+          "time": "20:30",
+          "duration": "60分钟",
+          "price": 391,
+          "spotsLeft": 8
+        }
+      ],
+      "highlights": [
+        "运动放松",
+        "课程可选",
+        "适合轻社交"
+      ]
+    },
+    {
+      "id": "e126",
+      "name": "时刻健身(中关村店)",
+      "type": "fitness",
+      "typeLabel": "💪 健身",
+      "area": "中关村",
+      "address": "天使大厦南门旁",
+      "rating": 4.4,
+      "priceRange": "2188-5471/人",
+      "openHours": "08:00-21:30",
+      "tags": [
+        "健身房",
+        "健身"
+      ],
+      "classes": [
+        {
+          "name": "搏击操",
+          "time": "19:30",
+          "duration": "50分钟",
+          "price": 3647,
+          "spotsLeft": 5
+        },
+        {
+          "name": "瑜伽",
+          "time": "20:30",
+          "duration": "60分钟",
+          "price": 2918,
+          "spotsLeft": 8
+        }
+      ],
+      "highlights": [
+        "运动放松",
+        "课程可选",
+        "适合轻社交"
+      ]
+    },
+    {
+      "id": "e127",
+      "name": "汤泉良子健身(中关村店)",
+      "type": "spa",
+      "typeLabel": "♨️ 汤泉",
+      "area": "中关村",
+      "address": "北京城区北四环西路56号辉煌时代大厦地下一层",
+      "rating": 4.6,
+      "priceRange": "104-260/人",
+      "openHours": "10:00-24:00",
+      "tags": [
+        "洗浴",
+        "健身|生活服务"
+      ],
+      "packages": [
+        {
+          "name": "单人泡汤",
+          "price": 138,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸",
+          "price": 173,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸+自助",
+          "price": 260,
+          "duration": "不限时"
+        }
+      ],
+      "highlights": [
+        "多种温泉/汗蒸",
+        "休息区舒适",
+        "适合放松"
+      ]
+    },
+    {
+      "id": "e128",
+      "name": "小舒仙采耳头道按摩(中关村店)",
+      "type": "spa",
+      "typeLabel": "♨️ 汤泉",
+      "area": "中关村",
+      "address": "中关村公馆C座503室",
+      "rating": 4.3,
+      "priceRange": "134-336/人",
+      "openHours": "10:30-24:00",
+      "tags": [
+        "采耳店",
+        "医疗保健服务场所"
+      ],
+      "packages": [
+        {
+          "name": "单人泡汤",
+          "price": 179,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸",
+          "price": 224,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸+自助",
+          "price": 336,
+          "duration": "不限时"
+        }
+      ],
+      "highlights": [
+        "多种温泉/汗蒸",
+        "休息区舒适",
+        "适合放松"
+      ]
+    },
+    {
+      "id": "e129",
+      "name": "乐汤荟温泉生活馆",
+      "type": "spa",
+      "typeLabel": "♨️ 汤泉",
+      "area": "中关村",
+      "address": "北四环西路甲2号辽宁大厦B1层",
+      "rating": 4.5,
+      "priceRange": "79-197/人",
+      "openHours": "09:00-02:00",
+      "tags": [
+        "温泉洗浴",
+        "洗浴推拿场所"
+      ],
+      "packages": [
+        {
+          "name": "单人泡汤",
+          "price": 105,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸",
+          "price": 131,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸+自助",
+          "price": 197,
+          "duration": "不限时"
+        }
+      ],
+      "highlights": [
+        "多种温泉/汗蒸",
+        "休息区舒适",
+        "适合放松"
+      ]
+    },
+    {
+      "id": "e130",
+      "name": "嘉瑞亨足道(中关村店)",
+      "type": "massage",
+      "typeLabel": "💆 足疗",
+      "area": "中关村",
+      "address": "5度LAB中心广场西门旁(中关村地铁站E西口步行410米)",
+      "rating": 4.5,
+      "priceRange": "121-303/人",
+      "openHours": "11:00-23:30",
+      "tags": [
+        "按摩",
+        "公司"
+      ],
+      "packages": [
+        {
+          "name": "足底按摩 60min",
+          "price": 141
+        },
+        {
+          "name": "全身推拿 90min",
+          "price": 202
+        },
+        {
+          "name": "精油SPA 120min",
+          "price": 303
+        }
+      ],
+      "highlights": [
+        "专业技师",
+        "环境舒适",
+        "可加钟"
+      ]
+    },
+    {
+      "id": "e131",
+      "name": "华清池修脚(中关村旗舰店)",
+      "type": "massage",
+      "typeLabel": "💆 足疗",
+      "area": "中关村",
+      "address": "科学院南路55号(知春里地铁站A西北口步行460米)",
+      "rating": 4.3,
+      "priceRange": "72-180/人",
+      "openHours": "10:00-22:30",
+      "tags": [
+        "足疗",
+        "洗浴推拿场所"
+      ],
+      "packages": [
+        {
+          "name": "足底按摩 60min",
+          "price": 84
+        },
+        {
+          "name": "全身推拿 90min",
+          "price": 120
+        },
+        {
+          "name": "精油SPA 120min",
+          "price": 180
+        }
+      ],
+      "highlights": [
+        "专业技师",
+        "环境舒适",
+        "可加钟"
+      ]
+    },
+    {
+      "id": "e132",
+      "name": "云川台球(中关村店)",
+      "type": "billiards",
+      "typeLabel": "🎱 台球",
+      "area": "中关村",
+      "address": "北京城区彩和坊路8号天创科技大厦东门地下1层",
+      "rating": 4.8,
+      "priceRange": "33-83",
+      "openHours": "24小时营业",
+      "tags": [
+        "台球厅",
+        "台球"
+      ],
+      "highlights": [
+        "桌台新",
+        "环境好",
+        "适合朋友"
+      ]
+    },
+    {
+      "id": "e133",
+      "name": "响袋24小时自助台球(中关村店)",
+      "type": "billiards",
+      "typeLabel": "🎱 台球",
+      "area": "中关村",
+      "address": "中关村北大街178号3层(中关村地铁站B东北口步行200米)",
+      "rating": 4.2,
+      "priceRange": "40-80/小时",
+      "openHours": "24小时营业",
+      "tags": [
+        "台球厅",
+        "台球"
+      ],
+      "highlights": [
+        "桌台新",
+        "环境好",
+        "适合朋友"
+      ]
+    },
+    {
+      "id": "e134",
+      "name": "中关村e世界",
+      "type": "shopping",
+      "typeLabel": "🛍️ 逛街",
+      "area": "中关村",
+      "address": "中关村大街11号e世界财富中心C座F18层",
+      "rating": 4.5,
+      "priceRange": "免费（逛街）",
+      "openHours": "",
+      "tags": [
+        "家电数码"
+      ],
+      "highlights": [
+        "逛街购物",
+        "网红打卡",
+        "夜景好"
+      ]
+    },
+    {
+      "id": "e135",
+      "name": "中关村ARTPARK大融城",
+      "type": "shopping",
+      "typeLabel": "🛍️ 逛街",
+      "area": "中关村",
+      "address": "中关村大街15-9号",
+      "rating": 4.7,
+      "priceRange": "免费（逛街）",
+      "openHours": "10:00-22:00",
+      "tags": [
+        "商场"
+      ],
+      "highlights": [
+        "逛街购物",
+        "网红打卡",
+        "夜景好"
+      ]
+    },
+    {
+      "id": "e136",
+      "name": "猎人桌游(中关村店)",
+      "type": "board_game_cafe",
+      "typeLabel": "🎲 桌游吧",
+      "area": "中关村",
+      "address": "苏州街12号西屋国际大厦南侧底商",
+      "rating": 4.6,
+      "priceRange": "42-105/人",
+      "openHours": "12:00-23:30",
+      "tags": [
+        "桌游",
+        "游戏"
+      ],
+      "highlights": [
+        "桌游丰富",
+        "适合聚会"
+      ]
+    },
+    {
+      "id": "e137",
+      "name": "宝可梦官方卡牌道馆(北京中关村领展店)",
+      "type": "board_game_cafe",
+      "typeLabel": "🎲 桌游吧",
+      "area": "中关村",
+      "address": "北京城区丹棱街甲1号中关村领展购物广场B1层05号",
+      "rating": 4.6,
+      "priceRange": "99-248/人",
+      "openHours": "10:00-22:00",
+      "tags": [
+        "桌游",
+        "体育休闲服务场所"
+      ],
+      "highlights": [
+        "桌游丰富",
+        "适合聚会"
+      ]
+    },
+    {
+      "id": "e138",
+      "name": "北京五道口工人俱乐部电影院(暂停营业)",
+      "type": "movie",
+      "typeLabel": "🎬 电影",
+      "area": "五道口",
+      "address": "成府路23号(五道口地铁站A北口步行210米)",
+      "rating": 3.9,
+      "priceRange": "45-120",
+      "openHours": "10:00-21:00",
+      "tags": [
+        "电影院"
+      ],
+      "highlights": [
+        "近期热映",
+        "适合饭后",
+        "可选晚场"
+      ]
+    },
+    {
+      "id": "e139",
+      "name": "完美世界影城(五道口购物中心店)",
+      "type": "movie",
+      "typeLabel": "🎬 电影",
+      "area": "五道口",
+      "address": "成府路28号五道口购物中心B1层",
+      "rating": 4.6,
+      "priceRange": "39-98",
+      "openHours": "10:00-24:00",
+      "tags": [
+        "电影院"
+      ],
+      "highlights": [
+        "近期热映",
+        "适合饭后",
+        "可选晚场"
+      ]
+    },
+    {
+      "id": "e140",
+      "name": "嘉华国际影城(新辰里学清路店)",
+      "type": "movie",
+      "typeLabel": "🎬 电影",
+      "area": "五道口",
+      "address": "学清路甲8号新辰里购物中心5层",
+      "rating": 4.7,
+      "priceRange": "32-81",
+      "openHours": "09:30-24:00",
+      "tags": [
+        "电影院"
+      ],
+      "highlights": [
+        "近期热映",
+        "适合饭后",
+        "可选晚场"
+      ]
+    },
+    {
+      "id": "e141",
+      "name": "桃醺酒吧(五道口店)",
+      "type": "bar",
+      "typeLabel": "🍸 酒吧",
+      "area": "五道口",
+      "address": "华清商务会馆5层(五道口地铁站B南口步行400米)",
+      "rating": 4.5,
+      "priceRange": "58-146",
+      "openHours": "19:00-02:00",
+      "tags": [
+        "清吧",
+        "酒吧"
+      ],
+      "highlights": [
+        "清吧",
+        "酒吧"
+      ]
+    },
+    {
+      "id": "e142",
+      "name": "second第二个酒吧(五道口店)",
+      "type": "bar",
+      "typeLabel": "🍸 酒吧",
+      "area": "五道口",
+      "address": "财智国际大厦A座18层1801",
+      "rating": 4.6,
+      "priceRange": "47-117",
+      "openHours": "19:00-02:00",
+      "tags": [
+        "酒吧"
+      ],
+      "highlights": [
+        "酒吧"
+      ]
+    },
+    {
+      "id": "e143",
+      "name": "META SPACE Coffee&Bar(五道口店)",
+      "type": "bar",
+      "typeLabel": "🍸 酒吧",
+      "area": "五道口",
+      "address": "东升公寓1号楼底商(五道口地铁站B南口步行410米)",
+      "rating": 4.6,
+      "priceRange": "22-54",
+      "openHours": "12:00-03:00",
+      "tags": [
+        "酒吧",
+        "咖啡|公司企业"
+      ],
+      "highlights": [
+        "酒吧",
+        "咖啡|公司企业"
+      ]
+    },
+    {
+      "id": "e144",
+      "name": "酷秀KTV·派对(五道口店)",
+      "type": "ktv",
+      "typeLabel": "🎤 KTV",
+      "area": "五道口",
+      "address": "北京城区成府路28号五道口购物中心4层",
+      "rating": 4.7,
+      "priceRange": "47-117/人",
+      "openHours": "12:00-02:00",
+      "tags": [
+        "量贩式KTV",
+        "KTV"
+      ],
+      "packages": [
+        {
+          "name": "欢唱2小时（小包）",
+          "capacity": "2-4人",
+          "price": 172,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "欢唱2小时（中包）",
+          "capacity": "4-8人",
+          "price": 273,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "夜场通宵（小包）",
+          "capacity": "2-4人",
+          "price": 296,
+          "period": "23:00-06:00"
+        }
+      ],
+      "highlights": [
+        "适合聚会",
+        "可订包间",
+        "晚间可玩"
+      ]
+    },
+    {
+      "id": "e145",
+      "name": "唱吧麦颂KTV(北京五道口店)",
+      "type": "ktv",
+      "typeLabel": "🎤 KTV",
+      "area": "五道口",
+      "address": "成府路35号东源大厦F5层(五道口地铁站A北口步行120米)",
+      "rating": 4.5,
+      "priceRange": "42-105/人",
+      "openHours": "12:00-02:00",
+      "tags": [
+        "量贩式KTV",
+        "KTV"
+      ],
+      "packages": [
+        {
+          "name": "欢唱2小时（小包）",
+          "capacity": "2-4人",
+          "price": 154,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "欢唱2小时（中包）",
+          "capacity": "4-8人",
+          "price": 245,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "夜场通宵（小包）",
+          "capacity": "2-4人",
+          "price": 266,
+          "period": "23:00-06:00"
+        }
+      ],
+      "highlights": [
+        "适合聚会",
+        "可订包间",
+        "晚间可玩"
+      ]
+    },
+    {
+      "id": "e146",
+      "name": "赛乐堡商务公馆(华源世纪商务楼店)",
+      "type": "ktv",
+      "typeLabel": "🎤 KTV",
+      "area": "五道口",
+      "address": "双清路88号华源世纪商务楼地下1-2层(五道口清华东门)",
+      "rating": 4.5,
+      "priceRange": "41-102/人",
+      "openHours": "14:00-20:00",
+      "tags": [
+        "KTV",
+        "KTV|餐饮服务"
+      ],
+      "packages": [
+        {
+          "name": "欢唱2小时（小包）",
+          "capacity": "2-4人",
+          "price": 150,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "欢唱2小时（中包）",
+          "capacity": "4-8人",
+          "price": 238,
+          "period": "18:00-23:00"
+        },
+        {
+          "name": "夜场通宵（小包）",
+          "capacity": "2-4人",
+          "price": 258,
+          "period": "23:00-06:00"
+        }
+      ],
+      "highlights": [
+        "适合聚会",
+        "可订包间",
+        "晚间可玩"
+      ]
+    },
+    {
+      "id": "e147",
+      "name": "白喵事务所密室逃脱(五道口店)",
+      "type": "escape_room",
+      "typeLabel": "🔐 密室逃脱",
+      "area": "五道口",
+      "address": "中关村东路18号",
+      "rating": 4.3,
+      "priceRange": "87-218/人",
+      "openHours": "10:00-22:00",
+      "tags": [
+        "密室逃脱",
+        "体育休闲服务场所"
+      ],
+      "highlights": [
+        "沉浸体验",
+        "适合多人",
+        "需要预约"
+      ]
+    },
+    {
+      "id": "e148",
+      "name": "白喵梦境密室逃脱体验馆(五道口店)",
+      "type": "escape_room",
+      "typeLabel": "🔐 密室逃脱",
+      "area": "五道口",
+      "address": "成府路108号华清商务会馆701号",
+      "rating": 4.2,
+      "priceRange": "89-222/人",
+      "openHours": "10:00-22:00",
+      "tags": [
+        "密室逃脱",
+        "体育休闲服务场所"
+      ],
+      "highlights": [
+        "沉浸体验",
+        "适合多人",
+        "需要预约"
+      ]
+    },
+    {
+      "id": "e149",
+      "name": "当局者·血染钟楼·剧本杀(财智国际大厦C座店)",
+      "type": "board_game",
+      "typeLabel": "🎲 剧本杀",
+      "area": "五道口",
+      "address": "财智国际大厦C座2003室",
+      "rating": 4.5,
+      "priceRange": "130-326/人",
+      "openHours": "24小时营业",
+      "tags": [
+        "剧本杀",
+        "娱乐场所"
+      ],
+      "highlights": [
+        "剧情互动",
+        "适合聚会",
+        "多人参与"
+      ]
+    },
+    {
+      "id": "e150",
+      "name": "Why沉浸剧本推理馆·血染钟楼",
+      "type": "board_game",
+      "typeLabel": "🎲 剧本杀",
+      "area": "五道口",
+      "address": "财智大厦c座12楼1212",
+      "rating": 4.5,
+      "priceRange": "99-248/人",
+      "openHours": "24小时营业",
+      "tags": [
+        "剧本杀",
+        "娱乐场所"
+      ],
+      "highlights": [
+        "剧情互动",
+        "适合聚会",
+        "多人参与"
+      ]
+    },
+    {
+      "id": "e151",
+      "name": "京张铁路遗址公园",
+      "type": "park",
+      "typeLabel": "🌿 公园",
+      "area": "五道口",
+      "address": "北京市学院路街道河清路五道口东面",
+      "rating": 4.6,
+      "priceRange": "免费",
+      "openHours": "24小时营业",
+      "tags": [
+        "公园"
+      ],
+      "highlights": [
+        "散步休闲",
+        "免费开放",
+        "适合饭后"
+      ]
+    },
+    {
+      "id": "e152",
+      "name": "樱花园",
+      "type": "park",
+      "typeLabel": "🌿 公园",
+      "area": "五道口",
+      "address": "学院路街道学院路街道学院路街道成府路北京语言大学",
+      "rating": 3.5,
+      "priceRange": "免费",
+      "openHours": "24小时营业",
+      "tags": [
+        "公园"
+      ],
+      "highlights": [
+        "散步休闲",
+        "免费开放",
+        "适合饭后"
+      ]
+    },
+    {
+      "id": "e153",
+      "name": "GC健身(五道口店)",
+      "type": "fitness",
+      "typeLabel": "💪 健身",
+      "area": "五道口",
+      "address": "社区自治道路与东升南路交叉口北120米",
+      "rating": 2.8,
+      "priceRange": "111-278/人",
+      "openHours": "",
+      "tags": [
+        "健身中心",
+        "健身"
+      ],
+      "classes": [
+        {
+          "name": "搏击操",
+          "time": "19:30",
+          "duration": "50分钟",
+          "price": 185,
+          "spotsLeft": 5
+        },
+        {
+          "name": "瑜伽",
+          "time": "20:30",
+          "duration": "60分钟",
+          "price": 148,
+          "spotsLeft": 8
+        }
+      ],
+      "highlights": [
+        "运动放松",
+        "课程可选",
+        "适合轻社交"
+      ]
+    },
+    {
+      "id": "e154",
+      "name": "B Active必爱体24小时健身(五道口店)",
+      "type": "fitness",
+      "typeLabel": "💪 健身",
+      "area": "五道口",
+      "address": "中关村东路1号院启迪科技大厦C座B1层",
+      "rating": 4.5,
+      "priceRange": "2019-5048/人",
+      "openHours": "24小时营业",
+      "tags": [
+        "健身房",
+        "体育休闲服务场所"
+      ],
+      "classes": [
+        {
+          "name": "搏击操",
+          "time": "19:30",
+          "duration": "50分钟",
+          "price": 3365,
+          "spotsLeft": 5
+        },
+        {
+          "name": "瑜伽",
+          "time": "20:30",
+          "duration": "60分钟",
+          "price": 2692,
+          "spotsLeft": 8
+        }
+      ],
+      "highlights": [
+        "运动放松",
+        "课程可选",
+        "适合轻社交"
+      ]
+    },
+    {
+      "id": "e155",
+      "name": "浅深休闲会所(北京店)",
+      "type": "spa",
+      "typeLabel": "♨️ 汤泉",
+      "area": "五道口",
+      "address": "北四环中路229号",
+      "rating": 4.7,
+      "priceRange": "275-689/人",
+      "openHours": "24小时营业",
+      "tags": [
+        "按摩",
+        "洗浴推拿场所"
+      ],
+      "packages": [
+        {
+          "name": "单人泡汤",
+          "price": 367,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸",
+          "price": 459,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸+自助",
+          "price": 689,
+          "duration": "不限时"
+        }
+      ],
+      "highlights": [
+        "多种温泉/汗蒸",
+        "休息区舒适",
+        "适合放松"
+      ]
+    },
+    {
+      "id": "e156",
+      "name": "汤泉良子蓟门桥店",
+      "type": "spa",
+      "typeLabel": "♨️ 汤泉",
+      "area": "五道口",
+      "address": "蓟门东里6号楼南侧1号楼一层和二层部分",
+      "rating": 4.7,
+      "priceRange": "108-270/人",
+      "openHours": "24小时营业",
+      "tags": [
+        "洗浴",
+        "洗浴推拿场所"
+      ],
+      "packages": [
+        {
+          "name": "单人泡汤",
+          "price": 144,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸",
+          "price": 180,
+          "duration": "不限时"
+        },
+        {
+          "name": "泡汤+汗蒸+自助",
+          "price": 270,
+          "duration": "不限时"
+        }
+      ],
+      "highlights": [
+        "多种温泉/汗蒸",
+        "休息区舒适",
+        "适合放松"
+      ]
+    },
+    {
+      "id": "e157",
+      "name": "颐润堂专业足疗保健按摩(五道口华清嘉园店)",
+      "type": "massage",
+      "typeLabel": "💆 足疗",
+      "area": "五道口",
+      "address": "五道口华清嘉园7号楼华清商务会馆12层1201A",
+      "rating": 4.4,
+      "priceRange": "124-309/人",
+      "openHours": "10:00-23:00",
+      "tags": [
+        "足疗",
+        "洗浴推拿场所"
+      ],
+      "packages": [
+        {
+          "name": "足底按摩 60min",
+          "price": 144
+        },
+        {
+          "name": "全身推拿 90min",
+          "price": 206
+        },
+        {
+          "name": "精油SPA 120min",
+          "price": 309
+        }
+      ],
+      "highlights": [
+        "专业技师",
+        "环境舒适",
+        "可加钟"
+      ]
+    },
+    {
+      "id": "e158",
+      "name": "无名栖境·足道·经络",
+      "type": "massage",
+      "typeLabel": "💆 足疗",
+      "area": "五道口",
+      "address": "北京城区五道口华清嘉园13号楼底商",
+      "rating": 4.1,
+      "priceRange": "124-311/人",
+      "openHours": "12:00-01:00",
+      "tags": [
+        "足疗",
+        "洗浴推拿场所"
+      ],
+      "packages": [
+        {
+          "name": "足底按摩 60min",
+          "price": 145
+        },
+        {
+          "name": "全身推拿 90min",
+          "price": 207
+        },
+        {
+          "name": "精油SPA 120min",
+          "price": 311
+        }
+      ],
+      "highlights": [
+        "专业技师",
+        "环境舒适",
+        "可加钟"
+      ]
+    },
+    {
+      "id": "e159",
+      "name": "松康按摩(华清嘉园店)",
+      "type": "massage",
+      "typeLabel": "💆 足疗",
+      "area": "五道口",
+      "address": "北京城区成府路华清商务会馆11层1108号",
+      "rating": 4.4,
+      "priceRange": "90-225/人",
+      "openHours": "10:00-24:00",
+      "tags": [
+        "按摩",
+        "洗浴推拿场所"
+      ],
+      "packages": [
+        {
+          "name": "足底按摩 60min",
+          "price": 105
+        },
+        {
+          "name": "全身推拿 90min",
+          "price": 150
+        },
+        {
+          "name": "精油SPA 120min",
+          "price": 225
+        }
+      ],
+      "highlights": [
+        "专业技师",
+        "环境舒适",
+        "可加钟"
+      ]
+    },
+    {
+      "id": "e160",
+      "name": "云川台球(五道口店)",
+      "type": "billiards",
+      "typeLabel": "🎱 台球",
+      "area": "五道口",
+      "address": "北京城区学院路51号首享科技大厦地下1层",
+      "rating": 4.8,
+      "priceRange": "29-72",
+      "openHours": "24小时营业",
+      "tags": [
+        "台球厅",
+        "台球"
+      ],
+      "highlights": [
+        "桌台新",
+        "环境好",
+        "适合朋友"
+      ]
+    },
+    {
+      "id": "e161",
+      "name": "鑫云端台球会所(五道口店)",
+      "type": "billiards",
+      "typeLabel": "🎱 台球",
+      "area": "五道口",
+      "address": "王庄路东王庄小区33号综合楼地下一层",
+      "rating": 4.5,
+      "priceRange": "40-80/小时",
+      "openHours": "10:00-03:00",
+      "tags": [
+        "台球厅",
+        "台球"
+      ],
+      "highlights": [
+        "桌台新",
+        "环境好",
+        "适合朋友"
+      ]
+    },
+    {
+      "id": "e162",
+      "name": "五道口购物中心",
+      "type": "shopping",
+      "typeLabel": "🛍️ 逛街",
+      "area": "五道口",
+      "address": "成府路28号",
+      "rating": 4.8,
+      "priceRange": "免费（逛街）",
+      "openHours": "10:00-22:00",
+      "tags": [
+        "商场",
+        "购物"
+      ],
+      "highlights": [
+        "逛街购物",
+        "网红打卡",
+        "夜景好"
+      ]
+    },
+    {
+      "id": "e163",
+      "name": "五道口购物中心地下停车场",
+      "type": "shopping",
+      "typeLabel": "🛍️ 逛街",
+      "area": "五道口",
+      "address": "成府路28号五道口购物中心(五道口地铁站B南口步行290米)",
+      "rating": 4,
+      "priceRange": "免费（逛街）",
+      "openHours": "07:00-21:00",
+      "tags": [
+        "地下停车场",
+        "公共停车场"
+      ],
+      "highlights": [
+        "逛街购物",
+        "网红打卡",
+        "夜景好"
+      ]
+    },
+    {
+      "id": "e164",
+      "name": "猎人桌游(五道口店)",
+      "type": "board_game_cafe",
+      "typeLabel": "🎲 桌游吧",
+      "area": "五道口",
+      "address": "中关村东路16号院唐宁one2号楼A125底商",
+      "rating": 4.6,
+      "priceRange": "41-102/人",
+      "openHours": "12:00-24:00",
+      "tags": [
+        "桌游",
+        "体育休闲服务场所"
+      ],
+      "highlights": [
+        "桌游丰富",
+        "适合聚会"
+      ]
+    },
+    {
+      "id": "e165",
+      "name": "吉图时光拼图馆",
+      "type": "board_game_cafe",
+      "typeLabel": "🎲 桌游吧",
+      "area": "五道口",
+      "address": "北京城区华清商务会馆606A",
+      "rating": 3.7,
+      "priceRange": "48-120/人",
+      "openHours": "10:00-22:00",
+      "tags": [
+        "桌游",
+        "体育休闲服务场所"
+      ],
+      "highlights": [
+        "桌游丰富",
+        "适合聚会"
+      ]
+    }
+  ],
+  "dataSource": "amap",
+  "crawledAt": "2026-05-03T08:32:23.480Z"
+}

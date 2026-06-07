@@ -1,0 +1,42 @@
+<view class="page">
+  <view class="nav-space" style="height: {{safeTop}}px;"></view>
+  <view class="panel">
+    <view class="head">
+      <view>
+        <text class="eyebrow">CUSTOM BUTLER</text>
+        <text class="title">自定义管家</text>
+      </view>
+      <view class="pill" bindtap="resetDraft">重置</view>
+    </view>
+
+    <view wx:if="{{loading}}" class="list-item muted">正在准备默认模板...</view>
+    <block wx:else>
+      <view class="section-title">编辑人设文件</view>
+      <view class="list">
+        <view
+          wx:for="{{documents}}"
+          wx:key="file"
+          class="list-item tappable profile-file"
+          data-file="{{item.file}}"
+          bindtap="openDocument"
+        >
+          <text class="item-title">{{item.title}}</text>
+          <text class="item-meta">{{item.file}}</text>
+          <text class="item-preview">{{item.tip}}</text>
+        </view>
+      </view>
+
+      <view class="section-title">最后给它取个名字</view>
+      <input
+        class="field"
+        value="{{name}}"
+        placeholder="例如：温柔日程管家"
+        placeholder-class="placeholder"
+        bindinput="onNameInput"
+      />
+      <view class="primary {{saving ? 'disabled' : ''}}" bindtap="saveProfile">
+        {{saving ? '保存中' : '保存为新管家'}}
+      </view>
+    </block>
+  </view>
+</view>

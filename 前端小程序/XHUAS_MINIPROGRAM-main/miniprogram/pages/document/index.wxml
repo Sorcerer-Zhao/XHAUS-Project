@@ -1,0 +1,104 @@
+<view class="page">
+  <view class="nav-space" style="height: {{safeTop}}px;"></view>
+  <view class="panel">
+    <view class="head">
+      <view>
+        <text class="eyebrow">DOCUMENT</text>
+        <text class="title">{{name}}</text>
+        <text wx:if="{{updatedAt}}" class="doc-meta">{{updatedAt}}</text>
+      </view>
+      <view class="doc-actions">
+        <view class="pill" bindtap="toggleEdit">{{editing ? '预览' : '编辑'}}</view>
+        <view class="pill" bindtap="deleteDocument">{{deleting ? '删除中' : '删除'}}</view>
+      </view>
+    </view>
+
+    <view wx:if="{{loading}}" class="doc-placeholder">正在读取文档...</view>
+    <view wx:elif="{{error}}" class="doc-placeholder">{{error}}</view>
+
+    <view wx:elif="{{editing}}">
+      <textarea
+        class="doc-editor"
+        value="{{content}}"
+        placeholder="编辑 Markdown 内容"
+        placeholder-class="placeholder"
+        maxlength="-1"
+        bindinput="onContentInput"
+      />
+      <view class="primary {{saving ? 'disabled' : ''}}" bindtap="saveDocument">
+        {{saving ? '保存中' : '保存修改'}}
+      </view>
+    </view>
+
+    <view wx:else class="doc-body">
+      <block wx:for="{{blocks}}" wx:for-item="block" wx:for-index="blockIndex" wx:key="blockIndex">
+        <view wx:if="{{block.type === 'paragraph'}}" class="md-p">
+          <text
+            wx:for="{{block.spans}}"
+            wx:for-item="span"
+            wx:for-index="spanIndex"
+            wx:key="spanIndex"
+            class="md-span {{span.style}}"
+          >{{span.text}}</text>
+        </view>
+        <view wx:elif="{{block.type === 'heading'}}" class="md-heading h{{block.level}}">
+          <text
+            wx:for="{{block.spans}}"
+            wx:for-item="span"
+            wx:for-index="spanIndex"
+            wx:key="spanIndex"
+            class="md-span {{span.style}}"
+          >{{span.text}}</text>
+        </view>
+        <view wx:elif="{{block.type === 'list'}}" class="md-list">
+          <view wx:for="{{block.items}}" wx:for-item="listItem" wx:for-index="listIndex" wx:key="listIndex" class="md-li">
+            <text class="bullet">•</text>
+            <view class="li-content">
+              <text
+                wx:for="{{listItem}}"
+                wx:for-item="span"
+                wx:for-index="spanIndex"
+                wx:key="spanIndex"
+                class="md-span {{span.style}}"
+              >{{span.text}}</text>
+            </view>
+          </view>
+        </view>
+        <scroll-view wx:elif="{{block.type === 'table'}}" scroll-x="true" class="md-table-scroll">
+          <view class="md-table">
+            <view class="md-tr md-th-row">
+              <view wx:for="{{block.headers}}" wx:for-item="cell" wx:for-index="cellIndex" wx:key="cellIndex" class="md-td md-th">
+                <text
+                  wx:for="{{cell}}"
+                  wx:for-item="span"
+                  wx:for-index="spanIndex"
+                  wx:key="spanIndex"
+                  class="md-span {{span.style}}"
+                >{{span.text}}</text>
+              </view>
+            </view>
+            <view wx:for="{{block.rows}}" wx:for-item="row" wx:for-index="rowIndex" wx:key="rowIndex" class="md-tr">
+              <view wx:for="{{row}}" wx:for-item="cell" wx:for-index="cellIndex" wx:key="cellIndex" class="md-td">
+                <text
+                  wx:for="{{cell}}"
+                  wx:for-item="span"
+                  wx:for-index="spanIndex"
+                  wx:key="spanIndex"
+                  class="md-span {{span.style}}"
+                >{{span.text}}</text>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+        <scroll-view wx:elif="{{block.type === 'code'}}" scroll-x="true" class="md-code-scroll">
+          <view class="md-code-block">
+            <text wx:if="{{block.language}}" class="md-code-lang">{{block.language}}</text>
+            <text class="md-code-text">{{block.text}}</text>
+          </view>
+        </scroll-view>
+        <view wx:elif="{{block.type === 'hr'}}" class="md-hr"></view>
+        <view wx:elif="{{block.type === 'space'}}" class="md-space"></view>
+      </block>
+    </view>
+  </view>
+</view>

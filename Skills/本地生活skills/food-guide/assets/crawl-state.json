@@ -1,0 +1,14 @@
+{
+  "restaurants": {
+    "lastCrawlTime": "2026-05-03T08:31:49.525Z",
+    "areas": "望京,三里屯,朝阳大悦城,国贸,中关村,五道口",
+    "count": 69,
+    "dataSource": "amap"
+  },
+  "queue": {
+    "lastCrawlTime": "2026-05-29T12:37:30.661Z",
+    "restaurant": "正院大宅門烤鸭(望京店)",
+    "area": "望京",
+    "hasQueue": false
+  }
+}

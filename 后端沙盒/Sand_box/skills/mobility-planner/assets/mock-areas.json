@@ -1,0 +1,146 @@
+{
+  "areas": {
+    "望京": {
+      "lat": 39.997,
+      "lon": 116.474,
+      "stations": [
+        { "name": "望京站", "lines": ["14号线", "15号线"] },
+        { "name": "望京西站", "lines": ["13号线", "15号线"] }
+      ]
+    },
+    "三里屯": {
+      "lat": 39.934,
+      "lon": 116.454,
+      "stations": [
+        { "name": "团结湖站", "lines": ["10号线"] },
+        { "name": "东大桥站", "lines": ["6号线"] }
+      ]
+    },
+    "朝阳大悦城": {
+      "lat": 39.924,
+      "lon": 116.513,
+      "stations": [
+        { "name": "青年路站", "lines": ["6号线"] }
+      ]
+    },
+    "国贸": {
+      "lat": 39.909,
+      "lon": 116.461,
+      "stations": [
+        { "name": "国贸站", "lines": ["1号线", "10号线"] },
+        { "name": "大望路站", "lines": ["1号线", "14号线"] }
+      ]
+    },
+    "中关村": {
+      "lat": 39.982,
+      "lon": 116.311,
+      "stations": [
+        { "name": "中关村站", "lines": ["4号线"] },
+        { "name": "海淀黄庄站", "lines": ["4号线", "10号线"] }
+      ]
+    },
+    "五道口": {
+      "lat": 39.993,
+      "lon": 116.338,
+      "stations": [
+        { "name": "五道口站", "lines": ["13号线"] }
+      ]
+    },
+    "朝阳公园": {
+      "lat": 39.942,
+      "lon": 116.480,
+      "stations": [
+        { "name": "朝阳公园站", "lines": ["14号线"] }
+      ]
+    },
+    "798": {
+      "lat": 39.983,
+      "lon": 116.493,
+      "stations": [
+        { "name": "望京南站", "lines": ["14号线"] }
+      ]
+    },
+    "簋街": {
+      "lat": 39.942,
+      "lon": 116.418,
+      "stations": [
+        { "name": "北新桥站", "lines": ["5号线"] },
+        { "name": "雍和宫站", "lines": ["2号线", "5号线"] }
+      ]
+    },
+    "前门": {
+      "lat": 39.900,
+      "lon": 116.398,
+      "stations": [
+        { "name": "前门站", "lines": ["2号线"] }
+      ]
+    },
+    "西单": {
+      "lat": 39.912,
+      "lon": 116.375,
+      "stations": [
+        { "name": "西单站", "lines": ["1号线", "4号线"] }
+      ]
+    },
+    "王府井": {
+      "lat": 39.915,
+      "lon": 116.411,
+      "stations": [
+        { "name": "王府井站", "lines": ["1号线", "8号线"] }
+      ]
+    },
+    "交通大学": {
+      "lat": 39.953,
+      "lon": 116.340,
+      "stations": [
+        { "name": "西直门站", "lines": ["2号线", "4号线", "13号线"] },
+        { "name": "国家图书馆站", "lines": ["4号线", "9号线", "16号线"] }
+      ]
+    },
+    "国际会议中心": {
+      "lat": 39.9937,
+      "lon": 116.3893,
+      "stations": [
+        { "name": "奥林匹克公园站", "lines": ["8号线", "15号线"] }
+      ]
+    },
+    "国家会议中心": {
+      "lat": 39.9937,
+      "lon": 116.3893,
+      "stations": [
+        { "name": "奥林匹克公园站", "lines": ["8号线", "15号线"] }
+      ]
+    }
+  },
+  "subwayConfig": {
+    "avgSpeedKmH": 35,
+    "transferMinutes": 5,
+    "walkToStationMinutes": 6,
+    "priceRules": {
+      "base": 3,
+      "thresholds": [
+        { "km": 6, "price": 3 },
+        { "km": 12, "price": 4 },
+        { "km": 22, "price": 5 },
+        { "km": 32, "price": 6 }
+      ]
+    }
+  },
+  "taxiConfig": {
+    "baseFare": 13,
+    "baseKm": 3,
+    "perKm": 2.3,
+    "peakMultiplier": 1.3,
+    "nightMultiplier": 1.2,
+    "peakHours": ["07:00-09:30", "17:00-20:00"],
+    "nightHours": ["23:00-05:00"],
+    "avgSpeedKmH": {
+      "normal": 28,
+      "peak": 18
+    }
+  },
+  "walkConfig": {
+    "speedKmH": 5,
+    "maxRecommendKm": 3
+  }
+}

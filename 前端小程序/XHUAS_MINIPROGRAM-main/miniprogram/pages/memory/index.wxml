@@ -1,0 +1,48 @@
+<view class="page">
+  <view class="nav-space" style="height: {{safeTop}}px;"></view>
+  <view class="panel">
+    <view class="head">
+      <view>
+        <text class="eyebrow">MEMORY</text>
+        <text class="title">自我认知文档</text>
+      </view>
+      <view class="pill" bindtap="saveCognition">{{saving ? '保存中' : '保存'}}</view>
+    </view>
+
+    <input
+      class="field"
+      value="{{title}}"
+      placeholder="文档标题"
+      placeholder-class="placeholder"
+      bindinput="onTitleInput"
+    />
+    <textarea
+      class="textarea"
+      value="{{content}}"
+      placeholder="写下你的偏好、习惯、节奏或长期目标"
+      placeholder-class="placeholder"
+      bindinput="onContentInput"
+    ></textarea>
+
+    <view class="satellite">
+      <view>
+        <text class="sat-title">Satellite 自动进化</text>
+        <text class="sat-status">{{satelliteStatus}}</text>
+      </view>
+      <view class="pill dark {{satelliteRunning ? 'disabled' : ''}}" bindtap="runSatelliteNow">
+        {{satelliteRunning ? '运行中' : '运行'}}
+      </view>
+    </view>
+
+    <view class="list">
+      <view wx:for="{{docs}}" wx:key="name" class="history-item">
+        <view class="history-main" data-name="{{item.name}}" bindtap="openDocument">
+          <text class="item-title">{{item.name}}</text>
+          <text class="item-meta">{{item.updated_at}}</text>
+        </view>
+        <view class="delete-btn" data-name="{{item.name}}" catchtap="deleteDocument">删除</view>
+      </view>
+      <view wx:if="{{docs.length === 0}}" class="list-item muted">暂无文档</view>
+    </view>
+  </view>
+</view>

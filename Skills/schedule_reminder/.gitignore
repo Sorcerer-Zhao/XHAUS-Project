@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 本地日程数据（含个人安排，不进仓库）
+memory/
+schedule.json
+
+# 环境变量与本地配置
+.env
+.env.*
+
+# OpenClaw 本机运行时状态
+.openclaw/
+
+# Python（若后续添加脚本）
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+.venv/
+venv/
+env/
+
+# 编辑器
+.idea/
+.vscode/
+*.swp
+*~

@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/persona/index",
+    "pages/customProfile/index",
+    "pages/customProfileEditor/index",
+    "pages/skill/index",
+    "pages/skillDetail/index",
+    "pages/memory/index",
+    "pages/document/index",
+    "pages/history/index",
+    "pages/example/index"
+  ],
+  "window": {
+    "backgroundColor": "#fff7ec",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff7ec",
+    "navigationBarTitleText": "OpenClaw XHAUS",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "lazyCodeLoading": "requiredComponents"
+}

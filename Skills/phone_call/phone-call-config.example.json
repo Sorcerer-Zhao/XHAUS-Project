@@ -1,0 +1,6 @@
+{
+  "pushcut": {
+    "api_key": "your-pushcut-api-key",
+    "notification_name": "OpenClaw预约"
+  }
+}

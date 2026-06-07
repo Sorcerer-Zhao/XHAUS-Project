@@ -1,0 +1,50 @@
+@import "../shared.wxss";
+
+.file-name {
+  display: block;
+  margin-top: 8rpx;
+  color: #8a6649;
+  font-size: 22rpx;
+  font-weight: 800;
+}
+
+.file-tip {
+  margin-bottom: 18rpx;
+  padding: 20rpx;
+  border: 2rpx solid rgba(214, 122, 42, 0.16);
+  border-radius: 22rpx;
+  background: rgba(255, 246, 230, 0.72);
+}
+
+.tip-title,
+.tip-text {
+  display: block;
+}
+
+.tip-title {
+  color: #74461f;
+  font-size: 24rpx;
+  font-weight: 900;
+}
+
+.tip-text {
+  margin-top: 8rpx;
+  color: #8a6649;
+  font-size: 24rpx;
+  line-height: 1.55;
+}
+
+.profile-editor {
+  width: 100%;
+  height: 60vh;
+  min-height: 680rpx;
+  padding: 22rpx;
+  border: 2rpx solid rgba(121, 75, 34, 0.14);
+  border-radius: 24rpx;
+  background: rgba(255, 255, 255, 0.78);
+  color: #3a2a20;
+  box-sizing: border-box;
+  font-family: Consolas, "SF Mono", "PingFang SC", monospace;
+  font-size: 25rpx;
+  line-height: 1.6;
+}

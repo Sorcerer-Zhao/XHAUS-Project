@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenClaw XHAUS</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section id="landing" class="landing">
+      <header class="landing-nav">
+        <div class="brand compact-brand">
+          <img class="brand-avatar" src="/assets/logo.png" alt="OpenClaw XHAUS logo" />
+          <div>
+            <p class="eyebrow">OPENCLAW LOCAL BUTLER</p>
+            <strong>OpenClaw XHAUS</strong>
+          </div>
+        </div>
+        <button id="startBtnTop" class="ghost-button" type="button">开始使用</button>
+      </header>
+
+      <div class="landing-shell">
+        <div class="hero-copy">
+          <p class="eyebrow">YOUR ALWAYS-ON PRIVATE BUTLER</p>
+          <h1>OpenClaw：你的全天候私人管家</h1>
+          <p class="hero-lead">
+            想象这样一位管家：它从不休息，全天候在线；它记得你说过的每一句话，懂你的喜好、读得懂你的情绪；它不只是回答问题，而是真正为你打理生活。
+          </p>
+          <div class="cta-row">
+            <button id="startBtn" class="primary-action" type="button">开始使用</button>
+            <button id="storyPingBtn" class="ghost-button" type="button">检查 OpenClaw</button>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="XHAUS architecture preview">
+          <img class="butler-portrait" src="/assets/logo.png" alt="XHAUS logo" />
+          <div class="signal-stack">
+            <div>
+              <span>多端口通道</span>
+              <strong>飞书 / 电报 / 微信 / 网页 / 小程序 / 终端</strong>
+            </div>
+            <div>
+              <span>多 Agent 协同</span>
+              <strong>大管家统筹，小管家处理出行、餐饮、娱乐、日程</strong>
+            </div>
+            <div>
+              <span>本地记忆策略</span>
+              <strong>沉淀偏好、情绪节奏与生活习惯</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="landing-story">
+        <article>
+          <p class="eyebrow">STORY</p>
+          <h2>它无处不在。</h2>
+          <p>
+            通过多端口通道，你的管家可以接入日常使用的任何平台。无论你在哪里，只需一句话，它都在。
+          </p>
+        </article>
+        <article>
+          <p class="eyebrow">TEAM</p>
+          <h2>它是一个团队，而非一个工具。</h2>
+          <p>
+            “大管家 + 领域小管家”的架构让意图理解、路线规划、餐饮安排、休闲娱乐和日程管理彼此协作。
+          </p>
+        </article>
+        <article>
+          <p class="eyebrow">VISION</p>
+          <h2>让人人拥有真正属于自己的私人管家。</h2>
+          <p>
+            它运行在本地，守护你的隐私；它读得懂你，而不是把你当成又一个用户；它随着时间推移愈发默契，成为生活中不可或缺的伙伴。
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <main id="appShell" class="shell app-shell" hidden>
+      <section class="topbar">
+        <div class="brand">
+          <img class="brand-avatar" src="/assets/logo.png" alt="OpenClaw XHAUS logo" />
+          <div>
+            <p class="eyebrow">OPENCLAW LOCAL BUTLER</p>
+            <h1>XHAUS 全天候私人管家</h1>
+          </div>
+        </div>
+        <div class="status-strip">
+          <div class="status-pill" id="xhausStatus">
+            <span class="pulse"></span>
+            <span>XHAUS 待激活</span>
+          </div>
+          <div class="status-pill" id="openclawStatus">
+            <span class="pulse pulse-muted"></span>
+            <span>OpenClaw 检测中</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="console-grid">
+        <article class="chat-panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">LIVE COMMAND</p>
+              <h2 id="conversationTitle">管家对话</h2>
+            </div>
+            <div class="chat-head-tools">
+              <button id="newConversationBtn" class="tool-button small-button" type="button">新对话</button>
+              <button id="historyToggleBtn" class="tool-button small-button subtle" type="button">历史</button>
+              <button id="renameConversationBtn" class="tool-button small-button subtle" type="button">改名</button>
+              <div class="active-agent-card" title="由右侧 XHAUS 初始化向导决定">
+                <span>当前 XHAUS 管家</span>
+                <strong id="activeAgentName">默认管家</strong>
+              </div>
+            </div>
+          </div>
+
+          <div id="conversationHistory" class="history-panel" hidden></div>
+
+          <div id="messages" class="messages"></div>
+
+          <div class="quick-row">
+            <button class="quick-chip" data-prompt="帮我规划今晚去一家安静餐厅吃饭，并估算出行时间。">餐饮</button>
+            <button class="quick-chip" data-prompt="我想找一个放松的娱乐场所，按我的偏好给我安排。">娱乐</button>
+            <button class="quick-chip" data-prompt="根据我现在的位置，帮我规划到目的地的最优路线。">出行</button>
+            <button class="quick-chip" data-prompt="把明天的日程整理成一份清晰计划，帮我排出优先级。">日程</button>
+          </div>
+
+          <form id="chatForm" class="composer">
+            <input
+              id="messageInput"
+              autocomplete="off"
+              placeholder="把今天要处理的事交给 OpenClaw"
+            />
+            <button class="icon-button send-button" type="submit" aria-label="发送">
+              <span></span>
+            </button>
+          </form>
+        </article>
+
+        <aside class="runtime-panel">
+          <div class="control-card activate-card">
+            <div class="panel-head compact">
+              <div>
+                <p class="eyebrow">RUNTIME</p>
+                <h2>连接 XHAUS</h2>
+              </div>
+              <div class="runtime-actions">
+                <button class="tool-button expand-button" type="button" data-expand-title="XHAUS 运行日志" data-expand-source="#runtimeLog" aria-label="放大运行日志">放大</button>
+                <button id="activateBtn" class="tool-button small-button" type="button">激活</button>
+                <button id="stopXhausBtn" class="tool-button small-button subtle" type="button">停止</button>
+              </div>
+            </div>
+            <div class="runtime-line">
+              <span>main.py</span>
+              <strong id="runtimePid">PID --</strong>
+            </div>
+            <div class="wizard-panel">
+              <div class="prompt-pill" id="xhausPrompt">等待 XHAUS 输出下一步</div>
+              <div id="personaChoices" class="persona-choices"></div>
+              <div id="wsHistory" class="ws-history" hidden></div>
+              <div class="wizard-row">
+                <input id="wizardInput" placeholder="根据上方提示输入内容" />
+                <button id="sendWizardBtn" class="small-button" type="button">发送</button>
+                <button id="sendEmptyBtn" class="small-button subtle" type="button">回车/默认</button>
+              </div>
+            </div>
+            <pre id="runtimeLog" class="runtime-log">等待运行日志...</pre>
+          </div>
+        </aside>
+
+        <section class="lower-control-row">
+          <div class="control-card">
+            <div class="panel-head compact">
+              <div>
+                <p class="eyebrow">SKILLS</p>
+                <h2>能力装载</h2>
+              </div>
+              <div class="panel-tools">
+                <button class="tool-button expand-button" type="button" data-expand-title="能力装载输出" data-expand-source="#skillResult" aria-label="放大能力装载输出">放大</button>
+                <label class="tool-button force-toggle">
+                  <input id="forceSkill" type="checkbox" />
+                  <span>覆盖</span>
+                </label>
+              </div>
+            </div>
+            <div class="path-row">
+              <input id="skillPath" placeholder="本地 Skill 目录，例如 C:\projects\my-skill" />
+              <button id="installSkillBtn" class="small-button" type="button">添加 Skill</button>
+            </div>
+            <div id="skillList" class="doc-list"></div>
+            <p id="skillResult" class="result-line">等待选择本地 Skill。</p>
+          </div>
+
+          <div class="control-card">
+            <div class="panel-head compact">
+              <div>
+                <p class="eyebrow">MEMORY</p>
+                <h2>自我认知文档</h2>
+              </div>
+              <div class="panel-tools">
+                <button class="tool-button expand-button" type="button" data-expand-title="自我认知与 Satellite" data-expand-source="#memoryExpandSource" aria-label="放大自我认知">放大</button>
+                <button id="saveCogBtn" class="tool-button small-button" type="button">添加文档</button>
+              </div>
+            </div>
+            <input id="cogTitle" class="doc-title" placeholder="文档标题" value="我的偏好与节奏" />
+            <textarea
+              id="cogContent"
+              rows="5"
+              placeholder="例如：我喜欢简洁的日程安排，午后适合处理创造性工作。"
+            ></textarea>
+            <div class="satellite-box">
+              <div>
+                <strong>Satellite 自动进化</strong>
+                <span id="satelliteStatus">等待状态...</span>
+              </div>
+              <button id="runSatelliteBtn" class="small-button subtle" type="button">立即运行</button>
+            </div>
+            <div id="memoryExpandSource" class="memory-expand-source">
+              <div id="cogList" class="doc-list"></div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+    </main>
+
+    <div id="detailOverlay" class="detail-overlay" hidden>
+      <div class="detail-backdrop" data-close-detail></div>
+      <section class="detail-modal" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+        <header class="detail-head">
+          <div>
+            <p class="eyebrow">EXPANDED VIEW</p>
+            <h2 id="detailTitle">详情</h2>
+          </div>
+          <button id="closeDetailBtn" class="small-button subtle" type="button">关闭</button>
+        </header>
+        <pre id="detailContent" class="detail-content"></pre>
+      </section>
+    </div>
+
+    <div id="editorOverlay" class="detail-overlay" hidden>
+      <div class="detail-backdrop" data-close-editor></div>
+      <section class="detail-modal editor-modal" role="dialog" aria-modal="true" aria-labelledby="editorTitle">
+        <header class="detail-head">
+          <div>
+            <p class="eyebrow" id="editorKind">EDITOR</p>
+            <h2 id="editorTitle">编辑</h2>
+          </div>
+          <div class="editor-actions">
+            <button id="deleteEditorBtn" class="small-button danger" type="button">删除</button>
+            <button id="saveEditorBtn" class="small-button" type="button">保存</button>
+            <button id="closeEditorBtn" class="small-button subtle" type="button">关闭</button>
+          </div>
+        </header>
+        <textarea id="editorContent" class="editor-textarea" spellcheck="false"></textarea>
+      </section>
+    </div>
+
+    <div id="toast" class="toast"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>

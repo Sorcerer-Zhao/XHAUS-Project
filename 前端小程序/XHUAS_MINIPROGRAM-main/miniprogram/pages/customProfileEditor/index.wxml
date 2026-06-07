@@ -1,0 +1,29 @@
+<view class="page">
+  <view class="nav-space" style="height: {{safeTop}}px;"></view>
+  <view class="panel">
+    <view class="head">
+      <view>
+        <text class="eyebrow">PROFILE FILE</text>
+        <text class="title">{{title}}</text>
+        <text class="file-name">{{file}}</text>
+      </view>
+    </view>
+
+    <view wx:if="{{error}}" class="list-item muted">{{error}}</view>
+    <block wx:else>
+      <view class="file-tip">
+        <text class="tip-title">这个文件要写什么</text>
+        <text class="tip-text">{{tip}}</text>
+      </view>
+      <textarea
+        class="profile-editor"
+        value="{{content}}"
+        placeholder="在这里编辑 Markdown 内容"
+        placeholder-class="placeholder"
+        maxlength="-1"
+        bindinput="onContentInput"
+      ></textarea>
+      <view class="primary" bindtap="saveDocument">保存这个文件</view>
+    </block>
+  </view>
+</view>
