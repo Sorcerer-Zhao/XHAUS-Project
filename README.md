@@ -1,6 +1,12 @@
-# XHAUS Project
+<p align="center">
+  <img src="assets/xhaus-logo.png" alt="XHAUS" width="180" />
+</p>
 
-> 培养一个**全天候私人管家**——不只是会聊天的 AI，而是有性格、有技能、能感知世界、能跨端陪伴的贴身助手。
+<h1 align="center">XHAUS</h1>
+
+<p align="center">
+  培养一个<strong>全天候私人管家</strong>——不只是会聊天的 AI，而是有性格、有技能、能感知世界、能跨端陪伴的贴身助手。
+</p>
 
 XHAUS（eXtended Home Agent Unified System）围绕「管家」这一核心角色，从**人格塑造、能力扩展、多端触达、世界仿真**四个维度构建完整体验。本仓库汇集了项目的主要模块与预设资源。
 
@@ -264,7 +270,7 @@ cd XHAUS-Project
 
 ### 第二步：运行一键安装脚本
 
-脚本会在 **`<仓库根>/RUNXHAUS/`** 下创建运行环境（不污染用户主目录）：
+脚本会在 `**<仓库根>/RUNXHAUS/**` 下创建运行环境（不污染用户主目录）：
 
 ```text
 XHAUS-Project/
@@ -344,7 +350,7 @@ openclaw gateway stop 2>/dev/null
 
 | 现象                 | 处理                                                       |
 | ------------------ | -------------------------------------------------------- |
-| `EADDRINUSE :3000` | 端口被旧进程占用；重新运行脚本会自动清理，或手动 `lsof -tiTCP:3000 \| xargs kill` |
+| `EADDRINUSE :3000` | 端口被旧进程占用；重新运行脚本会自动清理，或手动 `lsof -tiTCP:3000 | xargs kill` |
 | `Cannot GET /`     | 多为旧后端实例；结束 3000 端口进程后重新运行脚本                              |
 | 对话无响应 / 401        | 运行 `openclaw onboard` 配置模型 API Key                       |
 | OpenClaw 引导已做过     | 使用 `SKIP_OPENCLAW_ONBOARD=1` 跳过                          |
