@@ -60,6 +60,9 @@ Skills 是管家的「手脚」。本仓库的 Skills 体系由 **四个部分**
 
 ### 一、Satellite · 元技能（自我进化）
 
+> [!NOTE]
+>
+> **说明 · 元技能自我进化**  
 > **定位：** 让管家从重复对话中**自动学习**，生成新 Skill 或更新人格偏好、构建用户画像  
 > **仓库：** [Sorcerer-Zhao/Satellite](https://github.com/Sorcerer-Zhao/Satellite) · 路径：`Skills/Satellite/`
 
@@ -75,6 +78,9 @@ Skills 是管家的「手脚」。本仓库的 Skills 体系由 **四个部分**
 
 ### 二、本地生活 Skills · 连接模拟世界
 
+> [!NOTE]
+>
+> **说明 · 本地生活链路**  
 > **定位：** 贯通「搜索—推荐—排队—导航—出行—到店」本地生活链路，数据一律来自动态沙盒 API，**禁止凭空编造**。  
 > **路径：** `Skills/本地生活skills/`
 
@@ -94,6 +100,9 @@ Skills 是管家的「手脚」。本仓库的 Skills 体系由 **四个部分**
 
 ### 三、schedule_reminder · 日程识别与主动提醒
 
+> [!NOTE]
+>
+> **说明 · 日程提醒**  
 > **定位：** 从自然语言中**听懂日程**，写入结构化日程表，并按时间节点**主动推送**提醒。  
 > **仓库：** [Sorcerer-Zhao/schedule_reminder](https://github.com/Sorcerer-Zhao/schedule_reminder) · 路径：`Skills/schedule_reminder/`
 
@@ -110,6 +119,9 @@ Skills 是管家的「手脚」。本仓库的 Skills 体系由 **四个部分**
 
 ### 四、phone_call · 本机电话订位
 
+> [!NOTE]
+>
+> **说明 · 电话订位**  
 > **定位：** 协助用户完成**餐厅订位等电话预约**，走 Mac + iPhone 本机链路，不依赖云外呼。  
 > **仓库：** [Sorcerer-Zhao/phone_call](https://github.com/Sorcerer-Zhao/phone_call) · 路径：`Skills/phone_call/`
 
