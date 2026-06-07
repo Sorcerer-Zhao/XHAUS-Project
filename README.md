@@ -54,9 +54,15 @@ XHAUS 正是为此而设计。
 
 ## 2. 强大的 Skills 体系
 
-Skills 是管家的「手脚」。本仓库包含两类核心能力：
+Skills 是管家的「手脚」。本仓库的 Skills 体系由 **四个部分** 组成：元技能自我进化、本地生活链路、日程提醒、电话订位——分别覆盖「成长、查询、规划、执行」四类生活能力。
 
-### Satellite — 让管家自我进化的元技能
+---
+
+### 一、Satellite · 元技能（自我进化）
+
+> [!IMPORTANT]
+> **定位：** 让管家从重复对话中**自动学习**，生成新 Skill 或更新人格偏好。  
+> **仓库：** [Sorcerer-Zhao/Satellite](https://github.com/Sorcerer-Zhao/Satellite) · 路径：`Skills/Satellite/`
 
 [Satellite](https://github.com/Sorcerer-Zhao/Satellite) 是一个 **MetaSkill（生成 Skill 的 Skill）**：
 
@@ -66,9 +72,13 @@ Skills 是管家的「手脚」。本仓库包含两类核心能力：
 
 管家不再只是执行固定脚本——它能从与主人的日常互动中**持续成长**。
 
-### 本地生活 Skills — 连接真实（模拟）世界
+---
 
-`Skills/本地生活skills/` 提供一整套面向日常生活的 OpenClaw Skill，统一通过沙盒 API 获取数据，**禁止凭空编造**：
+### 二、本地生活 Skills · 连接模拟世界
+
+> [!TIP]
+> **定位：** 贯通「搜索—推荐—排队—导航—出行—到店」本地生活链路，数据一律来自动态沙盒 API，**禁止凭空编造**。  
+> **路径：** `Skills/本地生活skills/`
 
 | 能力 | Skill | 说明 |
 |------|-------|------|
@@ -78,7 +88,41 @@ Skills 是管家的「手脚」。本仓库包含两类核心能力：
 | 娱乐活动 | `entertainment-scout` | 发现周边娱乐选项 |
 | 管家心跳 | `sandbox-heartbeat` | 轮询世界事件，主动提醒排队/天气/出行等 |
 
-另有独立的 **schedule_reminder**（日程提醒）与 **phone_call**（电话呼叫）Skill，见下方相关仓库链接。
+五个 Skill 协同工作：`food-guide` 取号后由 `sandbox-heartbeat` 盯号叫号；`weather` 与 `mobility-planner` 根据天气联动出行 ETA；`entertainment-scout` 承接餐后娱乐推荐。需先启动 [动态沙盒](#完整环境搭建沙盒--skills--多端)（端口 `8787`）。
+
+---
+
+### 三、schedule_reminder · 日程识别与主动提醒
+
+> [!NOTE]
+> **定位：** 从自然语言中**听懂日程**，写入结构化日程表，并按时间节点**主动推送**提醒。  
+> **仓库：** [Sorcerer-Zhao/schedule_reminder](https://github.com/Sorcerer-Zhao/schedule_reminder) · 路径：`Skills/schedule_reminder/`
+
+[schedule_reminder](https://github.com/Sorcerer-Zhao/schedule_reminder) 让管家把模糊的计划变成可执行、可提醒的结构化安排：
+
+- **意图识别**：理解「提醒我」「周四中午去…」「明天开会」等中文表达，提取时间、地点、事件、交通方式；
+- **偏好推断**：根据事件类型判断重要程度，决定提醒语气与频次；
+- **三层主动提醒**：提前 1 天知会、提前 2 小时准备出发、提前 1 小时最后催促（Cron 推送）；
+- **原生联动**：写入 Apple 提醒事项与 iCloud「个人」日历，日程不只在聊天里说过一次就消失。
+
+适用于面试、聚餐、出行、会议等需要**提前规划、按时到场**的生活场景。
+
+---
+
+### 四、phone_call · 本机电话订位
+
+> [!WARNING]
+> **定位：** 协助用户完成**餐厅订位等电话预约**，走 Mac + iPhone 本机链路，不依赖云外呼。  
+> **仓库：** [Sorcerer-Zhao/phone_call](https://github.com/Sorcerer-Zhao/phone_call) · 路径：`Skills/phone_call/`
+
+[phone_call](https://github.com/Sorcerer-Zhao/phone_call) 帮用户完成电话预约全流程：
+
+- **撰写订位稿**：Agent 生成口语化中文台词，用户确认后再拨打；
+- **立即拨打 / 定时预约**：Mac 通过 Continuity 即时拨号，或写入 `current.json` 由 iPhone 快捷指令在指定时间弹窗提醒；
+- **事后归档**：确认后自动存入通讯录、写入 iCloud 日历用餐时间；
+- **用户亲自通话**：Agent 不代替用户说话，只协助准备台词与发起呼叫。
+
+触发场景包括「打电话订位」「帮我打给餐厅」「预约通话」等。首次使用需完成 Mac / iPhone 快捷指令引导（见 Skill 内 `onboarding.md`）。
 
 ---
 
@@ -129,7 +173,7 @@ Skills 是管家的「手脚」。本仓库包含两类核心能力：
 
 ```text
 XHAUS-Project/
-├── scripts/               # 一键安装脚本（macOS / Windows）
+├── scripts/               # 一键脚本（Web 安装 / 沙盒启停，macOS + Windows）
 ├── RUNXHAUS/              # 运行目录（脚本自动创建，已 gitignore）
 │   ├── XHUAS_WEBPAGE/     # 从 GitHub 克隆的 Web 前端
 │   └── .run/              # 进程日志与 PID
@@ -294,26 +338,42 @@ openclaw gateway stop 2>/dev/null
 
 若需本地生活沙盒、全部 Skills 或微信小程序，在 Web 端跑通后按以下步骤扩展。
 
-### 启动沙盒与世界引擎
+> [!TIP]
+> ### 🏙️ 沙盒快速启动
+>
+> **适用范围：** 启动 **dynamic-sandbox** 世界引擎（端口 `8787`），并挂载本地生活 Skills、OpenClaw Gateway 与管家心跳。
+>
+> 在 **XHAUS-Project 仓库根目录** 运行：
 
-沙盒为本地生活 Skills 提供可查询的仿真世界（时间、天气、排队、商户事件等）。
+**macOS**
 
 ```bash
-# 本仓库路径
-cd 后端沙盒/Sand_box
-
-chmod +x 一键启动.sh scripts/*.sh skills/install.sh
-./scripts/start-all.sh --all
+chmod +x scripts/start-sandbox-mac.sh scripts/stop-sandbox-mac.sh
+./scripts/start-sandbox-mac.sh              # 默认 --all：沙盒 + Skills + Gateway + Cron
+./scripts/start-sandbox-mac.sh --demo       # 额外跑端到端演示
+./scripts/stop-sandbox-mac.sh               # 停止沙盒与 Gateway
 ```
 
-`--all` 将依次完成：启动沙盒 → 健康检查 → 挂载本地生活 Skills → 启动 Gateway → 注册管家心跳 Cron。
+**Windows（PowerShell）**
 
-验证沙盒是否正常：
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\scripts\start-sandbox-windows.ps1         # 沙盒 + Skills + Gateway + Cron
+.\scripts\start-sandbox-windows.ps1 -SandboxOnly   # 仅启动沙盒引擎
+.\scripts\stop-sandbox-windows.ps1            # 停止服务
+```
+
+> Windows 挂载 Skills / Cron 需要 **Git Bash**（`bash` 命令）。未安装时会跳过 Skills 挂载并给出提示。
+
+脚本完成后可验证：
 
 ```bash
 curl http://127.0.0.1:8787/health
-node scripts/health-check.js --skills
+# 或在沙盒目录下：
+node 后端沙盒/Sand_box/scripts/health-check.js --skills
 ```
+
+沙盒 API 文档：**http://127.0.0.1:8787/docs**
 
 > 详细说明见 `后端沙盒/Sand_box/GETTING_STARTED.md`
 
