@@ -158,14 +158,14 @@ Skills 是管家的「手脚」。本仓库的 Skills 体系由 **四个部分**
 <p align="center">
   <img src="assets/miniprogram-landing.png" alt="XHAUS 小程序落地页" width="300" />
   &nbsp;&nbsp;
-  <img src="assets/miniprogram-chat.png" alt="XHAUS 小程序对话页" width="300" />
+  <img src="assets/miniprogram-chat.png" alt="XHAUS 小程序对话页 · Emma" width="300" />
 </p>
 
 <p align="center">
-  <sub>左：落地页 · 右：对话页（餐饮 / 娱乐 / 出行 / 日程快捷入口）</sub>
+  <sub>左：落地页 · 右：对话页（Emma 管家 · 餐饮规划示例）</sub>
 </p>
 
-落地页承接产品叙事与「开始使用」引导；进入对话后，可通过顶部标签切换历史、Skill、记忆与管家人格，底部快捷入口覆盖本地生活高频场景。
+落地页承接产品叙事与「开始使用」引导；进入对话后，可通过顶部标签切换历史、Skill、记忆与管家人格，由管家承接餐饮、出行等本地生活请求。
 
 ---
 
