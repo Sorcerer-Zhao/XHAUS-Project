@@ -153,6 +153,20 @@ Skills 是管家的「手脚」。本仓库的 Skills 体系由 **四个部分**
 
 无论用户在电脑前还是手机上，面对的是**同一个管家、同一份记忆**。
 
+### 微信小程序界面
+
+<p align="center">
+  <img src="assets/miniprogram-landing.png" alt="XHAUS 小程序落地页" width="300" />
+  &nbsp;&nbsp;
+  <img src="assets/miniprogram-chat.png" alt="XHAUS 小程序对话页" width="300" />
+</p>
+
+<p align="center">
+  <sub>左：落地页 · 右：对话页（餐饮 / 娱乐 / 出行 / 日程快捷入口）</sub>
+</p>
+
+落地页承接产品叙事与「开始使用」引导；进入对话后，可通过顶部标签切换历史、Skill、记忆与管家人格，底部快捷入口覆盖本地生活高频场景。
+
 ---
 
 ## 4. 动态沙盒 — 可加速、可暂停的仿真世界
