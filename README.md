@@ -119,6 +119,14 @@ Skills 是管家的「手脚」。本仓库的 Skills 体系由 **四个部分**
 - **三层主动提醒**：提前 1 天知会、提前 2 小时准备出发、提前 1 小时最后催促（Cron 推送）；
 - **原生联动**：写入 Apple 提醒事项与 iCloud「个人」日历，日程不只在聊天里说过一次就消失。
 
+<p align="center">
+  <img src="assets/schedule-reminder-list.png" alt="提醒事项 Today 视图" width="240" />
+  &nbsp;
+  <img src="assets/schedule-reminder-scheduled.png" alt="已安排提醒事项" width="240" />
+</p>
+
+<p align="center"><sub>左：提醒事项 Today · 右：已安排定时拨号</sub></p>
+
 适用于面试、聚餐、出行、会议等需要**提前规划、按时到场**的生活场景。
 
 ---
@@ -137,6 +145,16 @@ Skills 是管家的「手脚」。本仓库的 Skills 体系由 **四个部分**
 - **立即拨打 / 定时预约**：Mac 通过 Continuity 即时拨号，或写入 `current.json` 由 iPhone 快捷指令在指定时间弹窗提醒；
 - **事后归档**：确认后自动存入通讯录、写入 iCloud 日历用餐时间；
 - **用户亲自通话**：Agent 不代替用户说话，只协助准备台词与发起呼叫。
+
+<p align="center">
+  <img src="assets/phone-call-popup.png" alt="订位稿确认弹窗" width="180" />
+  &nbsp;
+  <img src="assets/phone-call-confirm.png" alt="是否拨打确认" width="180" />
+  &nbsp;
+  <img src="assets/phone-call-dial.png" alt="系统拨号界面" width="180" />
+</p>
+
+<p align="center"><sub>① 确认订位稿 · ② 是否拨打 · ③ 系统拨号</sub></p>
 
 触发场景包括「打电话订位」「帮我打给餐厅」「预约通话」等。首次使用需完成 Mac / iPhone 快捷指令引导（见 Skill 内 `onboarding.md`）。
 
