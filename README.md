@@ -216,13 +216,13 @@ Skills 是管家的「手脚」。本仓库的 Skills 体系由 **四个部分**
 以下为例：管家结合沙箱世界时间，完成**搜店 → 加速推演 → 取号排队**的完整链路（Emma 人格 + `food-guide` Skill）。
 
 <p align="center">
-  <a href="https://www.bilibili.com/video/BV1qWEM6eEXz/">
+  <a href="https://www.bilibili.com/video/BV1jyET6wEDG/">
     <img src="assets/sandbox-demo-video-cover.jpg" alt="XHAUS 全天候私人管家演示视频" width="640" />
   </a>
 </p>
 
 <p align="center">
-  <sub>▶ <a href="https://www.bilibili.com/video/BV1qWEM6eEXz/">XHAUS 全天候私人管家演示视频</a> · Bilibili 视频</sub>
+  <sub>▶ <a href="https://www.bilibili.com/video/BV1jyET6wEDG/">XHAUS 全天候私人管家演示视频</a> · Bilibili 视频</sub>
 </p>
 
 <p align="center">
