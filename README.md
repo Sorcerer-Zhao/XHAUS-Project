@@ -198,22 +198,26 @@ Skills 是管家的「手脚」。本仓库的 Skills 体系由 **四个部分**
 以下为例：管家结合沙箱世界时间，完成**搜店 → 加速推演 → 取号排队**的完整链路（Emma 人格 + `food-guide` Skill）。
 
 <p align="center">
-  <img src="assets/sandbox-demo-search.png" alt="沙箱演示：按世界时间搜索望京餐厅" width="720" />
+  <a href="https://www.bilibili.com/video/BV19gET6WEG4/">
+    <img src="assets/sandbox-demo-video-cover.jpg" alt="XHAUS 私人管家对话沙盒演示" width="640" />
+  </a>
 </p>
-
-<p align="center"><sub>① 读取沙箱时间，为用户规划「明天中午 12:00」望京用餐，返回真实餐厅数据</sub></p>
 
 <p align="center">
-  <img src="assets/sandbox-demo-accelerate.png" alt="沙箱演示：加速时间至用餐时刻" width="720" />
+  <sub>▶ <a href="https://www.bilibili.com/video/BV19gET6WEG4/">XHAUS 私人管家对话沙盒演示</a> · Bilibili 视频</sub>
 </p>
-
-<p align="center"><sub>② 调用 <code>/admin/clock</code> 加速世界时间，推演至 12:00 并汇报餐厅满座状态</sub></p>
 
 <p align="center">
-  <img src="assets/sandbox-demo-queue.png" alt="沙箱演示：按抵达时间取号" width="720" />
+  <img src="assets/sandbox-demo-search.png" alt="沙箱演示：按世界时间搜索望京餐厅" width="240" />
+  &nbsp;
+  <img src="assets/sandbox-demo-accelerate.png" alt="沙箱演示：加速时间至用餐时刻" width="240" />
+  &nbsp;
+  <img src="assets/sandbox-demo-queue.png" alt="沙箱演示：按抵达时间取号" width="240" />
 </p>
 
-<p align="center"><sub>③ 根据「2 小时后抵达」计算取号时机，执行 <code>queue-number.js</code> 完成排队</sub></p>
+<p align="center">
+  <sub>① 读取沙箱时间规划用餐 · ② <code>/admin/clock</code> 加速推演 · ③ <code>queue-number.js</code> 取号排队</sub>
+</p>
 
 ```
 用户 → OpenClaw → Skill 脚本 → :8787 沙箱 → 活的世界
