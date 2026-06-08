@@ -1,12 +1,8 @@
-# XHAUS 动态沙盒一键启动（Windows PowerShell）
-# 在仓库根目录运行
-#
-# 用法：
-#   Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-#   .\scripts\start-sandbox-windows.ps1           # 沙盒 + Skills（需 Git Bash）+ Gateway + Cron
-#   .\scripts\start-sandbox-windows.ps1 -SandboxOnly # 仅启动沙盒引擎
-#
-# 停止：.\scripts\stop-sandbox-windows.ps1
+﻿# XHAUS sandbox start (Windows PowerShell)
+# Usage:
+#   .\scripts\start-sandbox-windows.bat
+#   .\scripts\start-sandbox-windows.bat -SandboxOnly
+# Stop: .\scripts\stop-sandbox-windows.bat
 
 param(
     [switch]$SandboxOnly,
@@ -50,15 +46,14 @@ function Invoke-SandboxApi($method, $path, $body = $null) {
 }
 
 if (-not (Test-Path $SandboxRoot)) {
-    Write-Fail "找不到沙盒目录: $SandboxRoot"
+    Write-Fail "Sandbox directory not found: $SandboxRoot"
 }
 
-Write-Info "沙盒目录: $SandboxRoot"
+Write-Info "Sandbox root: $SandboxRoot"
 
-# ── 依赖检查 ──
 foreach ($cmd in @("node")) {
     if (-not (Get-Command $cmd -ErrorAction SilentlyContinue)) {
-        Write-Fail "未找到 $cmd，请先安装 Node.js 18+"
+        Write-Fail "Missing $cmd. Install Node.js 18+ first."
     }
 }
 
@@ -67,9 +62,8 @@ if (Get-Command python -ErrorAction SilentlyContinue) {
     $Python = (Get-Command python).Source
 } elseif (Get-Command py -ErrorAction SilentlyContinue) {
     $Python = "py"
-    $PythonArgs = @("-3")
 } else {
-    Write-Fail "未找到 Python 3.10+"
+    Write-Fail "Python 3.10+ not found."
 }
 
 function Invoke-Python {
@@ -82,20 +76,18 @@ function Invoke-Python {
 }
 
 Write-Host ""
-Write-Host "╔══════════════════════════════════════════════════╗" -ForegroundColor Cyan
-Write-Host "║  XHAUS 动态沙盒 · 一键启动 (Windows)              ║" -ForegroundColor Cyan
-Write-Host "╚══════════════════════════════════════════════════╝" -ForegroundColor Cyan
+Write-Host "====================================================" -ForegroundColor Cyan
+Write-Host "  XHAUS Sandbox - one-click start (Windows)" -ForegroundColor Cyan
+Write-Host "====================================================" -ForegroundColor Cyan
 Write-Host ""
 
-# ── 1. 安装 Python 依赖 ──
-Write-Info "安装沙盒 Python 依赖 …"
+Write-Info "Installing sandbox Python dependencies..."
 Invoke-Python @("-m", "pip", "install", "-q", "-r", (Join-Path $DynamicDir "requirements.txt"))
 
-# ── 2. 启动沙盒 ──
 if (Test-PortListening $SandboxPort) {
-    Write-Ok "沙盒已在运行 (端口 $SandboxPort)"
+    Write-Ok "Sandbox already running on port $SandboxPort"
 } else {
-    Write-Info "启动 dynamic-sandbox (端口 $SandboxPort) …"
+    Write-Info "Starting dynamic-sandbox on port $SandboxPort..."
     New-Item -ItemType Directory -Force -Path $RunDir | Out-Null
     $logFile = Join-Path $RunDir "sandbox.log"
     $pidFile = Join-Path $RunDir "sandbox.pid"
@@ -111,49 +103,45 @@ if (Test-PortListening $SandboxPort) {
     $proc.Id | Out-File $pidFile -Encoding ascii
 
     if (-not (Wait-Port $SandboxPort 30)) {
-        Write-Fail "沙盒启动超时，请查看: $logFile"
+        Write-Fail "Sandbox start timed out. Check: $logFile"
     }
-    Write-Ok "沙盒已启动 (PID $($proc.Id), 日志: $logFile)"
+    Write-Ok "Sandbox started (PID $($proc.Id), log: $logFile)"
 }
 
-# ── 3. 复位世界 + 加速时钟 ──
 try {
     Invoke-SandboxApi "POST" "/admin/reset" '{"seed":42}'
     Invoke-SandboxApi "POST" "/admin/clock" '{"time_scale":30}'
-    Write-Ok "世界已复位 seed=42，倍速 30x"
+    Write-Ok "World reset seed=42, time scale 30x"
 } catch {
-    Write-Warn "世界复位/倍速设置失败: $_"
+    Write-Warn "World reset/clock failed: $_"
 }
 
-# ── 4. 健康检查 ──
-Write-Info "健康检查 …"
+Write-Info "Health check..."
 $healthScript = Join-Path $SandboxRoot "scripts\health-check.js"
 & node $healthScript
-if ($LASTEXITCODE -ne 0) { Write-Fail "健康检查失败" }
-Write-Ok "沙盒 API 健康"
+if ($LASTEXITCODE -ne 0) { Write-Fail "Health check failed" }
+Write-Ok "Sandbox API healthy"
 
 if ($SandboxOnly) {
     Write-Host ""
-    Write-Ok "沙盒已就绪 → http://127.0.0.1:${SandboxPort}/docs"
+    Write-Ok "Sandbox ready -> http://127.0.0.1:${SandboxPort}/docs"
     exit 0
 }
 
-# ── 5. 挂载 Skills（需 Git Bash）──
-Write-Info "挂载 Skills 到 OpenClaw workspaces …"
+Write-Info "Mounting Skills to OpenClaw workspaces..."
 $installSh = Join-Path $SandboxRoot "skills\install.sh"
 if (Get-Command bash -ErrorAction SilentlyContinue) {
     bash $installSh
 } else {
-    Write-Warn "未找到 bash（可安装 Git for Windows），已跳过 Skills 挂载"
-    Write-Warn "手动运行: bash `"$installSh`""
+    Write-Warn "bash not found (install Git for Windows). Skipping Skills mount."
+    Write-Warn "Run manually: bash `"$installSh`""
 }
 
-# ── 6. OpenClaw Gateway ──
 if (Get-Command openclaw -ErrorAction SilentlyContinue) {
     if (Test-PortListening $GatewayPort) {
-        Write-Ok "OpenClaw Gateway 已在端口 $GatewayPort 运行"
+        Write-Ok "OpenClaw Gateway already on port $GatewayPort"
     } else {
-        Write-Info "启动 OpenClaw Gateway (端口 $GatewayPort) …"
+        Write-Info "Starting OpenClaw Gateway on port $GatewayPort..."
         $gwLog = Join-Path $RunDir "gateway.log"
         $gwPid = Join-Path $RunDir "gateway.pid"
         $gwProc = Start-Process -FilePath "openclaw" `
@@ -164,33 +152,31 @@ if (Get-Command openclaw -ErrorAction SilentlyContinue) {
             -PassThru
         $gwProc.Id | Out-File $gwPid -Encoding ascii
         if (Wait-Port $GatewayPort 25) {
-            Write-Ok "Gateway 已启动 → ws://127.0.0.1:$GatewayPort"
+            Write-Ok "Gateway started -> ws://127.0.0.1:$GatewayPort"
         } else {
-            Write-Warn "Gateway 启动失败，日志: $gwLog"
+            Write-Warn "Gateway failed to start. Log: $gwLog"
         }
     }
 
-    # ── 7. 管家心跳 Cron ──
     $cronSh = Join-Path $SandboxRoot "skills\sandbox-heartbeat\install-cron.sh"
     if ((Test-Path $cronSh) -and (Get-Command bash -ErrorAction SilentlyContinue)) {
-        Write-Info "注册 sandbox-heartbeat Cron …"
+        Write-Info "Registering sandbox-heartbeat cron..."
         bash $cronSh
     }
 } else {
-    Write-Warn "未找到 openclaw CLI，请手动: openclaw gateway --port $GatewayPort"
+    Write-Warn "openclaw CLI not found. Start manually: openclaw gateway --port $GatewayPort"
 }
 
-# ── 8. 端到端演示（可选）──
 if ($Demo) {
-    Write-Info "运行端到端演示 …"
+    Write-Info "Running end-to-end demo..."
     & node (Join-Path $SandboxRoot "demo\e2e-story.js")
 }
 
 Write-Host ""
-Write-Host "══════════════════════════════════════════════════" -ForegroundColor Green
-Write-Ok "沙盒一键启动完成"
-Write-Host "  沙箱 API:   http://127.0.0.1:${SandboxPort}/docs"
-Write-Host "  OpenClaw:   ws://127.0.0.1:${GatewayPort}"
-Write-Host "  完整检查:   node `"$healthScript`" --skills"
-Write-Host "  停止服务:   .\scripts\stop-sandbox-windows.ps1"
-Write-Host "══════════════════════════════════════════════════" -ForegroundColor Green
+Write-Host "====================================================" -ForegroundColor Green
+Write-Ok "Sandbox startup complete"
+Write-Host "  Sandbox API:  http://127.0.0.1:${SandboxPort}/docs"
+Write-Host "  OpenClaw:     ws://127.0.0.1:${GatewayPort}"
+Write-Host "  Full check:   node `"$healthScript`" --skills"
+Write-Host "  Stop:         .\scripts\stop-sandbox-windows.bat"
+Write-Host "====================================================" -ForegroundColor Green

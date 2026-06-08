@@ -1,6 +1,5 @@
-# XHAUS 动态沙盒一键停止（Windows PowerShell）
-#
-# 用法：.\scripts\stop-sandbox-windows.ps1
+﻿# XHAUS sandbox stop (Windows PowerShell)
+# Usage: .\scripts\stop-sandbox-windows.bat
 
 $ErrorActionPreference = "Continue"
 
@@ -13,7 +12,7 @@ $GatewayPort = if ($env:OPENCLAW_GATEWAY_PORT) { $env:OPENCLAW_GATEWAY_PORT } el
 
 function Stop-FromPidFile($name, $file) {
     if (-not (Test-Path $file)) {
-        Write-Host "[INFO] 无 $name PID 文件: $file"
+        Write-Host "[INFO] No $name PID file: $file"
         return
     }
     $pid = Get-Content $file -Raw
@@ -21,20 +20,20 @@ function Stop-FromPidFile($name, $file) {
     $proc = Get-Process -Id $pid -ErrorAction SilentlyContinue
     if ($proc) {
         Stop-Process -Id $pid -Force -ErrorAction SilentlyContinue
-        Write-Host "[ OK ] 已停止 $name (PID $pid)" -ForegroundColor Green
+        Write-Host "[ OK ] Stopped $name (PID $pid)" -ForegroundColor Green
     } else {
-        Write-Host "[INFO] $name 进程已不存在 (PID $pid)"
+        Write-Host "[INFO] $name process not running (PID $pid)"
     }
     Remove-Item $file -Force -ErrorAction SilentlyContinue
 }
 
-Write-Host "[INFO] 停止 Sand_box 服务 …" -ForegroundColor Cyan
+Write-Host "[INFO] Stopping Sand_box services..." -ForegroundColor Cyan
 
-Stop-FromPidFile "沙箱" (Join-Path $RunDir "sandbox.pid")
+Stop-FromPidFile "sandbox" (Join-Path $RunDir "sandbox.pid")
 Stop-FromPidFile "Gateway" (Join-Path $RunDir "gateway.pid")
 
 if (Get-NetTCPConnection -LocalPort $SandboxPort -State Listen -ErrorAction SilentlyContinue) {
-    Write-Host "[WARN] 端口 $SandboxPort 仍被占用。可尝试:" -ForegroundColor Yellow
+    Write-Host "[WARN] Port $SandboxPort still in use. Try:" -ForegroundColor Yellow
     Write-Host "       Get-NetTCPConnection -LocalPort $SandboxPort | ForEach-Object { Stop-Process -Id `$_.OwningProcess -Force }"
 }
 
@@ -47,4 +46,4 @@ if (Get-Command openclaw -ErrorAction SilentlyContinue) {
     openclaw gateway stop 2>$null
 }
 
-Write-Host "[ OK ] 完成" -ForegroundColor Green
+Write-Host "[ OK ] Done" -ForegroundColor Green

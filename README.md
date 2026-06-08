@@ -328,19 +328,26 @@ chmod +x scripts/setup-xhaus-mac.sh
 SKIP_OPENCLAW_ONBOARD=1 ./scripts/setup-xhaus-mac.sh
 ```
 
-**Windows（PowerShell）**
+**Windows（推荐双击或命令行运行 `.bat`）**
 
-```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\scripts\setup-xhaus-windows.ps1
+```bat
+scripts\setup-xhaus-windows.bat
 ```
 
-已配置 OpenClaw 时：
+或在 PowerShell 中：
+
+```powershell
+.\scripts\setup-xhaus-windows.bat
+```
+
+已配置 OpenClaw 时（跳过引导）：
 
 ```powershell
 $env:SKIP_OPENCLAW_ONBOARD = "1"
-.\scripts\setup-xhaus-windows.ps1
+.\scripts\setup-xhaus-windows.bat
 ```
+
+> 若 `.bat` 被系统识别为其他文件类型，可在资源管理器中右键 → **打开方式** → 选择「命令提示符」或「Windows 命令处理程序」；也可直接运行上面的 PowerShell 一行命令。
 
 脚本自动完成：
 
@@ -418,13 +425,12 @@ chmod +x scripts/start-sandbox-mac.sh scripts/stop-sandbox-mac.sh
 ./scripts/stop-sandbox-mac.sh               # 停止沙盒与 Gateway
 ```
 
-**Windows（PowerShell）**
+**Windows**
 
-```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\scripts\start-sandbox-windows.ps1         # 沙盒 + Skills + Gateway + Cron
-.\scripts\start-sandbox-windows.ps1 -SandboxOnly   # 仅启动沙盒引擎
-.\scripts\stop-sandbox-windows.ps1            # 停止服务
+```bat
+scripts\start-sandbox-windows.bat              REM 沙盒 + Skills + Gateway + Cron
+scripts\start-sandbox-windows.bat -SandboxOnly REM 仅启动沙盒引擎
+scripts\stop-sandbox-windows.bat               REM 停止服务
 ```
 
 > Windows 挂载 Skills / Cron 需要 **Git Bash**（`bash` 命令）。未安装时会跳过 Skills 挂载并给出提示。
