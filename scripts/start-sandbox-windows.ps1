@@ -67,11 +67,11 @@ if (Get-Command python -ErrorAction SilentlyContinue) {
 }
 
 function Invoke-Python {
-    param([string[]]$Args)
+    param([string[]]$PyArgs)
     if ($Python -eq "py") {
-        & py -3 @Args
+        & py -3 @PyArgs
     } else {
-        & $Python @Args
+        & $Python @PyArgs
     }
 }
 

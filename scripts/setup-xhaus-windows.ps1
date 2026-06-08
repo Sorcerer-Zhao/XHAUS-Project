@@ -53,11 +53,11 @@ function Set-EnvLine($file, $key, $value) {
 }
 
 function Invoke-PythonCmd {
-    param([string[]]$Args)
+    param([string[]]$PyArgs)
     if ($script:UsePyLauncher) {
-        & py -3 @Args
+        & py -3 @PyArgs
     } else {
-        & $script:PythonExe @Args
+        & $script:PythonExe @PyArgs
     }
 }
 
@@ -111,9 +111,10 @@ if (Test-Path $satReq) {
     Invoke-PythonCmd @("-m", "pip", "install", "-q", "-r", $satReq)
 }
 if ($UsePyLauncher) {
-    $PythonPath = (& py -3 -c "import sys; print(sys.executable)")
+    $PythonPath = (& py -3 -c "import sys; print(sys.executable)" 2>$null | Select-Object -Last 1)
 } else {
-    $PythonPath = $PythonExe
+    $PythonPath = (& $PythonExe -c "import sys; print(sys.executable)" 2>$null | Select-Object -Last 1)
+    if (-not $PythonPath) { $PythonPath = $PythonExe }
 }
 Write-Ok "Python dependencies installed"
 
