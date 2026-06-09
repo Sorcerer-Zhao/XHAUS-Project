@@ -171,6 +171,23 @@ Skills 是管家的「手脚」。本仓库的 Skills 体系由 **四个部分**
 
 无论用户在电脑前还是手机上，面对的是**同一个管家、同一份记忆**。
 
+### Web 网页端界面
+
+<p align="center">
+<table>
+  <tr>
+    <td align="center" valign="top">
+      <img src="assets/web-landing-panel.png" alt="XHAUS Web 落地页" width="480" />
+    </td>
+    <td align="center" valign="top">
+      <img src="assets/web-right-panel.png" alt="XHAUS Web 对话页与能力模块" width="480" />
+    </td>
+  </tr>
+</table>
+</p>
+
+<p align="center"><sub>左：落地页 · 右：对话页（上）/ 能力装载与自我认知（下）</sub></p>
+
 ### 微信小程序界面
 
 <p align="center">
